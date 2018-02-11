@@ -19,8 +19,15 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+      <script
+              src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+      </script>
+      <link
+              rel="stylesheet"
+              href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
 
-    <!-- Custom styles for this template -->
+
+      <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
   </head>
@@ -42,14 +49,20 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contribution">Contributions</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -68,7 +81,7 @@
           <h1 class="mb-0">Anip
             <span class="text-primary">Mehta</span>
           </h1>
-          <div class="subheading mb-5">4000 SW 37th Blvd. Gainesville, Florida
+          <div class="subheading mb-5">Gainesville, Florida
             <a href="mailto:name@email.com">anipmehta13@gmail.com</a>
           </div>
           <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
@@ -82,7 +95,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/anip-mehta-210a16104/">
+              <a href="https://www.linkedin.com/in/anipmehta">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -109,59 +122,27 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contribution">
+            <div class="my-auto">
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Android Development Intern</h3>
-              <div class="subheading mb-3">Salad Days</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
-            </div>
-          </div>
+                    <script>
+                        GitHubCalendar(".calendar", "anipmehta");
+                    </script>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Developer Intern</h3>
-              <div class="subheading mb-3">Fitso, Inc</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
+                </div>
+                <div class="calendar" style="text-align: center;" >
+                    <iframe width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?@anipmehta" frameborder="0" style="text-align: center;"></iframe>
+                </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Development Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
+        </section>
 
-          <!-- <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"></h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div> -->
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
@@ -191,42 +172,67 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+
+
+
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+              <i class="devicons devicons-java"></i>
+            </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-android"></i>
+              </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-python"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
+              <i class="devicons devicons-php"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+              <i class="devicons devicons-nodejs"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+              <i class="devicons devicons-angular"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
+              <i class="devicons devicons-django"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
+              <i class="devicons devicons-meteor"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
+              <i class="devicons devicons-mysql"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
+              <i class="devicons devicons-mongodb"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
+              <i class="devicons devicons-aws"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-photoshop"></i>
+              </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-linux"></i>
+              </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-digital-ocean"></i>
+              </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-heroku"></i>
+              </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-bitbucket"></i>
+              </li>
+              <li class="list-inline-item">
+                  <i class="devicons devicons-illustrator"></i>
+              </li>
             <li class="list-inline-item">
               <i class="devicons devicons-npm"></i>
             </li>
@@ -239,56 +245,217 @@
               Mobile-First, Responsive Design</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
               Agile Development &amp; Scrum</li>
           </ul>
         </div>
       </section>
 
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Internships Experiences</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Android Development Intern</h3>
+              <div class="subheading mb-3">Salad Days</div>
+              <p>
+              <ul>
+              <li>Salad Days a food startup which delivers mouth watering salads and juices in Delhi and Gurgaon</li>
+              <li>Added a completely new mode of ordering through app</li>
+              <li>Consumed REST API’s.</li>
+              <li>Developed features such as Ordering through App, Make Your Own Salad, Payment Gateway Integration, Customised Salads, OTP for Login</li>
+
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Summer 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Developer Intern</h3>
+              <div class="subheading mb-3">Fitso, Inc</div>
+              <p>
+              <ul>
+              <li>Fitso is a fitness app dedicated to make fitness an addictive experience for fitness freaks and fitness loving people</li>
+              <li>Added features such as Activity Reminder, In-app Notifications, Updating their Service App, Implemented Social Authentication using Google & Facebook SDK’s and is available in current release</li>
+              <li>I was part of the tech team which helped in winning Fitso the Best App of the Year in 2016 on Apple App Store and was featured on Google Play Store</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">December 2015 - January 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Development Intern</h3>
+              <div class="subheading mb-3">Sanlok Institute</div>
+              <p>
+                <ul>
+                  <li>
+                    Was responsible for building & releasing an android app for the students from scratch
+                  </li>
+                  <li>
+                    Developed features like Class Schedule, Study Material, Online Fee Payment, Online Attendance, Push Notification about the latest news and results, Customised Notification, In-app reminder on a day prior to there class
+                  </li>
+                  <li>
+                    Available on Google Play Store with over 200 downloads and a rating of 4.83/5.00
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2015 - December 2015</span>
+            </div>
+          </div>
+
+          <!-- <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"></h3>
+              <div class="subheading mb-3">Shout! Media Productions</div>
+              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            </div> -->
+           <!--  <div class="resume-date text-md-right">
+              <span class="text-primary">September 2008 - June 2010</span>
+            </div> -->
+          </div>
+
+        </div>
+
+      </section>
+
+     
+      <!-- Projects -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Open Source/Commercial Projects</h2>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0"><a href="https://play.google.com/store/apps/details?id=com.anip.swamphacks&hl=en">SwampHacks Android App</a></h3>
+                    <div class="subheading mb-3">Official app for Hackathon</div>
+                    <p>
+                    <ul>
+                        <li>Created and published an official app for SwampHacks, 2018</li>
+                        <li> Developed a bifunctional app both for Hacker and Sponsor using the latest technologies</li>
+                        <li>Designed and modified UI according to the iOS app to maintain consistency</li>
+                        <li>Technologies Used : Firebase API’s for Backend and Kotlin for Android app</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+           <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0"><a href="http://jitpack.io/#anipmehta/InAppNotification/v1.0"> InApp Notification</a></h3>
+              <div class="subheading mb-3">An Opensource Android Library</div>
+              <p>
+              <ul>
+              <li>Developed open source library for Android available on Jitpack</li>
+              <li>Library for generating InApp Notification, scheduled app notification, BigTextStyle , BigContent and ImageNotifications</li>
+              <li>Technologies Used - Native Android/Java</li>
+              </ul>
+              </p>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Summer 2016</span>
+            </div> -->
+          </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0"><a href="https://github.com/anipmehta/Icebreaker-android"> Icebreaker </a></h3>
+              <div class="subheading mb-3">A Peer to Peer Chat Application</div>
+              <p>
+              <ul>
+              <li>An application where students can chat with each other using their enrolment number in a safe and secure way</li>
+              <li>Addded features like Random Chat which helps in breaking ice between two people, Created REST API’s for sending and delivering messages, sending notifications about message through FCM (Firebase Cloud Messaging API)</li>
+              <li>Technologies Used - Backend (Django REST API) with MYSQL db, App - Native Android/Java</li>
+              </ul>
+              </p>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Summer 2016</span>
+            </div> -->
+          </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0"><a href="https://play.google.com/store/apps/details?id=com.aaa.cybersrishti&hl=en">Health Keep</a></h3>
+              <div class="subheading mb-3">Calorie Tracker App</div>
+              <p>
+              <ul>
+              <li>App that keeps a track of calories consumed and calories burned on day to day basis of a particular user</li>
+              <li>Consumed Google Fit API for tracking calories burned, maintaining a calculator for calorie consumed by user</li>
+              <li>Displaying a graph between calorie consumed and calories burned on a pie chart and notifying user</li>
+              <li>Technologies Used- Native Android App (Available on Google Play Store)</li>
+              </ul>
+              </p>
+            </div>
+           <!--  <div class="resume-date text-md-right">
+              <span class="text-primary">Summer 2016</span>
+            </div> -->
+          </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0"><a href="https://github.com/addiittya2006/foh-android-v2"> Funds of Hope </a></h3>
+              <div class="subheading mb-3">A crowdfunding app for NGO's</div>
+              <p>
+              <ul>
+              <li>Created interface where NGO’s can upload their project with budget and images</li>
+              <li>User can donate (with no minimum limit) on whichever project he/she is interested and can also keep track of the project</li>
+              <li>Technologies Used - Technologies - Backend (Django REST API) with MYSQL db, Website - Angular JS, HTML, CSS, Jquery and App - Android (Java)</li>
+              </ul>
+              </p>
+            </div>
+           <!--  <div class="resume-date text-md-right">
+              <span class="text-primary">Summer 2016</span>
+            </div> -->
+          </div>
+         
+
+        </div>
+      </section>
+
+      
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+          <p>Apart from being a software developer, I enjoy most of my time being outdoors and capturing the beauty of everyday life through my camera.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, love to spend time with my friends, and I spend a large amount of my free time exploring the latest technolgy advancements in the software development world.</p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <h2 class="mb-5">Volunteer and Achievements</h2>
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
+              Mentor - SwampHacks, 2018
+              </li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
+              Android Coordinator - SwampHacks, 2018</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+              Finalist, VandyHacks, 2017</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+              Represented UF at MIT, Media Lab at Reality Virtually Hackathon</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+              Won Gold Medal at International Informatics Olympiad, 2006</li>
             <li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
+              Won Silver Medal at International Informatics Olympiad, 2005</li>
           </ul>
         </div>
       </section>
