@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/more-styles.css" rel="stylesheet">
 
   </head>
 
@@ -71,7 +72,15 @@
             <span class="text-primary">Gorgone</span>
           </h1>
           <h3 class="OFF-mb-5">Freelance Web Developer</h3>
-          <div class="subheading mb-5">Las Vegas · Los Angeles · Chicago · (424) 241-9327 · <a href="mailto:name@email.com">peter@peltronic.com</a>
+<!--
+          <div class="subheading mb-5">Las Vegas · Los Angeles · Chicago · (424) 241-9327 · <a href="mailto:peter@peltronic.com">peter@peltronic.com</a></div>
+-->
+          <div class="subheading mb-5">Las Vegas · Los Angeles · Chicago · 
+              <script type="text/javascript"> var areacode="424"; var pnumber1="241"; var pnumber2="9327"; document.write('('+areacode+') '+pnumber1+'-'+pnumber2); </script>
+              · 
+              <a href="mailto:peter@peltronic.com">
+              <script type="text/javascript"> var name="peter"; var domain="@peltronic.com"; var txtstr=name + domain; document.write(''+txtstr+''); </script>
+              </a>
           </div>
           
           <p class="mb-5"> Professional Custom Web Development for Small Business and Startups</p>
@@ -220,8 +229,10 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
+
           <h2 class="mb-5">Skills</h2>
 
+          <article class="skills-languages">
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="fa-ul mb-0">
             <li>
@@ -257,47 +268,9 @@
               OAuth, Web 2.0 APIs (Facebook, Twitter, etc), REST, SSL, PHPUnit
             </li>
           </ul>
-<!--
-Web programming: PHP, MySQL, AJAX/JSON, HTML, CSS, Javascript/JQuery, REST, OAuth, Web 2.0 APIs (Facebook, Twitter, etc)
-Web Analytics Tools: Mixpanel, Google Analytics.
-Highly proficient with Linux, MySQL, and Apache administration (including shell scripting & Linux command line, vi).
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-          </ul>
--->
+          </article>
 
+          <article class="skills-workflow">
           <div class="subheading mb-3">Workflow</div>
           <ul class="fa-ul mb-0">
             <li>
@@ -313,14 +286,40 @@ Highly proficient with Linux, MySQL, and Apache administration (including shell 
               Excellent debug/troubleshooting skills: PHP Storm, Chrome Inspector, gdb
             <li>
           </ul>
+          </article>
+
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
         <div class="my-auto">
-          <h2 class="mb-5">About</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+          <h2 class="mb-4">About</h2>
+          <p class="mb-5">A few questions that may be on your mind...</p>
+          <ul>
+              <li class="mb-5">
+                  <div class="mb-2">Q: Las Vegas, Chicago, LA? Where exactly are you based?</div>
+                  <div class="mb-2">A: I'm based out of Las Vegas. After living in serveral west coast cities (Seattle, San Fran, and LA), I decided
+                      Las Vegas was the best place to grow a consulting business...good weather, low overhead, not too much traffic. Best of all, 
+                      the airport is easily accessible and there are cheap flights to most major US cities (more on that below).  </div>
+              </li>
+              <li class="mb-5">
+                  <div class="mb-2">Q: So what's up with Chicago and LA?</div>
+                  <div class="mb-2">
+                    <p class="mb-1">A: Chicago and LA are where most of my recent clients have been based. I lived in LA for several years and love the city, and I've been traveling to Chicago regularly the last 2 years to work onsite with a client there. Chicago has been growing on me with each trip and it's a place in I don't mind spending time.</p>
+                    <p class="mb-1">As you may have guessed I don't mind traveling occasionally to work on-site with a client.</p>
+                  </div>
+              </li>
+              <li class="mb-5">
+                  <div class="mb-2">Q: How can I contact you?</div>
+                  <div class="mb-2">
+                      <p class="mb-1">A: Please shoot me an email or text and we can setup a time to chat about your project!</p>
+                      <p class="mb-0">
+                        <script type="text/javascript"> var areacode="424"; var pnumber1="241"; var pnumber2="9327"; document.write('('+areacode+') '+pnumber1+'-'+pnumber2); </script> |
+                        <script type="text/javascript"> var name="peter"; var domain="@peltronic.com"; var txtstr=name + domain; document.write(''+txtstr+''); </script>
+                      </p>
+                  </div>
+              </li>
+          </ul>
         </div>
       </section>
 

@@ -1,0 +1,6 @@
+section#about ul {
+    list-style: none;
+}
+section#skills article.skills-languages {
+    margin-bottom: 25px;
+}
