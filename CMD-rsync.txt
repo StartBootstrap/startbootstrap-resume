@@ -1,0 +1,5 @@
+
+
+rsync -az --force --delete --progress --chmod=g+w       --rsync-path='rsync'       --exclude-from=rsyncconfig/exclude-init.txt       ./       psgc-aws:/jet/www/src/peterg-webdeveloper
+
+rsync -az --force --delete --progress --chmod=g+w       --rsync-path='rsync'       --exclude-from=rsyncconfig/exclude-update.txt     ./       psgc-aws:/jet/www/src/peterg-webdeveloper

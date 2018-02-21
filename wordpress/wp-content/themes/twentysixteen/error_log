@@ -1,0 +1,10 @@
+[07-Aug-2017 21:43:16 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/404.php on line 10
+[07-Aug-2017 21:43:16 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/404.php on line 10
+[14-Aug-2017 07:58:03 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/header.php on line 13
+[14-Aug-2017 07:58:03 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/header.php on line 13
+[14-Aug-2017 07:58:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/archive.php on line 19
+[14-Aug-2017 07:58:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/404.php on line 10
+[14-Aug-2017 07:58:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/archive.php on line 19
+[14-Aug-2017 07:58:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/404.php on line 10
+[17-Aug-2017 11:18:22 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/index.php on line 17
+[17-Aug-2017 11:18:23 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/ultimbi0/src/peterg-webdeveloper/wordpress/wp-content/themes/twentysixteen/index.php on line 17
