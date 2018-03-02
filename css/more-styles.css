@@ -1,3 +1,7 @@
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clearBoth { clear: both; }
+
 section#about ul {
     list-style: none;
 }
@@ -10,3 +14,23 @@ nav span.d-block {
     max-width: 50px;
 }
 */
+
+ul.tag-youtube_embeds {
+    list-style: none;
+}
+ul.tag-youtube_embeds li {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 40%;
+}
+ul.tag-youtube_embeds li:first-child {
+    margin-left: 0;
+}
+ul.tag-youtube_embeds li p {
+    margin: 5px 0;
+    max-width: 300px;
+    text-align: center;
+}
+img.tag-image_border {
+    border: solid 7px #777;
+}
