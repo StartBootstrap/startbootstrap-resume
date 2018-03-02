@@ -34,3 +34,11 @@ ul.tag-youtube_embeds li p {
 img.tag-image_border {
     border: solid 7px #777;
 }
+#tag-clickme_to_scroll_down {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+#tag-clickme_to_scroll_down h4 {
+    display: none;
+}
