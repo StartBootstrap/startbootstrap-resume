@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
+    // %TODO: if scroll down will take us into next section, stop at the section, otherwise go the full window height
     var isBottomOnLoad = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
 
     if (isBottomOnLoad) {
-        $('#tag-clickme_to_scroll_down h4.tag-top').show();
+        $('#tag-clickme_to_scroll_down .tag-top').show();
     } else {
-        $('#tag-clickme_to_scroll_down h4.tag-more').show();
+        $('#tag-clickme_to_scroll_down .tag-more').show();
     }
 
     $(document).on('click', '#tag-clickme_to_scroll_down .tag-more a', function(e) {

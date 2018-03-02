@@ -36,9 +36,12 @@ img.tag-image_border {
 }
 #tag-clickme_to_scroll_down {
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 30px;
+    bottom: 20px;
 }
-#tag-clickme_to_scroll_down h4 {
+#tag-clickme_to_scroll_down h3 {
     display: none;
+}
+#tag-clickme_to_scroll_down h3 a {
+    color: #52b8dd;
 }
