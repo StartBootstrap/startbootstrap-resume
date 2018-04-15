@@ -11,11 +11,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
@@ -23,7 +19,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/XavierCarpenter/startbootstrap-resume.git"
     },
     "dependencies": {
         "bootstrap": "4.0.0",
