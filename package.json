@@ -29,7 +29,8 @@
         "bootstrap": "4.0.0",
         "devicons": "^1.8.0",
         "jquery": "3.3.1",
-        "simple-line-icons": "^2.4.1"
+        "simple-line-icons": "^2.4.1",
+        "micro": "latest"
     },
     "devDependencies": {
         "browser-sync": "2.23.6",
@@ -39,5 +40,10 @@
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",
         "gulp-uglify": "3.0.0"
+    },
+    "scripts": {
+        "now-start": "micro"
+   
+      
     }
 }
