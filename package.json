@@ -1,7 +1,7 @@
 {
     "title": "Resume",
     "name": "startbootstrap-resume",
-    "version": "4.0.0",
+    "version": "4.1.1",
     "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
         "css",
@@ -26,18 +26,18 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
     },
     "dependencies": {
-        "bootstrap": "4.0.0",
+        "bootstrap": "4.1.1",
         "devicons": "^1.8.0",
         "jquery": "3.3.1",
         "simple-line-icons": "^2.4.1"
     },
     "devDependencies": {
-        "browser-sync": "2.23.6",
+        "browser-sync": "2.24.2",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.2",
-        "gulp-header": "2.0.1",
+        "gulp-clean-css": "3.9.3",
+        "gulp-header": "2.0.5",
         "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
+        "gulp-sass": "4.0.1",
         "gulp-uglify": "3.0.0"
     }
 }
