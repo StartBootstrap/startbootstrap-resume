@@ -1,8 +1,13 @@
 #sideNav {
-  .navbar-brand {}
   .navbar-nav .nav-item .nav-link {
-    font-weight: 600;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
+  }
+  .navbar-toggler {
+    &:focus {
+      outline-color: lighten($primary, 15%);
+    }
   }
 }
 

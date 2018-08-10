@@ -33,26 +33,44 @@ h2 {
   font-size: 3.5rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
   @include heading-font;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
 
-.list-social-icons {
+.social-icons {
   a {
-    color: $gray-700;
-    &:hover {
-      color: $primary;
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: $gray-700;
+    color: $white !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
     }
-    .fa-lg {
-      font-size: 1.75rem;
+    &:hover {
+      background-color: $primary;
     }
   }
 }
 
-.list-icons {
+.dev-icons {
   font-size: 3rem;
   .list-inline-item i {
     &:hover {
