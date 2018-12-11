@@ -45,3 +45,7 @@ img.tag-image_border {
 #tag-clickme_to_scroll_down h3 a {
     color: #52b8dd;
 }
+
+#crate-references img {
+    width: 75%;
+}
