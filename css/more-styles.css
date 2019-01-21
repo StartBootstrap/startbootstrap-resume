@@ -38,7 +38,7 @@ ul.tag-youtube_embeds li p {
     text-align: center;
 }
 img.tag-image_border {
-    border: solid 7px #777;
+    border: solid 5px #888;
 }
 #tag-clickme_to_scroll_down {
     position: fixed;
@@ -66,4 +66,30 @@ img.tag-image_border {
 #tag-copyright {
     color: #fafafa;
     font-size: 0.8rem;
+}
+
+.crate-image {
+    margin-left: 5%;
+    margin-bottom: 0.9rem;
+}
+.crate-image > span {
+    display: inline-block;
+}
+.crate-image > span p {
+    max-width: 25rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #3a3a3a;
+}
+.crate-image > span img {
+    margin-right: 1rem;
+    max-width: 31rem;
+    max-height: 31rem;
+}
+
+.modal-lg {
+    max-width: 65% !important;
+}
+img.tag-trigger_modal:hover {
+    cursor: pointer;
 }
