@@ -35,7 +35,9 @@ ul.tag-youtube_embeds li:first-child {
 ul.tag-youtube_embeds li p {
     margin: 5px 0;
     max-width: 300px;
-    text-align: center;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #3a3a3a;
 }
 img.tag-image_border {
     border: solid 5px #888;
@@ -76,9 +78,9 @@ img.tag-image_border {
     display: inline-block;
 }
 .crate-image > span p {
+    margin-bottom: 0;
     max-width: 25rem;
     font-size: 0.9rem;
-    margin-bottom: 0;
     color: #3a3a3a;
 }
 .crate-image > span img {
@@ -92,4 +94,30 @@ img.tag-image_border {
 }
 img.tag-trigger_modal:hover {
     cursor: pointer;
+}
+.modal-content {
+}
+.modal-header {
+    background-color: #bd5d38!important;
+    padding: 0 1rem;
+}
+.modal-header > h5 {
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 1.4rem !important;
+    /*
+    line-height: 0.8;
+    */
+    padding: 1rem;
+    margin: 0;
+}
+.modal-header button.close {
+    padding: 1rem;
+    line-height: 0.8;
+    margin: 0;
+}
+.modal-header button.close span {
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: 2.5rem !important;
 }

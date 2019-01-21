@@ -144,7 +144,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-4">Experience</h2>
-          <p class="mb-4">I have over 20 years experience writing software. As a professional full-stack web developer, I am passionate about building web applications using modern technologies and best practices. The list below highlights the major projects I have worked on as a freelance web developer.</p>
+          <p class="mb-4">I have over 20 years experience writing software. As a professional full-stack web developer, I am passionate about building web applications using modern technologies and best practices. The list below highlights a few of the sites I've built for clients.</p>
 
           <!-- NewLogix -->
 
@@ -159,6 +159,7 @@ $_mdata = [
     'imgUrl'=>'/img/portfolio/newlogix/ls-project_list.png',
     'desc'=>'Project Dashboard with sorting and search capabilities. Sidebar utilizes charts to analyze project data in meaningful ways.',
     'alt'=>'Synergy Project Dashboard',
+    'title'=>'Project Dashboard',
     'target'=>'modal-synergy_project_list',
 ];
 include("./_modal.php");
@@ -166,6 +167,7 @@ include("./_modal.php");
 $_mdata = [
     'imgUrl'=>'/img/portfolio/newlogix/ls-fb-template_builder.png',
     'desc'=>'The forms used to track project data can be constructed dynamically in an administration area. This page shows building a form from \'components\' (commonly used sub-forms). The user can drag & drop a component from the list on the right into the center area to add it to a form, which will then be available on the site (or possibly a mobile app) for filling out by contractors and engineers in the field.',
+    'title'=>'Form Builder',
     'alt'=>'Form Builder',
     'target'=>'modal-synergy_formbuilder',
 ];
@@ -177,6 +179,8 @@ include("./_modal.php");
               <span class="text-primary">March 2016 - Present</span>
             </div>
           </div>
+
+          <!-- Write Evolution -->
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -202,25 +206,26 @@ include("./_modal.php");
             </div>
           </div>
 
+          <!-- Axiom Images -->
+
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Senior Web Developer</h3>
               <div class="subheading mb-3"><a href="http://www.axiomimages.com/">Axiom Images</a></div>
               <p>Implemented features such as dynamic playlist, and intelligent search filtering for leading aerial stock footage website. Work also included a complete re-write of the website's admin panel using Laravel MVC Framework.</p>
+<?php
+$_mdata = [
+    'imgUrl'=>'/img/portfolio/axiom-images/ai-search-with_playlist.png',
+    'desc'=>'Search with sophisticated filtering UI (left), results (right), and customizable playlist (bottom).',
+    'title'=>'Filtered Search Results',
+    'alt'=>'Filtered Search Results',
+    'target'=>'modal-axiom_search_results',
+];
+include("./_modal.php");
+?>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">February 2014 - April 2015</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3"><a href="http://www.moboom.com/">Moboom Ltd.</a></div>
-              <p>Assisted in the early development of the company's adaptive content management system, focusing on feature development in Yii-driven backend including: writing code to implement REST-ful API services, Elastic Search-based theme importer, and access control and permissions logic.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2012 - August 2013</span>
             </div>
           </div>
 
@@ -234,28 +239,32 @@ include("./_modal.php");
               <div class="subheading mb-3"><a href="http://odoe-demo.peterg-webdeveloper.com/videos/year/2011">One Day on Earth Archive</a></div>
               <p>One Day on Earth was an annual project founded by a Santa Monica-based filmmaker. Starting on October 10, 2010 (10/10/10), thousands of volunteers worldwide shot footage documenting life on that day. The 'archive' lets viewers browse and watch the videos by location, keywords, and categories. I built the archive site implementing features such as keyword-based search, commenting, and user ratings. I also integrated the site with the Vimeo API to support both video playback, ans well as the ability to upload new videos.</p>
 
-              <div class="crate-image">
-                <span>
-                    <a href="http://odoe-demo.peterg-webdeveloper.com/videos/year/2011">
-                        <img class="img-fluid tag-image_border" src="/img/portfolio/odoe/odoe-map.png" alt="One Day on Earth Archive Map">
-                    </a>
-                </span>
-                <span><p>Map-based UI showing locations where videos were shot on 10/10/2010. 'Cluster' icons in green show groups of videos, which can be clicked on to zoom into.</p></span>
-              </div>
-              <div class="crate-image">
-                <span>
-                    <a href="http://odoe-demo.peterg-webdeveloper.com/videos/year/2011">
-                        <img class="img-fluid tag-image_border" src="/img/portfolio/odoe/odoe-video.png" alt="One Day on Earth Archive Video Popout">
-                    </a>
-                </span>
-                <span><p>Pop-out sidebar contains video player, along with other information about the work, plus a playlist of related videos at the bottom.</p></span>
-              </div>
+<?php
+$_mdata = [
+    'imgUrl'=>'/img/portfolio/odoe/odoe-map.png',
+    'desc'=>'Map-based UI showing locations where videos were shot on 10/10/2010. \'Cluster\' icons in green show groups of videos, which can be clicked on to zoom into.',
+    'title'=>'Archive map',
+    'alt'=>'One Day on Earth Archive Map',
+    'target'=>'modal-odoe_map',
+];
+include("./_modal.php");
+$_mdata = [
+    'imgUrl'=>'/img/portfolio/odoe/odoe-video.png',
+    'desc'=>'Pop-out sidebar contains video player, along with other information about the work, plus a playlist of related videos at the bottom.',
+    'title'=>'One Day on Earth Sidebar with Embedded Video Player',
+    'alt'=>'Sidebar',
+    'target'=>'modal-odoe_sidebar',
+];
+include("./_modal.php");
+?>
 
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">October 2010 - April 2013</span>
             </div>
           </div>
+
+          <!-- Misc. -->
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -327,7 +336,7 @@ include("./_modal.php");
             </li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Javascript, AJAX/JSON, JQuery, Backbone.js, Vue.js, Angular
+              Javascript, AJAX/JSON, JQuery, BackboneJS, VueJS, React, Angular
             </li>
             <li>
               <i class="fa-li fa fa-check"></i>
