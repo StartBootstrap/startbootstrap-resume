@@ -2,6 +2,12 @@
 .floatRight { float: right; }
 .clearBoth { clear: both; }
 
+body a {
+    color: #007bff; /* blue */
+}
+body a.tag-clickme_to_email {
+    color: #bd5d38; /* brown-ish */
+}
 section#about ul {
     list-style: none;
 }
@@ -55,4 +61,9 @@ img.tag-image_border {
 
 #github h3 {
     color: #bd5d38;
+}
+
+#tag-copyright {
+    color: #fafafa;
+    font-size: 0.8rem;
 }
