@@ -44,6 +44,8 @@ After installation, run `npm install` and then run `gulp dev` which will open up
 
 You must have npm and Gulp installed globally on your machine in order to use these features.
 
+To use this features with local gulp installation, use `npm run <command>` within project directory, where `<command>` is one of the tasks, specified above (e.g.: `npm run gulp dev`).
+
 ## Troubleshooting and Help
 
 Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
