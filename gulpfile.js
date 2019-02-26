@@ -11,7 +11,7 @@ const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 
 // Load package.json for banner
 const pkg = require('./package.json');

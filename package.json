@@ -44,7 +44,7 @@
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.1",
+        "gulp-uglify-es": "^1.0.4",
         "merge-stream": "^1.0.1"
     }
 }
