@@ -60,9 +60,9 @@ function modules() {
     .pipe(gulp.dest('./vendor/jquery-easing'));
   // jQuery
   var jquery = gulp.src([
-      './node_modules/jquery/dist/*',
-      '!./node_modules/jquery/dist/core.js'
-    ])
+    './node_modules/jquery/dist/*',
+    '!./node_modules/jquery/dist/core.js'
+  ])
     .pipe(gulp.dest('./vendor/jquery'));
   return merge(bootstrap, fontAwesome, jquery, jqueryEasing);
 }
@@ -116,7 +116,9 @@ function js() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch("./js/**/*", js);
+  gulp.watch("./js/**/*", {
+    ignored: './js/*.min.js'
+  }, js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
