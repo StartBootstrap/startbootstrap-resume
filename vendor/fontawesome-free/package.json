@@ -22,11 +22,11 @@
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.7.2.tgz",
   "_shasum": "1498c3eb78ee7c78c5488418707de90aaf58d5d7",
   "_spec": "@fortawesome/fontawesome-free@5.7.2",
-  "_where": "/Users/DANGER_DAVID/Sites/startbootstrap-themes/startbootstrap-resume",
+  "_where": "",
   "author": {
-    "name": "Dave Gandy",
-    "email": "dave@fontawesome.com",
-    "url": "http://twitter.com/davegandy"
+    "name": "Pedro Faria",
+    "email": "pmiguelf15@gmail.com",
+    "url": "http://twitter.com/pedro_ffaria"
   },
   "bugs": {
     "url": "http://github.com/FortAwesome/Font-Awesome/issues"
@@ -34,24 +34,8 @@
   "bundleDependencies": false,
   "contributors": [
     {
-      "name": "Brian Talbot",
-      "url": "http://twitter.com/talbs"
-    },
-    {
-      "name": "Travis Chase",
-      "url": "http://twitter.com/supercodepoet"
-    },
-    {
-      "name": "Rob Madole",
-      "url": "http://twitter.com/robmadole"
-    },
-    {
-      "name": "Geremia Taglialatela",
-      "url": "http://twitter.com/gtagliala"
-    },
-    {
-      "name": "Mike Wilkerson",
-      "url": "http://twitter.com/mw77"
+      "name": "Pedro Faria",
+      "url": "https://github.com/pedro96"
     }
   ],
   "dependencies": {},

@@ -1,11 +1,11 @@
 {
     "title": "Resume",
-    "name": "startbootstrap-resume",
+    "name": "resume",
     "version": "5.0.4",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "Resume is a simple, yet elegant.",
     "keywords": [
         "css",
         "sass",
@@ -14,15 +14,15 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://pedro96.github.io/my-resume/",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://pedro96.github.io/my-resume/",
+        "email": "pmiguelf15@gmail.com"
     },
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Pedro Faria (https://pedro96.github.io/my-resume//)"
     ],
     "repository": {
         "type": "git",
