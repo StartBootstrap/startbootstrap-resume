@@ -3,8 +3,17 @@
     "name": "startbootstrap-resume",
     "version": "5.0.4",
     "scripts": {
-        "start": "node app",
-		"postinstall": "gulp default"
+        "start:dev": "gulp",
+   	"start": "node server",
+    "mocha": "node tools/test/run-mocha.js",
+    "karma": "node node_modules/karma/bin/karma start karma.conf.js",
+    "test": "gulp test",
+    "test-e2e": "gulp e2e.test",
+    "build:production": "cross-env NODE_ENV=production webpack",
+    "postinstall": "node tools/scripts/postinstall.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+
     },
     "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
