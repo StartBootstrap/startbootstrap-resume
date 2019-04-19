@@ -190,3 +190,102 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+
+
+
+
+
+
+.modal1
+.modal2 {
+  padding-right: 0px !important;
+}
+
+.modal1 .modal-dialog,
+.modal2 .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+.modal1 .modal-content,
+.modal2 .modal-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.modal1 .modal-content h2,
+.modal2 .modal-content h2{
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.modal1 .modal-content,
+.modal2 .modal-content p{
+  margin-bottom: 30px;
+}
+
+.modal1 .modal-content p.item-intro,
+.modal2 .modal-content p.item-intro{
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.modal1 .modal-content ul.list-inline,
+.modal2 .modal-content ul.list-inline{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.modal1 .modal-content img,
+.modal2 .modal-content img{
+  margin-bottom: 30px;
+}
+
+.modal1 .modal-content button,
+.modal2 .modal-content button{
+  cursor: pointer;
+}
+
+.modal1 .close-modal,
+.modal2 .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal1 .close-modal:hover,
+.modal2 .close-modal:hover {
+  opacity: 0.3;
+}
+
+.modal1 .close-modal .lr,
+.modal2 .close-modal .lr {
+  /* Safari and Chrome */
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #212529;
+}
+
+.modal1 .close-modal .lr .rl,
+.modal2 .close-modal .lr .rl {
+  /* Safari and Chrome */
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #212529;
+}
