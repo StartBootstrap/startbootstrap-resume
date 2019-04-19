@@ -197,7 +197,7 @@ a:hover, a:focus, a:active {
 
 
 
-.modal1
+.modal1,
 .modal2 {
   padding-right: 0px !important;
 }
@@ -215,18 +215,18 @@ a:hover, a:focus, a:active {
 }
 
 .modal1 .modal-content h2,
-.modal2 .modal-content h2{
+.modal2 .modal-content h2 {
   font-size: 3em;
   margin-bottom: 15px;
 }
 
 .modal1 .modal-content,
-.modal2 .modal-content p{
+.modal2 .modal-content p {
   margin-bottom: 30px;
 }
 
 .modal1 .modal-content p.item-intro,
-.modal2 .modal-content p.item-intro{
+.modal2 .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
@@ -234,18 +234,18 @@ a:hover, a:focus, a:active {
 }
 
 .modal1 .modal-content ul.list-inline,
-.modal2 .modal-content ul.list-inline{
+.modal2 .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
 .modal1 .modal-content img,
-.modal2 .modal-content img{
+.modal2 .modal-content img {
   margin-bottom: 30px;
 }
 
 .modal1 .modal-content button,
-.modal2 .modal-content button{
+.modal2 .modal-content button {
   cursor: pointer;
 }
 
