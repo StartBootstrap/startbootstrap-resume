@@ -123,15 +123,11 @@
           <div class="resume-content">
             <h3 class="mb-0">Title 1</h3>
             <div class="subheading mb-3">Title 2</div>
-			<p>Please notice that the following E/R model is not correct since there isn't a connection between Artifact and People. <br>Please go to this <a href="https://github.com/simayguzel/Knowledge-Organization-Project/issues/10">ISSUE</a> on Github to choose between Slug, Whale or Donut examples or to propose another one :)</p>
-            <div>		
-				<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ermodel.png" alt="">
-			</div>
-            <p>Brief explanation</p>
-			<p>Below, I propose the Whale sample</p>
+			<p>Description</p>
             <div>		
 				<img class="img-fluid img-profile mx-auto mb-2" src="img/whale.png" alt="">
 			</div>
+            <p>Brief explanation</p>
           </div>
         </div>
 
@@ -204,7 +200,7 @@
             <img class="img-fluid" src="img/theses.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>First item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal1">First item</a></h4></p>
             <p class="text-muted"><i>Disputatio pro declaratione <br> virtutis indulgentiarum</i></p>
           </div>
         </div>
@@ -218,7 +214,7 @@
             <img class="img-fluid" src="img/septembertestament.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Second item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal2">Second item</a></h4></p>
             <p class="text-muted"><i>Septembertestament</i></p>
           </div>
         </div>
@@ -232,7 +228,7 @@
             <img class="img-fluid" src="img/deszeit.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Third item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal3">Third item</a></h4></p>
             <p class="text-muted"><i>Das Zeitalter der Reformation</i></p>
           </div>
         </div>
@@ -246,7 +242,7 @@
             <img class="img-fluid" src="img/effetti.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Fourth item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal4">Fourth item</a></h4></p>
             <p class="text-muted"><i>Gli effetti della Riforma protestante</i></p>
           </div>
         </div>
@@ -260,7 +256,7 @@
             <img class="img-fluid" src="img/bulla.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Fifth item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal5">Fifth item</a></h4></p>
             <p class="text-muted"><i>Bulla contra errores Martini Lutheri & sequacium</i></p>
           </div>
         </div>
@@ -274,7 +270,7 @@
             <img class="img-fluid" src="img/calvin.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Sixth item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal6">Sixth item</a></h4></p>
             <p class="text-muted"><i>Institutio christianae religionis</i></p>
           </div>
         </div>
@@ -288,7 +284,7 @@
             <img class="img-fluid" src="img/stone.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Seventh item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal7">Seventh item</a></h4></p>
             <p class="text-muted"><i>Memorial stone</i></p>
           </div>
         </div>
@@ -302,7 +298,7 @@
             <img class="img-fluid" src="img/music.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Eighth item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal8">Eighth item</a></h4></p>
             <p class="text-muted"><i>Ein feste Burg ist unser Gott</i></p>
           </div>
         </div>
@@ -316,7 +312,7 @@
             <img class="img-fluid" src="img/broad.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Ninth item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal9">Ninth item</a></h4></p>
             <p class="text-muted"><i>Broadsheet for the Centenary <br>of the Reformation</i></p>
           </div>
         </div>
@@ -330,7 +326,7 @@
             <img class="img-fluid" src="img/verdammnis.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Tenth item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal10">Tenth item</a></h4></p>
             <p class="text-muted"><i>Verdammnis und Erlösung</i></p>
           </div>
         </div>
@@ -344,7 +340,7 @@
             <img class="img-fluid" src="img/medal.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Eleventh item</h4>
+            <p><h4> <a data-toggle="modal" href="#portfolioModal11">Eleventh item</a></h4></p>
             <p class="text-muted">Medal</p>
           </div>
         </div>
@@ -823,155 +819,156 @@
 					<td> </td>
 					<td>contributor</td>
 					<td>eac-cpf:agentType/<br>eac-cpf:agent</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>pico:editor<br>pico:producer<br>pico:responsible<br>pico:translator<br>pico:performer<br>dc:contributor</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/tei:titleStmt/<br>tei:editor</td>
+					<td>lido:eventSet<br>/lido:event/<br>lido:eventActor</td>
+					<td>dc:contributor</td>
+					<td>dcterms:contributor</td>
+					<td>E5_Event > P11_had_<br>participants > E39_Actor</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>publisher</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:agent<br>Type/eac-cpf:agent</td>
+					<td>dc:publisher<br>pico:printer<br>pico:distributor</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:distributor<br>tei/tei:Header/<br>tei:fileDesc/<br>tei:publicationStmt/<br>tei:publisher
+</td>
+					<td>lido:eventSet<br>/lido:event/<br>lido:eventActor</td>
+					<td>dc:publisher</td>
+					<td>dcterms:publisher</td>
+					<td>E5_Event > P11_had_<br>participants > E39_Actor</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>provider</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:sources<br>/source/eac-cpf:<br>sourceEntry</td>
+					<td>dc:isPartOf</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:ms<br>Identifier/tei:institution</td>
+					<td>lido:repository<br>Location/lido:name<br>PlaceSet</td>
+					<td>edm:provider</td>
+					<td>dcterms:provenance</td>
+					<td>E18_Physical_Thing ><br> P50_has_current_keeper ><br> E39_Actor</td>
 				</tr>
 				<tr>
 					<td><b>WHAT</b></td>
 					<td>title</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:<br>nameEntry</td>
+					<td>dc:title</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:titleStmt/<br>tei:title</td>
+					<td>lido:titleSet/<br>lido:appellation<br>Value</td>
+					<td>dc:title</td>
+					<td>dcterms:title</td>
+					<td>E71_Man-Made_Thing ><br> P102_has_title ><br> E35_Title</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>date</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:<br>maintenanceEvent/<br>eac-cpf:event<br>Type/eac-cpf:event<br>DateTime</td>
+					<td>dcterms:created</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:date</td>
+					<td>lido:eventSet/<br>lido:event/lido:<br>eventDate</td>
+					<td>dcterms:created</td>
+					<td>dcterms:created</td>
+					<td>E12_Production ><br> P4_has_time_span ><br> E52_Time-Span</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>subject</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:<br>function/eac-cpf:<br>descriptiveNote</td>
+					<td>dc:subject</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:<br>msContents</td>
+					<td>lido:display<br>Subject</td>
+					<td>dc:subject</td>
+					<td>dcterms:<br>subject</td>
+					<td>E1_CRM_Entity ><br> P129_is_subject_of ><br> E89_Propositional_<br>Object</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>description</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:<br>description</td>
+					<td>dc:description</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:<br>msContents</td>
+					<td>lido:object<br>Description</td>
+					<td>dc:description</td>
+					<td>dcterms:<br>description</td>
+					<td>E1_CRM_Entity ><br> P3_has_note ><br> E62_string</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>type</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:<br>entityType</td>
+					<td>dc:type</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:objectType</td>
+					<td>lido:object<br>WorkType</td>
+					<td>edm:type</td>
+					<td>dcterms:type</td>
+					<td>E1_CRM_Entity ><br> P2_has_type ><br> E55_Type</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>material</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:physdesc/<br>eac-cpf:genre<br>form</td>
+					<td>pico:materialAndTechnique</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:material</td>
+					<td>lido:materials<br>Tech</td>
+					<td>dcterms:medium </td>
+					<td>dcterms:medium</td>
+					<td>E18_Physical_Thing ><br> P45_consists_of ><br> E57_Material</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>format</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:function/<br>eac-cpf:<br>descriptiveNote</td>
+					<td>dc:format</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:dimension</td>
+					<td>lido:formatMeasurements</td>
+					<td>dc:format</td>
+					<td>dcterms:format</td>
+					<td>-</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>size/<br>duration</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:function/<br>eac-cpf:<br>descriptiveNote</td>
+					<td>dcterms:extent</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:extent</td>
+					<td>lido:object<br>MeasurementsSet</td>
+					<td>dcterms:extent</td>
+					<td>dcterms:extent</td>
+					<td>E70_Thing ><br> P43_has_dimension ><br> E54_Dimension</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>language</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:language<br>Declaration/<br>eac-cpf:language</td>
+					<td>dc:language</td>
+					<td>tei/tei:Header/<br>tei:profileDesc/<br>tei:langUsage</td>
+					<td>lido:descriptiveMetadata</td>
+					<td>dc:language</td>
+					<td>dcterms:language</td>
+					<td>E33_Language_<br>Object > P72<br> has_language ><br> E56_Language</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>identifier</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:recordId</td>
+					<td>dc:identifier</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:idno</td>
+					<td>lido:object<br>WorkType/lido:<br>conceptID</td>
+					<td>dc:identifier</td>
+					<td>dcterms:identifier</td>
+					<td>E1_CRM_Entity ><br> P48_has_preferred_<br>identifier ><br> E42_Identifier</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>rights</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:rights<br>Declaration</td>
+					<td>dc:rights</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:<br>availability</td>
+					<td>lido:RightsType</td>
+					<td>edm:rights</td>
+					<td>dcterms:rights</td>
+					<td>E72_Legal_Object ><br> P105_right_held_<br>by > E39_Actor</td>
 				</tr>
 				<tr>
 					<td> </td>
@@ -987,24 +984,24 @@
 				<tr>
 					<td><b>WHE<br>RE</b></td>
 					<td>creation<br>place</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:places/<br>eac-cpf:place/<br>eac-cpf:placeRole<br>/eac-cpf:placeEntity</td>
+					<td>dc:coverage</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:pubPlace</td>
+					<td>lido:eventSet/<br>lido:event/<br>lido:eventPlace</td>
+					<td>dc:coverage</td>
+					<td>dcterms:<br>coverage</td>
+					<td>E12_Production ><br> P7_took_place_at ><br> E53_Place</td>
 				</tr>
 				<tr>
 					<td> </td>
 					<td>current <br> location</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
+					<td>eac-cpf:places/<br>eac-cpf:place/<br>eac-cpf:place<br>Role/eac-cpf:<br>placeEntity</td>
+					<td>dcterms:spatial</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:ms<br>Identifier/<br>tei:settlement</td>
+					<td>lido:repository<br>Set/lido:repository<br>Location</td>
+					<td>edm:currentLocation</td>
+					<td>dcterms:spatial </td>
+					<td>E19_Physical_<br>Object > has_<br>current_location ><br> E53_Place</td>
 				</tr>
 				</table>
       </div>
@@ -1285,94 +1282,6 @@
 		</ul>
 		</div>
 	</section>
-	
-	
-	
-	<hr class="m-0">
-		
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="rdf">
-      <div class="w-100">
-        <h2 class="mb-5">Chantal's random exercise with modals</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Title A</h3>
-            <div class="subheading mb-3">Title B</div>
-            <p>Random written things.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Left text</span>
-          </div>
-        </div>
-
-
-<!-- Large modal: button -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Click here</button>
-
-<!-- Large modal: content -->
-<div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Hi! It's a modal!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-	  <div class="modal-body">
-      asdfghjkloiertyuioxcvbnmsdfghjkdfghujki<br>exsdcrftvgbyhunjibtgvrf
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-	</div>
-  </div>
-</div>
-        </div>
-    </section>
-	
-	
-
-	
-	<hr class="m-0">
-		
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="rdf">
-      <div class="w-100">
-        <h2 class="mb-5">Chantal's random exercise with modals, 2!</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Title A2</h3>
-            <div class="subheading mb-3">Title B2</div>
-            <p>Random written things2.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Left text2</span>
-          </div>
-        </div>
-
-<!-- Large modal: button -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Click here</button>
-
-<!-- Large modal: content -->
-<div class="modal fade bd-example-modal-lg" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Hi! It's a modal!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-	  <div class="modal-body">
-      222222222222222222<br>exsdcrftvgbyhunjibtgvrf
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-	</div>
-  </div>
-</div>
-        </div>
-    </section>
 	
 
 
