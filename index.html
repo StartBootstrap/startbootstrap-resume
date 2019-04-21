@@ -40,6 +40,9 @@
   }
 </style>
 
+<!-- for music-->
+
+	
 </head>
 
 <body id="page-top">
@@ -95,7 +98,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="idea">
       <div class="w-100">
 	  		  <div class="resume-date text-md-right">
-            <span class="text-primary"> <a href="mailto:simay.guzel@studio.unibo.it">Simay G&uuml;zel</a> <br> <a href="mailto:chantal.lengua@studio.unibo.it">Chantal Lengua</a> <br> <a href="mailto:vittoria.moccia@studio.unibo.it">Vittoria Moccia</a> <br><a href="mailto:chantal.lengua@studio.unibo.it">Elisaveta Siurina</a></span>
+            <span class="text-primary"> <a href="mailto:simay.guzel@studio.unibo.it">Simay G&uuml;zel</a><br><a href="mailto:chantal.lengua@studio.unibo.it">Chantal Lengua</a><br><a href="mailto:vittoria.moccia@studio.unibo.it">Vittoria Moccia</a><br><a href="mailto:elizaveta.siurina@studio.unibo.it"> Lisa Siurina</a> </span>
           </div>
         <h1 class="mb-0">LOD 
           <span class="text-primary">project</span>
@@ -103,8 +106,8 @@
         <div class="subheading mb-5"> Digital Humanities and Digital Knowledge · Bologna, BO · Italy · <i class="far fa-envelope"></i>
           <a href="mailto:dhdk@gmail.com">dhdk@gmail.com</a>
         </div>
-        <p class="lead mb-5"> This project belongs to the 'Knowledge Organization and Digital Methods in the Cultural Heritage Domain' course of University of Bologna, a.y. 2018/2019. Its aim is to create a <b>Linked Open Data</b> sample for describing data related to the event of the <b>Protestant Reformation</b>. </p>
-		<p class="lead mb-5"> The Protestant Reformation is the religious separation movement from the Catholic Church in the 16th century. It represented, both from the historical and cultural point of view, a strong influence on the society of that time and thus gave origin to many <b>artifacts</b> – from paintings, to documents, to music – which testify its undeniable relevance. For this reason, we chose to deepen this event by analyzing it in all its possible manifestations. </p>
+        <p class="lead mb-5" align="justify"> This project belongs to the 'Knowledge Organization and Digital Methods in the Cultural Heritage Domain' course of University of Bologna, a.y. 2018/2019. Its aim is to create a <b>Linked Open Data</b> sample for describing data related to the event of the <b>Protestant Reformation</b>. </p>
+		<p class="lead mb-5" align="justify"> The Protestant Reformation is the religious separation movement from the Catholic Church in the 16th century. It represented, both from the historical and cultural point of view, a strong influence on the society of that time and thus gave origin to many <b>artifacts</b> – from paintings, to documents, to music – which testify its undeniable relevance. For this reason, we chose to deepen this event by analyzing it in all its possible manifestations. </p>
         <div class="social-icons">
           <a href="https://github.com/LODproject/pro-reformation">
             <i class="fab fa-github"></i>
@@ -118,22 +121,55 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="ermodel">
       <div class="w-100">
         <h2 class="mb-5">E/R Model</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Title 1</h3>
-            <div class="subheading mb-3">Title 2</div>
-			<p>Description</p>
-            <div>		
+		<div><p align="justify">In this section, we present our project through an E/R Model (i.e. Entity / Relationship model), a theoretical and conceptual way of showing data relationships. 
+		<br>Below, the E/R Model is shown as an abstract diagram for the visual representation of our relational database, and <a data-toggle="modal" href="#modaler"><b>here</b></a> its structure, entities and attributes are described.</p></div>
+		    <div>		
 				<img class="img-fluid img-profile mx-auto mb-2" src="img/whale.png" alt="">
 			</div>
-            <p>Brief explanation</p>
-          </div>
-        </div>
-
       </div>
     </section>
 
+	
+	<!--Modal of the E/R Model-->
+  <div class="portfolio-modal modal fade" id="modaler" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">E/R Model</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify">In our E/R model, we chose to take into consideration four types of entities. 
+					<ul>
+					<li>The central one is the <b>Event</b> of the Protestant Reformation, with its attributes "Name", "Abstract" (a brief description of the event) and "Date". For its importance, it is linked to all the other entities. 
+					<li>The <b>Concept</b> entity depicts the two prominent religious movements that arised from the Protestant Reformation: Lutheranism and Calvinism. 
+					<li>The Concept entity, as the Event one, is connected to the <b>Person</b> entity, in order to define the people that embodied the above mentioned concepts, Martin Luther and John Calvin, with an important addiction: Pope Leo X. This adjunct is due to the reason that, refusing to acknowledge the legitimacy of Martin Luther's demands, he played an important role in the Protestant Reformation. We have treated the person as an entity historically inserted in the event of the Protestant Revolution, thus describing it with numerous properties; only three are given here, as an example: "Name", "Education" and "Occupation".
+					<li>As well as to the Person entity, the Concept and the Event are connected to the <b>Artifact</b> entity. Here are described all the eleven items we took from different institutions - museums, libraries and archives - to better explain and present the idea of the project.
+					<li>Eventually, we included the <b>Place</b> entity, linked to the Artifact and to the Event: we wanted, in fact, to analyze in depth the place of creation and the current location of our artifacts, as well as the most important places of the Protestant Reformation (Wittenberg and Nurimberg, for example). We didn't link this entity to Concept due to its abstractness, and we didn't connect it to Person because we decided not to focus ourselves on the deepening on birthplaces and deathplaces of our people (such as Einsleben, regarding Martin Luther, Florence or Noyon).</p>
+					</ul>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	
+	
 	<hr class="m-0">
 		
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="entities">
@@ -143,27 +179,21 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Who</h3>
-            <div class="subheading mb-3">People</div>
-            <p>People involved in the Protestant Reformation: Martin Luther, Pope Leo X, John Calvin. why we choose them, their role in the reformation... just take something from Wikipedia. Maybe even pictures?</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Random Text to add (maybe)</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
             <h3 class="mb-0">What</h3>
-            <div class="subheading mb-3"><b>Artifacts</b></div>
+			<div class="subheading mb-3">Event</div>
+            <p>The central event of our project is the <a href="https://en.wikipedia.org/wiki/Reformation">Protestant Reformation</a>. Insert things</p>
+            <div class="subheading mb-3">Artifacts</div>
             <p>In this project we chose to present lot of bla bla bla Manuscripts, paintings, medals, books, broadsheets and so on.</p>
-			<div class="subheading mb-3">Events</div>
-            <p>The most important event: the Protestant Reformation. Again, take something from Wikipedia</p>
 			<div class="subheading mb-3">Concepts</div>
             <p>The concepts underlying the artifact and connected to our event: Lutheranism, Evangelism and Calvinism. If we still want Evangelism. Again, take things from Wikipedia. Maybe even pictures.</p>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+        </div>
+		
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Who</h3>
+            <div class="subheading mb-3">People</div>
+            <p>People involved in the Protestant Reformation: Martin Luther, Pope Leo X, John Calvin. why we choose them, their role in the reformation... just take something from Wikipedia. Maybe even pictures?</p>
           </div>
         </div>
 
@@ -172,9 +202,6 @@
             <h3 class="mb-0">Where</h3>
             <div class="subheading mb-3">Places</div>
             <p>The places related to the items and the Protestant Reformation: Nurimberg and Wittenberg.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
           </div>
         </div>
       </div>
@@ -436,9 +463,10 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify">This painting is an allegorical composite group of eighty men and one woman (recognized as the Queen <b>Elizabeth I of England</b>) prominent in the Protestant Reformation. <br> We considered this item important for our project since it can be considered as a manifest of the movement and of the wide spread that it also took among royals. <br> This item is taken from Library of Congress, which uses <a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"> Dublin Core</a>. <br> The item is reachable <a href="https://www.loc.gov/resource/pga.01148/">here</a>.</p>
-
-				        <div class="modal-footer">
+                <p align="justify">This painting is an allegorical composite group of eighty men and one woman (recognized as the Queen <b>Elizabeth I of England</b>) prominent in the Protestant Reformation. <br> We considered this item important for our project since it can be considered as a manifest of the movement and of the wide spread that it also took among <b>royals</b>.</p>
+				<div align="center"><img class="img-fluid" src="img/deszeitbig.jpg" size="10" alt=""></div>
+				<br><p align="justify"><br>This item is taken from Library of Congress, which uses <a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"> Dublin Core</a>. <br>The item is reachable <a href="https://www.loc.gov/resource/pga.01148/">here</a></p>.
+						<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
 						Close</button>
 						</div>
@@ -551,7 +579,7 @@
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Das Zeitalter der Reformation</h4>
+					<h4 class="modal-title">Gedenkstein zum 400. Jahrestag der Reformation</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -560,7 +588,12 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><i>“Gli effetti della Riforma Protestante”</i> is a text extracted from the book <i>“Rassegna di Cultura”</i>. <br>It has been included in our project as a summary of the <b>effects</b> that the Protestant Reformation has had on society and politics. <br>This item is taken from Cultura Italia, which uses <a href="http://www.culturaitalia.it/opencms/export/sites/culturaitalia/attachments/documenti/picoap/picoap1.0.xml">PICO</a> as metadata standard. The digitiztion of the item can be seen <a href="http://www.urfm.braidense.it/rd/eva/pdf/2862/ART345846.pdf"> here</a>.</p>
+                <br><p align="justify">This 1917 photograph represents the Reformation stone that was set up for the <b>400th anniversary</b> of the Ninety-Five Theses by Martin Luther. The stone is situated in Dresden and is made in sandstone, a sedimentary rock composed of sand-size grains of mineral. On it is engraved the Luther rose, or Luther seal, a widely recognized symbol for Lutheranism, designed by Martin Luther ("[The] heart should stand in the middle of a white rose, to show that faith gives joy, comfort, and peace. In other words, it places the believer into a white, joyous rose, for this faith does not give peace and joy like the world gives. That is why the rose should be white and not red, for white is the color of the spirits and the angels"<sup>1</sup>).
+				<br>We opted for this memorial artifact to present the importance of Reformation ideas years later in a more <b>modern time</b> for our contemporaries.</p>
+				<p align="right"><small><sup>1</sup>Luther, Martin. <i>Luther's Works. 55 Volumes. Various translators</i>. St. Louis: Concordia Publishing House; Minneapolis: Fortress Press, 1957-1986. CD-ROM edition, 2001.</small></p>
+				<div><center><img class="img-fluid" src="img/stonebig.jpg" alt=""></center></div>
+				<br><p align="justify">We have found this item on Europeana Collections, which uses <a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Definition_v5.2.7_042016.pdf"> EDM </a>. <br>This item is taken from <a href="https://www.europeana.eu/portal/it/record/2048417/item_AH6QQNATTHUAM3PF5TQEWZFH3HMAD67L.html?q=reformation#dcId=1554195429282&p=16">here</a>.</p>
+				<div align="center"><img class="img-fluid" src="img/rosebig.jpg" size="10" alt=""></div>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -582,7 +615,7 @@
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Das Zeitalter der Reformation</h4>
+					<h4 class="modal-title">Ein feste Burg ist unser Gott</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -591,8 +624,10 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><i>“Gli effetti della Riforma Protestante”</i> is a text extracted from the book <i>“Rassegna di Cultura”</i>. <br>It has been included in our project as a summary of the <b>effects</b> that the Protestant Reformation has had on society and politics. <br>This item is taken from Cultura Italia, which uses <a href="http://www.culturaitalia.it/opencms/export/sites/culturaitalia/attachments/documenti/picoap/picoap1.0.xml">PICO</a> as metadata standard. The digitiztion of the item can be seen <a href="http://www.urfm.braidense.it/rd/eva/pdf/2862/ART345846.pdf"> here</a>.</p>
-
+                <p align="justify"><i>“Ein feste Burg ist unser Gott”</i> (<i>"A Mighty Fortress Is Our God"</i>) is a chorale cantata for Reformation Day by <b>Johann Sebastian Bach</b>. Bach wrote this cantata for Reformation Day, celebrated annually on 31 October. In composing this work, Bach reused an earlier cantata, <i>"Alles, was von Gott geboren"</i> and also the second stanza of <b>Luther's original hymn</b> for the closing chorale. In the passage <i>"Mit unser Macht ist nichts getan"</i> (<i>“With our might nothing is done”</i>), Luther emphasized the impotence of man, as a <b>sinner</b>, without the hand of God. <br>Therefore it seemed important for us to include this composition, because it represents part of the Lutheran creed. <br>We have taken this item from Europeana Collections, which uses <a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Definition_v5.2.7_042016.pdf">EDM ontology</a> to describe metadata. <br>This item is taken from <a href="https://www.europeana.eu/portal/it/record/2048024/Athena_Plus_ProvidedCHO_Biblioteca_nazionale_centrale_di_Roma_oai_bncrm_librari_beniculturali_it_disco_BVE0241712_1.html?q=Ein+feste+Burg+ist+unser+Gott#dcId=1554199050544&p=3">here</a>. Below, you can directly listen to it.</p>
+						        <audio controls>
+								<source src="music/bach.mp3" type="audio/mpeg"/>
+								</audio>
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
 						Close</button>
@@ -613,7 +648,7 @@
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Das Zeitalter der Reformation</h4>
+					<h4 class="modal-title">Broadsheet for the Centenary of the Reformation</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -622,7 +657,9 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><i>“Gli effetti della Riforma Protestante”</i> is a text extracted from the book <i>“Rassegna di Cultura”</i>. <br>It has been included in our project as a summary of the <b>effects</b> that the Protestant Reformation has had on society and politics. <br>This item is taken from Cultura Italia, which uses <a href="http://www.culturaitalia.it/opencms/export/sites/culturaitalia/attachments/documenti/picoap/picoap1.0.xml">PICO</a> as metadata standard. The digitiztion of the item can be seen <a href="http://www.urfm.braidense.it/rd/eva/pdf/2862/ART345846.pdf"> here</a>.</p>
+                <p align="justify">This broadsheet depicts the early Reformation of the Christian Church as a prophetic <b>dream</b> of Friedrich III, who was a political protector of Martin Luther. In one corner of the artifact, Luther receives true insight in the form of a <b>shower of words</b> pouring down from God. In another, he offers his work to the Elector Frederick. Luther is also depicted writing on a church door with an enormously long pen (i.e. "giant quill"), which emphasises the importance of the <b>written word</b> to Protestants, as opposed to images which were popular in the Catholicism.</p>
+				<div><center><img class="img-fluid" src="img/broadbig.jpg" alt=""></center></div>
+				<br><p align="justify"> We decide to include this item to our list to broaden the <b>allegorical</b> spectrum of references to the Reformation depicted in art. <br>The item is taken from Google Arts & Culture provided by Staatliche Museen zu Berlin. <a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf">CIDOC-CRM</a> is used for the metadata description. <br>This item can be seen <a href="https://artsandculture.google.com/asset/broadsheet-for-the-centenary-of-the-reformation/sAFqKQ-hxhcsnw">here</a></p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -644,7 +681,7 @@
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Das Zeitalter der Reformation</h4>
+					<h4 class="modal-title">Verdammnis und Erlösung</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -653,7 +690,9 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><i>“Gli effetti della Riforma Protestante”</i> is a text extracted from the book <i>“Rassegna di Cultura”</i>. <br>It has been included in our project as a summary of the <b>effects</b> that the Protestant Reformation has had on society and politics. <br>This item is taken from Cultura Italia, which uses <a href="http://www.culturaitalia.it/opencms/export/sites/culturaitalia/attachments/documenti/picoap/picoap1.0.xml">PICO</a> as metadata standard. The digitiztion of the item can be seen <a href="http://www.urfm.braidense.it/rd/eva/pdf/2862/ART345846.pdf"> here</a>.</p>
+                <p align="justify"><i>Verdammnis und Erlösung</i> (<i>Law and Gospel</i> or <i>Law and Grace</i>) is one of the thematically linked, allegorical panel paintings by <b>Lucas Cranach the Elder</b> from about 1529. The painting illustrates the Lutheran ideas of salvation and represents didactic illustrations of Christian doctrine. The "wings" on the left and right of the paintings illustrate the Protestant concept of Law and Gospel, which emphasizes <b>salvation</b> through the forgiveness of sins. <br>Since Cranach was inspired by his lifelong friend Martin Luther when designing these panels, we put this item to represent the influence of the Reformation in the field of art. <br></p>
+				<div><center><img class="img-fluid" src="img/paintingbig.jpg" alt=""></center></div>
+				<br><p align="justify">This item is taken from Museum-digital (Das Schlossmuseum Gotha); the institution uses LIDO. The documentary about LIDO can be found <a href="http://www.lido-schema.org/schema/v1.0/lido-v1.0-specification.pdf"> here</a>. <br>For item visualization: <a href="https://thue.museum-digital.de/index.php?t=objekt&oges=96">here</a>.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -675,7 +714,7 @@
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Das Zeitalter der Reformation</h4>
+					<h4 class="modal-title">Medal</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -684,7 +723,9 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><i>“Gli effetti della Riforma Protestante”</i> is a text extracted from the book <i>“Rassegna di Cultura”</i>. <br>It has been included in our project as a summary of the <b>effects</b> that the Protestant Reformation has had on society and politics. <br>This item is taken from Cultura Italia, which uses <a href="http://www.culturaitalia.it/opencms/export/sites/culturaitalia/attachments/documenti/picoap/picoap1.0.xml">PICO</a> as metadata standard. The digitiztion of the item can be seen <a href="http://www.urfm.braidense.it/rd/eva/pdf/2862/ART345846.pdf"> here</a>.</p>
+                <p align="justify">This medal of silver is catalogued on Europeana with the title <i>"Medaille auf Martin Luther und die Reformation 1839"</i>. The artifact was in fact created in occasion of the 200th Anniversary of the Reformation. It depicts on one side the half-lenght portrait of Martin Luther with the inscription in capital letters <i>"Doctor Martin Luther"</i>, and on the other side a crucified Jesus Christ.</p>
+									<div><center><img class="img-fluid" src="img/medalbig.jpg" alt=""></center></div>
+									<br><p align="justify">We chose the item to reflect the concept of Reformation in time and in the everyday life. <br> We have taken this item from Europeana Collections, which uses <a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Definition_v5.2.7_042016.pdf">EDM ontology</a>. <br>This item is taken from <a href="https://www.europeana.eu/portal/it/record/08547/sgml_eu_php_obj_z0002565.html?q=reformation#dcId=1554195429282&p=1">here</a>.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -706,11 +747,11 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="alignment">
       <div class="w-100">
         <h2 class="mb-5">Metadata alignment</h2>
-        <p>In this step, we described the <b>metadata standards</b> used by the institutions in which our eleven items are held. <br> In particular "<i>an <b>alignment</b> is a match between one or more elements in one schema to one or more elements in another schema"</i><sup>1</sup>.</p>
+        <p align="justify">In this step, we described the <b>metadata standards</b> used by the institutions in which our eleven items are held. <br> In particular "<i>an <b>alignment</b> is a match between one or more elements in one schema to one or more elements in another schema"</i><sup>1</sup>.</p>
 		<p align="right"><small><sup>1</sup> Maria Violeta Bertolini et al., <a href="https://www.ifla.org/files/assets/cataloguing/isbd/OtherDocumentation/guidelines-use-isbdld_082016.0.pdf"><i>"Guidelines for use of ISBD as linked data"</i></a>. Final draft: August 2016. IFLA, 2016.</small></p>
-		<p>At first, we aligned our eleven items with their providers and the used standards. In the case of the presence of digital platforms that work as cultural heritage aggregators (<a href="https://www.europeana.eu/portal/en">Europeana collections</a>, <a href="http://www.culturaitalia.it/">CulturaItalia</a>, <a href="https://artsandculture.google.com/">Google Arts & Culture</a>, <a href="https://www.museum-digital.de/">museum-digital</a>), we have also provided the specific heritage institution in which the object is kept.</p>
+		<p align="justify">At first, we aligned our eleven items with their providers and the used standards. In the case of the presence of digital platforms that work as cultural heritage aggregators (<a href="https://www.europeana.eu/portal/en">Europeana collections</a>, <a href="http://www.culturaitalia.it/">CulturaItalia</a>, <a href="https://artsandculture.google.com/">Google Arts & Culture</a>, <a href="https://www.museum-digital.de/">museum-digital</a>), we have also provided the specific heritage institution in which the object is kept.</p>
 		<div>
-		    <table style="width:100%">
+		    <table class="table table-bordered">
 		    <caption><small><center>Table 1.</center></small></caption>
 				<tr>
 					<th>Object type</th>
@@ -787,11 +828,11 @@
 				</table>
 				</div>
 			<div>
-			<p>Secondly, we aligned the standards previously cited (EAC-CPF, PICO, TEI, LIDO, EDM, DC and CIDOC-CRM) matching their properties. <br> In particular, we divided the <b>properties</b> according to the four main categories/questions (<b>WHO</b>, <b>WHAT</b>, <b>WHERE</b>) in which our four entities (<b>Person</b>, <b>Concept</b>, <b> Event</b>, <b>Artifact</b>, <b>Place</b>) are divided.
+			<p align="justify">Secondly, we aligned the standards previously cited (EAC-CPF, PICO, TEI, LIDO, EDM, DC and CIDOC-CRM) matching their properties. <br> In particular, we divided the <b>properties</b> according to the four main categories/questions (<b>WHO</b>, <b>WHAT</b>, <b>WHERE</b>) in which our four entities (<b>Person</b>, <b>Concept</b>, <b> Event</b>, <b>Artifact</b>, <b>Place</b>) are divided.
 			<br>Regarding the <b>WHEN</b> category, it has been inserted as a property (i.e. as an attribute, in the E/R model) under the category WHAT: this was done for the need to specify the date only of our entity Artifact.</p>
 			</div>
-			<div>
-			<table style="width:100%">
+			<div class="table-responsive">
+			<table class="table table-bordered">
 		    <caption><small><center>Table 2.</center></small></caption>
 				<tr>
 					<th> </th>
@@ -1283,7 +1324,6 @@
 		</div>
 	</section>
 	
-
 
 
   <!-- Bootstrap core JavaScript -->
