@@ -830,222 +830,9 @@
 			<div>
 			<p align="justify">Secondly, we aligned the standards previously cited (EAC-CPF, PICO, TEI, LIDO, EDM, DC and CIDOC-CRM) matching their properties. <br> In particular, we divided the <b>properties</b> according to the four main categories/questions (<b>WHO</b>, <b>WHAT</b>, <b>WHERE</b>) in which our four entities (<b>Person</b>, <b>Concept</b>, <b> Event</b>, <b>Artifact</b>, <b>Place</b>) are divided.
 			<br>Regarding the <b>WHEN</b> category, it has been inserted as a property (i.e. as an attribute, in the E/R model) under the category WHAT: this was done for the need to specify the date only of our entity Artifact.</p>
-			</div>
-			<div class="table-responsive">
-			<table class="table table-bordered">
-		    <caption><small><center>Table 2.</center></small></caption>
-				<tr>
-					<th> </th>
-					<th>Property</th>
-					<th>EAC-CPF</th>
-					<th>PICO</th>
-					<th>TEI</th>
-					<th>LIDO</th>
-					<th>EDM</th>
-					<th>DC</th>
-					<th>CIDOC-CRM</th>
-				</tr>
-				<tr>
-					<td><b>WHO</b></td>
-					<td>creator</td>
-					<td>eac-cpf:agentType/<br>eac-cpf:agent</td>
-					<td>dc:creator   pico:author   </td>
-					<td>tei/tei:Header/<br>tei:fileDesc/tei:<br>titleStmt/tei:author</td>
-					<td>lido:eventSet/<br>lido:event/<br>lido:eventActor</td>
-					<td>dc:creator</td>
-					<td>dc:creator</td>
-					<td>E12_Production  <br><i>>P14_carried_<br>out_by </i><br> > E39_Actor</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>contributor</td>
-					<td>eac-cpf:agentType/<br>eac-cpf:agent</td>
-					<td>pico:editor<br>pico:producer<br>pico:responsible<br>pico:translator<br>pico:performer<br>dc:contributor</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/tei:titleStmt/<br>tei:editor</td>
-					<td>lido:eventSet<br>/lido:event/<br>lido:eventActor</td>
-					<td>dc:contributor</td>
-					<td>dcterms:contributor</td>
-					<td>E5_Event > P11_had_<br>participants > E39_Actor</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>publisher</td>
-					<td>eac-cpf:agent<br>Type/eac-cpf:agent</td>
-					<td>dc:publisher<br>pico:printer<br>pico:distributor</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:distributor<br>tei/tei:Header/<br>tei:fileDesc/<br>tei:publicationStmt/<br>tei:publisher
-</td>
-					<td>lido:eventSet<br>/lido:event/<br>lido:eventActor</td>
-					<td>dc:publisher</td>
-					<td>dcterms:publisher</td>
-					<td>E5_Event > P11_had_<br>participants > E39_Actor</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>provider</td>
-					<td>eac-cpf:sources<br>/source/eac-cpf:<br>sourceEntry</td>
-					<td>dc:isPartOf</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:ms<br>Identifier/tei:institution</td>
-					<td>lido:repository<br>Location/lido:name<br>PlaceSet</td>
-					<td>edm:provider</td>
-					<td>dcterms:provenance</td>
-					<td>E18_Physical_Thing ><br> P50_has_current_keeper ><br> E39_Actor</td>
-				</tr>
-				<tr>
-					<td><b>WHAT</b></td>
-					<td>title</td>
-					<td>eac-cpf:<br>nameEntry</td>
-					<td>dc:title</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:titleStmt/<br>tei:title</td>
-					<td>lido:titleSet/<br>lido:appellation<br>Value</td>
-					<td>dc:title</td>
-					<td>dcterms:title</td>
-					<td>E71_Man-Made_Thing ><br> P102_has_title ><br> E35_Title</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>date</td>
-					<td>eac-cpf:<br>maintenanceEvent/<br>eac-cpf:event<br>Type/eac-cpf:event<br>DateTime</td>
-					<td>dcterms:created</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:date</td>
-					<td>lido:eventSet/<br>lido:event/lido:<br>eventDate</td>
-					<td>dcterms:created</td>
-					<td>dcterms:created</td>
-					<td>E12_Production ><br> P4_has_time_span ><br> E52_Time-Span</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>subject</td>
-					<td>eac-cpf:<br>function/eac-cpf:<br>descriptiveNote</td>
-					<td>dc:subject</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:<br>msContents</td>
-					<td>lido:display<br>Subject</td>
-					<td>dc:subject</td>
-					<td>dcterms:<br>subject</td>
-					<td>E1_CRM_Entity ><br> P129_is_subject_of ><br> E89_Propositional_<br>Object</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>description</td>
-					<td>eac-cpf:<br>description</td>
-					<td>dc:description</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:<br>msContents</td>
-					<td>lido:object<br>Description</td>
-					<td>dc:description</td>
-					<td>dcterms:<br>description</td>
-					<td>E1_CRM_Entity ><br> P3_has_note ><br> E62_string</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>type</td>
-					<td>eac-cpf:<br>entityType</td>
-					<td>dc:type</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:objectType</td>
-					<td>lido:object<br>WorkType</td>
-					<td>edm:type</td>
-					<td>dcterms:type</td>
-					<td>E1_CRM_Entity ><br> P2_has_type ><br> E55_Type</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>material</td>
-					<td>eac-cpf:physdesc/<br>eac-cpf:genre<br>form</td>
-					<td>pico:materialAndTechnique</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:material</td>
-					<td>lido:materials<br>Tech</td>
-					<td>dcterms:medium </td>
-					<td>dcterms:medium</td>
-					<td>E18_Physical_Thing ><br> P45_consists_of ><br> E57_Material</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>format</td>
-					<td>eac-cpf:function/<br>eac-cpf:<br>descriptiveNote</td>
-					<td>dc:format</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:dimension</td>
-					<td>lido:formatMeasurements</td>
-					<td>dc:format</td>
-					<td>dcterms:format</td>
-					<td>-</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>size/<br>duration</td>
-					<td>eac-cpf:function/<br>eac-cpf:<br>descriptiveNote</td>
-					<td>dcterms:extent</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:extent</td>
-					<td>lido:object<br>MeasurementsSet</td>
-					<td>dcterms:extent</td>
-					<td>dcterms:extent</td>
-					<td>E70_Thing ><br> P43_has_dimension ><br> E54_Dimension</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>language</td>
-					<td>eac-cpf:language<br>Declaration/<br>eac-cpf:language</td>
-					<td>dc:language</td>
-					<td>tei/tei:Header/<br>tei:profileDesc/<br>tei:langUsage</td>
-					<td>lido:descriptiveMetadata</td>
-					<td>dc:language</td>
-					<td>dcterms:language</td>
-					<td>E33_Language_<br>Object > P72<br> has_language ><br> E56_Language</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>identifier</td>
-					<td>eac-cpf:recordId</td>
-					<td>dc:identifier</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:idno</td>
-					<td>lido:object<br>WorkType/lido:<br>conceptID</td>
-					<td>dc:identifier</td>
-					<td>dcterms:identifier</td>
-					<td>E1_CRM_Entity ><br> P48_has_preferred_<br>identifier ><br> E42_Identifier</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>rights</td>
-					<td>eac-cpf:rights<br>Declaration</td>
-					<td>dc:rights</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:<br>availability</td>
-					<td>lido:RightsType</td>
-					<td>edm:rights</td>
-					<td>dcterms:rights</td>
-					<td>E72_Legal_Object ><br> P105_right_held_<br>by > E39_Actor</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>preview</td>
-					<td>-</td>
-					<td>pico:preview</td>
-					<td>-</td>
-					<td>-</td>
-					<td>edm:isShownBy</td>
-					<td>-</td>
-					<td>E24_Physical_Man-Made_Thing <br> > P65 is_shown_by <br> E38_Image</td>
-				</tr>
-				<tr>
-					<td><b>WHE<br>RE</b></td>
-					<td>creation<br>place</td>
-					<td>eac-cpf:places/<br>eac-cpf:place/<br>eac-cpf:placeRole<br>/eac-cpf:placeEntity</td>
-					<td>dc:coverage</td>
-					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:pubPlace</td>
-					<td>lido:eventSet/<br>lido:event/<br>lido:eventPlace</td>
-					<td>dc:coverage</td>
-					<td>dcterms:<br>coverage</td>
-					<td>E12_Production ><br> P7_took_place_at ><br> E53_Place</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>current <br> location</td>
-					<td>eac-cpf:places/<br>eac-cpf:place/<br>eac-cpf:place<br>Role/eac-cpf:<br>placeEntity</td>
-					<td>dcterms:spatial</td>
-					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:ms<br>Identifier/<br>tei:settlement</td>
-					<td>lido:repository<br>Set/lido:repository<br>Location</td>
-					<td>edm:currentLocation</td>
-					<td>dcterms:spatial </td>
-					<td>E19_Physical_<br>Object > has_<br>current_location ><br> E53_Place</td>
-				</tr>
-				</table>
-      </div>
+			<p>Click on the image below to see the table.</p>
+			<div><a href="https://github.com/LODproject/pro-reformation/table.html"><img class="img-fluid" src="img/preview4.png" alt=""></a></div>
+			<img src="">
 	  </div>
     </section>
 
@@ -1222,9 +1009,9 @@
             <div class="subheading mb-3">Person</div>
             <p align="justify">For the entity <b>Person</b> we have created URIs for all the protagonists of our project. By clicking on the links below, you can also see the connections with other resources.</p>
 			<ul>
-				<li><a href="http://lodproject.github.io/pro-reformation/martin-luther.ttl">Martin Luther</a>. See the <a data-toggle="modal" href="#rdfmartin">RDF</a> or the <a data-toggle="modal" href="#turtlemartin">TURTLE</a>;
-				<li><a href="http://lodproject.github.io/pro-reformation/john-calvin.ttl">John Calvin</a>. See the <a data-toggle="modal" href="#rdfcalvin">RDF</a> or the <a data-toggle="modal" href="#turtlecalvin">TURTLE</a>;
-				<li><a href="http://lodproject.github.io/pro-reformation/leo-x.ttl">Pope Leo X</a> See the <a data-toggle="modal" href="#rdfleo">RDF</a> or the <a data-toggle="modal" href="#turtleleo">TURTLE</a>.
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/martin-luther.ttl">Martin Luther</a>. See the <a data-toggle="modal" href="#rdfmartin">RDF</a> or the <a data-toggle="modal" href="#turtlemartin">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/john-calvin.ttl">John Calvin</a>. See the <a data-toggle="modal" href="#rdfcalvin">RDF</a> or the <a data-toggle="modal" href="#turtlecalvin">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/leo-x.ttl">Pope Leo X</a> See the <a data-toggle="modal" href="#rdfleo">RDF</a> or the <a data-toggle="modal" href="#turtleleo">TURTLE</a>.
 			</ul>
           </div>
         </div>	
@@ -1235,16 +1022,16 @@
             <div class="subheading mb-3">Artifact</div>
             <p>For the entity <b>Artifact</b> we have created URIs and RDF framework for:
 			<ul>
-				<li><a href="http://lodproject.github.io/pro-reformation/disputatio.ttl"><i>Disputatio pro declaratione virtutis indulgentiarum</i></a>. See the <a data-toggle="modal" href="#rdfdisputatio">RDF</a> or the <a data-toggle="modal" href="#turtledisputatio">TURTLE</a>;
-				<li><a href="http://lodproject.github.io/pro-reformation/bulla.ttl"><i>Bulla contra errores Martini Lutheri &amp; sequacium</i></a>. See the <a data-toggle="modal" href="#rdfbulla">RDF</a> or the <a data-toggle="modal" href="#turtlebulla">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl"><i>Disputatio pro declaratione virtutis indulgentiarum</i></a>. See the <a data-toggle="modal" href="#rdfdisputatio">RDF</a> or the <a data-toggle="modal" href="#turtledisputatio">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/bulla.ttl"><i>Bulla contra errores Martini Lutheri &amp; sequacium</i></a>. See the <a data-toggle="modal" href="#rdfbulla">RDF</a> or the <a data-toggle="modal" href="#turtlebulla">TURTLE</a>;
 			</ul>
 			<div class="subheading mb-3">Event</div>
-            <p>For the <b>Event</b> category, we analyzed our only event: the <a href="http://lodproject.github.io/pro-reformation/pro-reformation.ttl">Protestant Reformation</a>. See the <a data-toggle="modal" href="#rdfproref">RDF</a> or the <a data-toggle="modal" href="#turtleproref">TURTLE</a>;</p>
+            <p>For the <b>Event</b> category, we analyzed our only event: the <a href="http://lodproject.github.io/pro-reformation/ttl/pro-reformation.ttl">Protestant Reformation</a>. See the <a data-toggle="modal" href="#rdfproref">RDF</a> or the <a data-toggle="modal" href="#turtleproref">TURTLE</a>;</p>
 			<div class="subheading mb-3">Concept</div>
             <p>Here, we present the concepts underlying our artifacts and connected to our event:</p>
 			<ul>
-				<li><a href="http://lodproject.github.io/pro-reformation/lutheranism.ttl">Lutheranism</a>. See the <a data-toggle="modal" href="#rdflutheranism">RDF</a> or the <a data-toggle="modal" href="#turtlelutheranism">TURTLE</a>;
-				<li><a href="http://lodproject.github.io/pro-reformation/calvinism.ttl">Calvinism</a>. See the <a data-toggle="modal" href="#rdfcalvinism">RDF</a> or the <a data-toggle="modal" href="#turtlecalvinism">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/lutheranism.ttl">Lutheranism</a>. See the <a data-toggle="modal" href="#rdflutheranism">RDF</a> or the <a data-toggle="modal" href="#turtlelutheranism">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/calvinism.ttl">Calvinism</a>. See the <a data-toggle="modal" href="#rdfcalvinism">RDF</a> or the <a data-toggle="modal" href="#turtlecalvinism">TURTLE</a>;
 			</ul>
           </div>
         </div>
@@ -1253,7 +1040,7 @@
           <div class="resume-content">
             <h3 class="mb-0">Where</h3>
             <div class="subheading mb-3">Places</div>
-            <p>The <b>Place</b> par excellence that we have chosen in this <a data-toggle="modal" href="#rdfwitt">RDF</a> and <a data-toggle="modal" href="#turtlewitt">TURTLE</a> serialization is <a href="http://lodproject.github.io/pro-reformation/lutheranism.ttl">Wittenberg</a>.</p>
+            <p>The <b>Place</b> par excellence that we have chosen in this <a data-toggle="modal" href="#rdfwitt">RDF</a> and <a data-toggle="modal" href="#turtlewitt">TURTLE</a> serialization is <a href="http://lodproject.github.io/pro-reformation/ttl/wittenberg.ttl">Wittenberg</a>.</p>
           </div>
         </div>
       </div>
@@ -1329,8 +1116,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/martin-luther.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/martin-luther.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/martin-luther.png"><img class="img-fluid" src="img/martin-luther.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/martin-luther.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1416,8 +1203,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/john-calvin.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/john-calvin.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/john-calvin.png"><img class="img-fluid" src="img/john-calvin.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/john-calvin.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1433,7 +1220,7 @@
   
 
        	<!--Modal for Leo RDF-->
-  <div class="portfolio-modal modal fade" id="rdfwitt" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="rdfleo" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1450,7 +1237,7 @@
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <pre><small>
-				@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
 @prefix dcterms: < http://purl.org/dc/terms/ >.
 @prefix dc: < http://purl.org/dc/terms/ >.
 @prefix person: < http://www.w3.org/ns/person# >.
@@ -1489,7 +1276,7 @@
   
  
  	<!--Modal for Leo TURTLE-->
-  <div class="portfolio-modal modal fade" id="turtlewitt" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="turtleleo" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1505,8 +1292,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/leo-x.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/leo-x.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/leo-x.png"><img class="img-fluid" src="img/leo-x.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/leo-x.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1599,8 +1386,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/disputatio.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/disputatio.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/disputatio.png"><img class="img-fluid" src="img/disputatio.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/disputatio.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1690,8 +1477,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/bulla2.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/bulla2.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/bulla2.png"><img class="img-fluid" src="img/bulla2.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/bulla2.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1776,8 +1563,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/pro-reformation.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/pro-reformation.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/pro-reformation.png"><img class="img-fluid" src="img/pro-reformation.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/pro-reformation.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1856,8 +1643,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/lutheranism.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/lutheranism.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/lutheranism.png"><img class="img-fluid" src="img/lutheranism.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/lutheranism.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1930,7 +1717,6 @@
 			        <div class="modal-header">
 					<h4 class="modal-title">John Calvin: TURTLE</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<p>Click <a href="http://lodproject.github.io/pro-reformation/img/calvinism.png">here</a> to see it larger.</p>
 					</div>
           </div>
         </div>
@@ -1938,7 +1724,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/calvinism.png" alt=""></p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/calvinism.png"><img class="img-fluid" src="img/calvinism.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/calvinism.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -1970,7 +1757,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <pre><small>@prefix gn: < http://www.geonames.org/ontology# >.
+                <pre><small>
+@prefix gn: < http://www.geonames.org/ontology# >.
 @prefix owl:< http://www.w3.org/2002/07/owl# >.
 @prefix dbo: < http://dbpedia.org/property/ >.
 @prefix wgs84_pos: < http://www.w3.org/2003/01/geo/wgs84_pos# >.
@@ -2024,8 +1812,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <p align="justify"><img class="img-fluid" src="img/wittenberg.png" alt=""></p>
-				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/wittenberg.png">here</a> to see it larger.</p>
+                <p align="justify"><a href="http://lodproject.github.io/pro-reformation/img/wittenberg.png"><img class="img-fluid" src="img/wittenberg.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/pro-reformation/img/wittenberg.png">here</a> to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>

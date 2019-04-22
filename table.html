@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>LOD project</title>
+  <link rel='icon' href='img/redhat.ico' type='image/x-icon' sizes="16x16" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+
+  <!-- style of the Metadata alignment table -->
+  <style>
+  #table2, th, td { 
+    border: 1px solid black;
+	padding: 2px;
+  }
+
+  th {
+    text-align: center;
+  }
+  
+  td {
+    text-align: left;
+  }
+</style>
+
+<!-- for music-->
+
+	
+</head>
+<body>
+<section>
+<div>
+			<font size="2">
+			<table class="table table-bordered" id="table2" fontsize="-4">
+				<tr>
+					<th> </th>
+					<th>Property</th>
+					<th>EAC-CPF</th>
+					<th>PICO</th>
+					<th>TEI</th>
+					<th>LIDO</th>
+					<th>EDM</th>
+					<th>DC</th>
+					<th>CIDOC-CRM</th>
+				</tr>
+				<tr>
+					<td><b>WHO</b></td>
+					<td>creator</td>
+					<td>eac-cpf:agentType/<br>eac-cpf:agent</td>
+					<td>dc:creator   pico:author   </td>
+					<td>tei/tei:Header/<br>tei:fileDesc/tei:<br>titleStmt/tei:author</td>
+					<td>lido:eventSet/<br>lido:event/<br>lido:eventActor</td>
+					<td>dc:creator</td>
+					<td>dc:creator</td>
+					<td>E12_Production  <br><i>>P14_carried_<br>out_by </i><br> > E39_Actor</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>contributor</td>
+					<td>eac-cpf:agentType/<br>eac-cpf:agent</td>
+					<td>pico:editor<br>pico:producer<br>pico:responsible<br>pico:translator<br>pico:performer<br>dc:contributor</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/tei:titleStmt/<br>tei:editor</td>
+					<td>lido:eventSet<br>/lido:event/<br>lido:eventActor</td>
+					<td>dc:contributor</td>
+					<td>dcterms:contributor</td>
+					<td>E5_Event > P11_had_<br>participants > E39_Actor</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>publisher</td>
+					<td>eac-cpf:agent<br>Type/eac-cpf:agent</td>
+					<td>dc:publisher<br>pico:printer<br>pico:distributor</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:distributor<br>tei/tei:Header/<br>tei:fileDesc/<br>tei:publicationStmt/<br>tei:publisher</td>
+					<td>lido:eventSet<br>/lido:event/<br>lido:eventActor</td>
+					<td>dc:publisher</td>
+					<td>dcterms:publisher</td>
+					<td>E5_Event > P11_had_<br>participants > E39_Actor</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>provider</td>
+					<td>eac-cpf:sources<br>/source/eac-cpf:<br>sourceEntry</td>
+					<td>dc:isPartOf</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:ms<br>Identifier/tei:institution</td>
+					<td>lido:repository<br>Location/lido:name<br>PlaceSet</td>
+					<td>edm:provider</td>
+					<td>dcterms:provenance</td>
+					<td>E18_Physical_Thing ><br> P50_has_current_keeper ><br> E39_Actor</td>
+				</tr>
+				<tr>
+					<td><b>WHAT</b></td>
+					<td>title</td>
+					<td>eac-cpf:<br>nameEntry</td>
+					<td>dc:title</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:titleStmt/<br>tei:title</td>
+					<td>lido:titleSet/<br>lido:appellation<br>Value</td>
+					<td>dc:title</td>
+					<td>dcterms:title</td>
+					<td>E71_Man-Made_Thing ><br> P102_has_title ><br> E35_Title</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>date</td>
+					<td>eac-cpf:<br>maintenanceEvent/<br>eac-cpf:event<br>Type/eac-cpf:event<br>DateTime</td>
+					<td>dcterms:created</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:date</td>
+					<td>lido:eventSet/<br>lido:event/lido:<br>eventDate</td>
+					<td>dcterms:created</td>
+					<td>dcterms:created</td>
+					<td>E12_Production ><br> P4_has_time_span ><br> E52_Time-Span</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>subject</td>
+					<td>eac-cpf:<br>function/eac-cpf:<br>descriptiveNote</td>
+					<td>dc:subject</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:<br>msContents</td>
+					<td>lido:display<br>Subject</td>
+					<td>dc:subject</td>
+					<td>dcterms:<br>subject</td>
+					<td>E1_CRM_Entity ><br> P129_is_subject_of ><br> E89_Propositional_<br>Object</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>description</td>
+					<td>eac-cpf:<br>description</td>
+					<td>dc:description</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:<br>msContents</td>
+					<td>lido:object<br>Description</td>
+					<td>dc:description</td>
+					<td>dcterms:<br>description</td>
+					<td>E1_CRM_Entity ><br> P3_has_note ><br> E62_string</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>type</td>
+					<td>eac-cpf:<br>entityType</td>
+					<td>dc:type</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:objectType</td>
+					<td>lido:object<br>WorkType</td>
+					<td>edm:type</td>
+					<td>dcterms:type</td>
+					<td>E1_CRM_Entity ><br> P2_has_type ><br> E55_Type</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>material</td>
+					<td>eac-cpf:physdesc/<br>eac-cpf:genre<br>form</td>
+					<td>pico:materialAndTechnique</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:material</td>
+					<td>lido:materials<br>Tech</td>
+					<td>dcterms:medium </td>
+					<td>dcterms:medium</td>
+					<td>E18_Physical_Thing ><br> P45_consists_of ><br> E57_Material</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>format</td>
+					<td>eac-cpf:function/<br>eac-cpf:<br>descriptiveNote</td>
+					<td>dc:format</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/<br>tei:dimension</td>
+					<td>lido:formatMeasurements</td>
+					<td>dc:format</td>
+					<td>dcterms:format</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>size/<br>duration</td>
+					<td>eac-cpf:function/<br>eac-cpf:<br>descriptiveNote</td>
+					<td>dcterms:extent</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:extent</td>
+					<td>lido:object<br>MeasurementsSet</td>
+					<td>dcterms:extent</td>
+					<td>dcterms:extent</td>
+					<td>E70_Thing ><br> P43_has_dimension ><br> E54_Dimension</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>language</td>
+					<td>eac-cpf:language<br>Declaration/<br>eac-cpf:language</td>
+					<td>dc:language</td>
+					<td>tei/tei:Header/<br>tei:profileDesc/<br>tei:langUsage</td>
+					<td>lido:descriptiveMetadata</td>
+					<td>dc:language</td>
+					<td>dcterms:language</td>
+					<td>E33_Language_<br>Object > P72<br> has_language ><br> E56_Language</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>identifier</td>
+					<td>eac-cpf:recordId</td>
+					<td>dc:identifier</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:idno</td>
+					<td>lido:object<br>WorkType/lido:<br>conceptID</td>
+					<td>dc:identifier</td>
+					<td>dcterms:identifier</td>
+					<td>E1_CRM_Entity ><br> P48_has_preferred_<br>identifier ><br> E42_Identifier</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>rights</td>
+					<td>eac-cpf:rights<br>Declaration</td>
+					<td>dc:rights</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:<br>availability</td>
+					<td>lido:RightsType</td>
+					<td>edm:rights</td>
+					<td>dcterms:rights</td>
+					<td>E72_Legal_Object ><br> P105_right_held_<br>by > E39_Actor</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>preview</td>
+					<td>-</td>
+					<td>pico:preview</td>
+					<td>-</td>
+					<td>-</td>
+					<td>edm:isShownBy</td>
+					<td>-</td>
+					<td>E24_Physical_Man-Made_<br>Thing <br> > P65 is_shown_by <br> > E38_Image</td>
+				</tr>
+				<tr>
+					<td><b>WHE<br>RE</b></td>
+					<td>creation<br>place</td>
+					<td>eac-cpf:places/<br>eac-cpf:place/<br>eac-cpf:placeRole<br>/eac-cpf:placeEntity</td>
+					<td>dc:coverage</td>
+					<td>tei/tei:Header/<br>tei:fileDesc/<br>tei:publication<br>Stmt/tei:pubPlace</td>
+					<td>lido:eventSet/<br>lido:event/<br>lido:eventPlace</td>
+					<td>dc:coverage</td>
+					<td>dcterms:<br>coverage</td>
+					<td>E12_Production ><br> P7_took_place_at ><br> E53_Place</td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td>current <br> location</td>
+					<td>eac-cpf:places/<br>eac-cpf:place/<br>eac-cpf:place<br>Role/eac-cpf:<br>placeEntity</td>
+					<td>dcterms:spatial</td>
+					<td>tei:fileDesc/<br>tei:sourceDesc/<br>tei:msDesc/tei:ms<br>Identifier/<br>tei:settlement</td>
+					<td>lido:repository<br>Set/lido:repository<br>Location</td>
+					<td>edm:currentLocation</td>
+					<td>dcterms:spatial </td>
+					<td>E19_Physical_<br>Object > has_<br>current_location ><br> E53_Place</td>
+				</tr>
+				<caption><small><center>Table 2.</center></small></caption>
+				</table>
+				</font>
+				</div>
+				</section>
+</body>
+</html>
