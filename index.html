@@ -919,42 +919,736 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Who</h3>
-            <div class="subheading mb-3">People</div>
-            <p>People involved in the Protestant Reformation: Martin Luther, Pope Leo X, John Calvin.</p>
+            <p align="justify">In this section, we present the formal/<b>conceptual model</b> created in order to transform the previous <b>theoretical model</b> in something <b>computable</b>. A conceptual model, in fact, is a model that defines, for our five categories of entities (Person, Place, Concept, Artifact, Event), the way in which we will write the properties according to the ontologies chosen and described in the theoretical model, and then their objects (in form of the triple <b>subject-property-object</b>).</p>
+			<p>Click on the following <b>icons</b> to open the related sections of the conceptual model.</p>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+		 </div>
+		 
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <div class="subheading mb-3"><h1><a data-toggle="modal" href="#personmodal"><i class="fas fa-user"></i></a></h1></div>
+			<h3 class="mb-0">Person</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><h1><a data-toggle="modal" href="#placemodal"><i class="fas fa-map-marked-alt"></a></i></div>
+			<h3 class="mb-0">Place</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><h1><a data-toggle="modal" href="#conceptmodal"><i class="fas fa-feather-alt"></a></i></div>
+			<h3 class="mb-0">Concept</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><h1><a data-toggle="modal" href="#artifactmodal"><i class="fas fa-palette"></a></i></div>
+			<h3 class="mb-0">Artifact</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><h1><a data-toggle="modal" href="#eventmodal"><i class="fas fa-bible"></i></a></div>
+			<h3 class="mb-0">Event</h3>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">What</h3>
-            <div class="subheading mb-3">Artifacts</div>
-            <p>Manuscripts, paintings, medals, books, broadsheets and so on.</p>
-			<div class="subheading mb-3">Events</div>
-            <p>The most important event: the Protestant Reformation.</p>
-			<div class="subheading mb-3">Concepts</div>
-            <p>The concepts underlying the artifact and connected to our event: Lutheranism, Evangelism and Catholicism.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+		
+		
+	<!-- modal for Person-->
+	
+  <div class="portfolio-modal modal fade" id="personmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Person</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
           </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                		  <div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Person.</center></small></caption>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>foaf:name</td>
+					<td>FOAF Vocabulary Specification</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>foaf:gender</td>
+					<td>FOAF Vocabulary Specification</td>
+				</tr>
+				<tr>
+					<td>Citizenship</td>
+					<td>dbo:citizenship</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Place of Birth</td>
+					<td>person:placeOfBirth</td>
+					<td>Person Core Vocabulary</td>
+				</tr>
+				<tr>
+					<td>Place of Death</td>
+					<td>person:placeOfDeath</td>
+					<td>Person Core Vocabulary</td>
+				</tr>
+				<tr>
+					<td>Date of Birth</td>
+					<td>dbo:birthDate</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Date of Death</td>
+					<td>dbo:deathDate</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Education</td>
+					<td>dbp:education</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Occupation</td>
+					<td>core:occupation</td>
+					<td>Core Concepts Ontology</td>
+				</tr>
+				<tr>
+					<td>Known For</td>
+					<td>core:knownFor</td>
+					<td>Core Concepts Ontology</td>
+				</tr>
+				<tr>
+					<td>Wiki page</td>
+					<td>dbo:wikiPageExternalLink</td>
+					<td>DBpedia</td>
+				</tr>
+				</table>
+				</div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Where</h3>
-            <div class="subheading mb-3">Places</div>
-            <p>The places related to the items and the Protestant Reformation: Nuremberg and Wittenberg.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+		
+		
+
+	<!-- modal for Place-->
+	
+  <div class="portfolio-modal modal fade" id="placemodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Place</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                		  <div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Place.</center></small></caption>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>gn:name</td>
+					<td>GeoNames</td>
+				</tr>
+				<tr>
+					<td>Alternative name</td>
+					<td>gn:alternateName</td>
+					<td>GeoNames</td>
+				</tr>
+				<tr>
+					<td>Brief description</td>
+					<td>dbo:abstract</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Type of place</td>
+					<td>dbo:type</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Area code</td>
+					<td>dbo:areaCode</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Country</td>
+					<td>dbo:country</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Country code</td>
+					<td>gn:countryCode</td>
+					<td>GeoNames</td>
+				</tr>
+				<tr>
+					<td>Latitude</td>
+					<td>wgs84_pos:lat</td>
+					<td>Basic Geo (WGS84) Vocabulary</td>
+				</tr>
+				<tr>
+					<td>Longitude</td>
+					<td>wgs84_pos:long</td>
+					<td>Basic Geo (WGS84) Vocabulary</td>
+				</tr>
+				<tr>
+					<td>Population</td>
+					<td>gn:population</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Wiki page</td>
+					<td>dbo:wikiPageExternalLink</td>
+					<td>DBpedia</td>
+				</tr>
+				</table>
+				</div>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+ 	<!-- modal for Concept-->
+	
+  <div class="portfolio-modal modal fade" id="conceptmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Concept</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                		  <div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Concept.</center></small></caption>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>E1_CRM_Entity > P1_is_identified_by > E41_Appellation</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Alternative name</td>
+					<td>dcterms:alternative</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Abstract</td>
+					<td>dcterms:abstract</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Relation with Person</td>
+					<td>E7_Activity < P14_carried_out_by > E39 Actor </td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Relation with Artifact</td>
+					<td>dc:isReferencedBy</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Wiki page</td>
+					<td>dbo:wikiPageExternalLink</td>
+					<td>DBpedia</td>
+				</tr>
+				</table>
+				</div>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+ 	<!-- modal for Artifact-->
+	
+  <div class="portfolio-modal modal fade" id="artifactmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Artifact</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+               <div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Artifact: items in Archives.</center></small></caption>
+				<tr>
+					<th> </th>
+					<th>Institution: <b>archive</b></th>
+					<th> </th>
+				</tr>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Title</td>
+					<td>oad:title</td>
+					<td>OAD</td>
+				</tr>
+				<tr>
+					<td>Creator</td>
+					<td>dcterms:creator</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Date of creation</td>
+					<td>oad:date</td>
+					<td>OAD</td>
+				</tr>
+				<tr>
+					<td>Place of creation</td>
+					<td>dc:coverage</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Current location</td>
+					<td>oad:place</td>
+					<td>OAD</td>
+				</tr>
+				<tr>
+					<td>Subject</td>
+					<td>dcterms:subject</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Description</td>
+					<td>eac-cpf:description</td>
+					<td>EAC-CPF</td>
+				</tr>
+				<tr>
+					<td>Type</td>
+					<td>eac-cpf:entityType</td>
+					<td>EAC-CPF</td>
+				</tr>
+				<tr>
+					<td>Material</td>
+					<td>dcterms:medium</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Format</td>
+					<td>dcterms:format</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Dimension</td>
+					<td>dcterms:extent</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Language</td>
+					<td>oad:has_languageScriptsOfMaterial</td>
+					<td>OAD</td>
+				</tr>
+				<tr>
+					<td>Identifier</td>
+					<td>eac-cpf:recordId</td>
+					<td>EAC-CPF</td>
+				</tr>
+				<tr>
+					<td>Provider/keeper</td>
+					<td>oad:has_custody</td>
+					<td>OAD</td>
+				</tr>
+				<tr>
+					<td>Rights</td>
+					<td>eac-cpf:rightsDeclaration</td>
+					<td>EAC-CPF</td>
+				</tr>
+				<tr>
+					<td>Administrative or biographical history</td>
+					<td>oad:administrativeBiographicalHistory</td>
+					<td>OAD</td>
+				</tr>
+				<tr>
+					<td>File Plan</td>
+					<td>oad:has_has_filePlan</td>
+					<td>OAD</td>
+				</tr>
+				</table>
+				</div>
+				
+				
+				<pre>
+				</pre>
+				
+				
+				 <div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Artifact: items in Libraries.</center></small></caption>
+				<tr>
+					<th> </th>
+					<th>Institution: <b>library</b></th>
+					<th> </th>
+				</tr>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Title</td>
+					<td>rdai:P40082 ("has title of item")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Author</td>
+					<td>dcterms:creator</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Publisher</td>
+					<td>dcterms:publisher</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Contributor</td>
+					<td>rdai:P40093 ("has modifier agent")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Date of creation</td>
+					<td>dcterms:created</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Place of creation</td>
+					<td>dcterms:coverage</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Current location</td>
+					<td>dcterms:spatial</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Subject</td>
+					<td>rdai:P40061 ("is subject item of")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Description</td>
+					<td>dcterms:description</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Type</td>
+					<td>dcterms:type</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Material</td>
+					<td>dcterms:medium</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Format</td>
+					<td>dcterms:format</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Dimension</td>
+					<td>rdai:P40010 ("has note on dimensions of item")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Language</td>
+					<td>dc:language</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Identifier</td>
+					<td>rdai:P40001 ("has identifier for item")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Preview</td>
+					<td>rdai:P40088 ("has electronic reproduction of item")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Provider/keeper</td>
+					<td>rdai:P40004 ("has collector agent")</td>
+					<td>RDA</td>
+				</tr>
+				<tr>
+					<td>Rights</td>
+					<td>rdai:P40048 ("has restriction on use of item")</td>
+					<td>RDA</td>
+				</tr>
+				</table>
+				</div>
+				
+				
+				
+				<pre>
+				</pre>
+				
+				
+				
+			<div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Artifact: items in Museums.</center></small></caption>
+				<tr>
+					<th> </th>
+					<th>Institution: <b>museum</b></th>
+					<th> </th>
+				</tr>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Title</td>
+					<td>E71_Man-Made_Thing > P102_has_title > E35_Title</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Creator</td>
+					<td>E12_Production > P14_carried_out_by > E39_Actor</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Date of creation</td>
+					<td>E12_Production > P4_has_time_span > E52_Time-Span</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Place of creation</td>
+					<td>E12_Production > P7_took_place_at > E53_Place</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Current location</td>
+					<td>E19_Physical_Object > P55_has_current_location > E53_Place</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Subject</td>
+					<td>E89_Propositional_Object > P129_is_about > E1_CRM_Entity</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Description</td>
+					<td>E1_CRM_Entity > P3_has_note > E62_string</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Type</td>
+					<td>E1_CRM_Entity > P2_has_type > E55_Type</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Material</td>
+					<td>E18_Physical_Thing > P45_consists_of > E57_Material</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Format</td>
+					<td>dcterms:format</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Dimension</td>
+					<td>E70_Thing > P43_has_dimension > E54_Dimension</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Language</td>
+					<td>E33_Language_Object > P72 has_language > E56_Language</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Identifier</td>
+					<td>E1_CRM_Entity > P48_has_preferred_identifier > E42_Identifier</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Provider/keeper</td>
+					<td>E18_Physical_Thing > P50_has_current_keeper > E39_Actor</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Rights</td>
+					<td>E72_Legal_Object > P105_right_held_by > E39_Actor</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				</table>
+				</div>
+				
+				
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+    
+
+	<!-- modal for Event-->
+	
+  <div class="portfolio-modal modal fade" id="eventmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Event</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                		  <div>
+		    <table class="table table-bordered">
+		    <caption><small><center>Conceptual model - Event.</center></small></caption>
+				<tr>
+					<th>Metadata</th>
+					<th>Predicate</th>
+					<th>Ontology</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>E5_Event  > P1_is_identified_by > E41 Appellation </td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Alternative name</td>
+					<td>dcterms:alternative</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Abstract</td>
+					<td>dcterms:abstract</td>
+					<td>DC</td>
+				</tr>
+				<tr>
+					<td>Starting date</td>
+					<td>E5_Event > P92_brought_into_existence > E77_Persistent_Item</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Relation with Person</td>
+					<td>E5_Event > P11_had_participant > E39_Actor</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Relation with Artifact</td>
+					<td>E5_Event > P12_occured in_the_presence_of > E77_Persisent_Item</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Relation with Concept</td>
+					<td>E2_TemporalEntity > P116_starts > E2_TemporalEntity</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
+					<td>Disambiguation Wiki page</td>
+					<td>dbo:wikiPageDisambiguates</td>
+					<td>DBpedia</td>
+				</tr>
+				<tr>
+					<td>Wiki page</td>
+					<td>dbo:wikiPageExternalLink</td>
+					<td>DBpedia</td>
+				</tr>
+				</table>
+				</div>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+	</section>
 	
 	
 	<!--Data description section-->
@@ -1040,15 +1734,19 @@
             <p>For the entity <b>Artifact</b> we have created URIs and RDF framework for:
 			<ul>
 				<li><a href="http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl"><i>Disputatio pro declaratione virtutis indulgentiarum</i></a>. See the <a data-toggle="modal" href="#rdfdisputatio">RDF</a> or the <a data-toggle="modal" href="#turtledisputatio">TURTLE</a>;
-				<li><a href="http://lodproject.github.io/pro-reformation/ttl/bulla.ttl"><i>Bulla contra errores Martini Lutheri &amp; sequacium</i></a>. See the <a data-toggle="modal" href="#rdfbulla">RDF</a> or the <a data-toggle="modal" href="#turtlebulla">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/bulla.ttl"><i>Bulla contra errores Martini Lutheri &amp; sequacium</i></a>. See the <a data-toggle="modal" href="#rdfbulla">RDF</a> or the <a data-toggle="modal" href="#turtlebulla">TURTLE</a>.
 			</ul>
 			<div class="subheading mb-3">Event</div>
-            <p>For the <b>Event</b> category, we analyzed our only event: the <a href="http://lodproject.github.io/pro-reformation/ttl/pro-reformation.ttl">Protestant Reformation</a>. See the <a data-toggle="modal" href="#rdfproref">RDF</a> or the <a data-toggle="modal" href="#turtleproref">TURTLE</a>;</p>
+            <p>For the <b>Event</b> category, we analyzed our only event: 
+			<ul>
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/pro-reformation.ttl">Protestant Reformation</a>. See the <a data-toggle="modal" href="#rdfproref">RDF</a> or the <a data-toggle="modal" href="#turtleproref">TURTLE</a>.
+			</ul>
+			</p>
 			<div class="subheading mb-3">Concept</div>
             <p>Here, we present the concepts underlying our artifacts and connected to our event:</p>
 			<ul>
 				<li><a href="http://lodproject.github.io/pro-reformation/ttl/lutheranism.ttl">Lutheranism</a>. See the <a data-toggle="modal" href="#rdflutheranism">RDF</a> or the <a data-toggle="modal" href="#turtlelutheranism">TURTLE</a>;
-				<li><a href="http://lodproject.github.io/pro-reformation/ttl/calvinism.ttl">Calvinism</a>. See the <a data-toggle="modal" href="#rdfcalvinism">RDF</a> or the <a data-toggle="modal" href="#turtlecalvinism">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/calvinism.ttl">Calvinism</a>. See the <a data-toggle="modal" href="#rdfcalvinism">RDF</a> or the <a data-toggle="modal" href="#turtlecalvinism">TURTLE</a>.
 			</ul>
           </div>
         </div>
@@ -1057,8 +1755,12 @@
           <div class="resume-content">
             <h3 class="mb-0">Where</h3>
             <div class="subheading mb-3">Places</div>
-            <p>The <b>Place</b> par excellence that we have chosen in this <a data-toggle="modal" href="#rdfwitt">RDF</a> and <a data-toggle="modal" href="#turtlewitt">TURTLE</a> serialization is <a href="http://lodproject.github.io/pro-reformation/ttl/wittenberg.ttl">Wittenberg</a>.</p>
-          </div>
+            <p>Regarding <b>Place</b> entity, in this section we have chosen to describe our place par excellence
+			<ul>
+				<li><a href="http://lodproject.github.io/pro-reformation/ttl/wittenberg.ttl">Wittenberg</a>. See it in <a data-toggle="modal" href="#rdfwitt">RDF</a> and <a data-toggle="modal" href="#turtlewitt">TURTLE</a>.
+			</ul>
+			</p>
+			</div>
         </div>
       </div>
     </section>
