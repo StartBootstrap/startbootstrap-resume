@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dbo: <http://dbpedia.org/property/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix crm: <http://www.cidoc-crm.org/official_release_cidoc.html>.
+
+<http://lodproject.github.io/pro-reformation/pro-reformation.ttl> 
+    crm:P1_is_identified_by "Protestant Reformation" ;
+    dcterms:alternative "Protestantism", "Reformation", "European Reformation", "Lutheranism" ;
+    dcterms:abstract "Schism from the Roman Catholic Church initiated by Martin Luther in 16th century" ;
+    crm:P92_brought_into_existence "1517" ;
+    crm:P11_had_participant "Martin Luther", "Thomas Müntzer", "John Calvin", "Pope Leo X " ;
+    crm:P12_occured_in_the_presence_of <http://lodproject.github.io/pro-reformation/disputatio.ttl> , "Septembertestament", "Das Zeitalter der Reformation", <http://lodproject.github.io/pro-reformation/bulla.ttl> , "Verdammnis und Erlösung" ;
+    dc:isReferencedBy "Medal on the introduction of the Reformation in Saxony in 1839", "Ein feste Burg ist unser Gott : Kantate am Reformationsfest", "Gedenkstein zum 400. Jahrestag der Reformation", "Broadsheet for the Centenary of the Reformation", "Gli effetti della Riforma protestante" ;
+    crm:P14_carried_out_by <http://lodproject.github.io/pro-reformation/martin-luther.ttl> ;
+    crm:P17_motivated "Lutheranism", "Calvinism" ;
+    dbo:wikiPageDisambiguates <https://en.wikipedia.org/wiki/Reformation_(disambiguation)> ;
+    dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Reformation> ;
+    owl:sameAs <https://www.britannica.com/event/Reformation> ;
+    owl:sameAs <https://www.history.com/topics/reformation/reformation> ;
+    owl:differentFrom <https://en.wikipedia.org/wiki/Catholic_Church> .

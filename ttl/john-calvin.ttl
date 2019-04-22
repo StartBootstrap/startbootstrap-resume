@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts>.
+@prefix owl:<http://www.w3.org/2002/07/owl#>.
+
+<http://lodproject/pro-reformation.github.io/john-calvin.ttl>
+    foaf:Agent 'Person';
+    foaf:name 'John Calvin';
+    foaf:gender 'Male';
+    person:placeOfBirth 'Noyon';
+    core:dateOfBirth '10/7/1509';
+    person:placeOfDeath 'Geneva';
+    core:dateOfDeath '27/5/1564';
+    core:occupation 'Theologist', 'Pastor';
+    core:traditionMovement <http://lodproject/pro-reformation.github.io/calvinism.ttl>;
+    core:knownFor 'Being the principal figure in the development of Calvinism';
+    dcterms:relation "Institutio christianae religionis, Iohanne Caluuino authore";
+    owl:sameAs <http://dbpedia.org/page/John_Calvin>;
+    owl:sameAs <https://en.wikipedia.org/wiki/John_Calvin>;
+    foaf:knows <http://lodproject/pro-reformation.github.io/martin-luther.ttl>.

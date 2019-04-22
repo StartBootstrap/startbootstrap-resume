@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts>.
+@prefix owl:<http://www.w3.org/2002/07/owl#>.
+
+<http://lodproject.github.io/pro-reformation/martin-luther.ttl>
+    foaf:Agent 'Person';
+    foaf:name 'Martin Luther';
+    foaf:gender 'Male';
+    person:placeOfBirth 'Eisleben';
+    core:dateOfBirth '10/11/1483';
+    person:placeOfDeath 'Eisleben';
+    core:dateOfDeath '18/02/1546';
+    core:occupation 'Theologist';
+    core:knownFor 'Being a seminal figure in the Protestant Reformation';
+    dcterms:relation <http://martinluther.github.io/disputatio-pro-declaratione.ttl>;
+    dcterms:relation <http://martinluther.github.io/septembertestament.ttl>;
+    owl:sameAs <http://dbpedia.org/page/Martin_Luther>;
+    owl:sameAs <https://www.wikidata.org/wiki/Q9554>;
+    foaf:knows <http://dbpedia.org/page/Pope_Leo_X>.

@@ -1,0 +1,22 @@
+@prefix gn: <http://www.geonames.org/ontology#>.
+@prefix owl:<http://www.w3.org/2002/07/owl#>.
+@prefix dbo: <http://dbpedia.org/property/>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix wn: <http://www.w3.org/2006/03/wn/wn20/schema/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+<http://lodproject.github.io/pro-reformation/wittenberg.ttl> 
+    gn:name "Wittenberg";
+    gn:alternateName "Lutherstadt Wittenberg";
+    dbo:type "City";
+    dbo:areaCode "06886";
+    dbo:country "Germany";
+    gn:countryCode "DE";
+    wgs84_pos:lat "51° 86’ 61″ N";
+    wgs84_pos:long "12° 64’ 97″ E";
+    gn:population "46 475";
+    dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Wittenberg>;
+    owl:sameAs <http://dbpedia.org/page/Wittenberg>;
+    owl:sameAs <http://yago-knowledge.org/resource/Wittenberg>;
+    owl:differentFrom <http://dbpedia.org/page/Wittenberg,_Missouri>;
+    foaf:primaryTopic <https://en.wikipedia.org/wiki/Wittenberg>.

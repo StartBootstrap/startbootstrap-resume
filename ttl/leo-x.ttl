@@ -1,0 +1,23 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts>.
+@prefix owl:<http://www.w3.org/2002/07/owl#>.
+
+<http://lodproject/pro-reformation.github.io/leo-x.ttl>
+    foaf:Agent 'Person';
+    foaf:name 'Giovanni di Lorenzo de Medici';
+    dc:alternate 'Pope Leo X';
+    foaf:gender 'Male';
+    person:placeOfBirth 'Firenze';
+    core:dateOfBirth '11/12/1475';
+    person:placeOfDeath 'Rome';
+    core:dateOfDeath '1/12/1521';
+    core:occupation 'Pope';
+    core:knownFor 'Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised.';
+    core:traditionMovement 'Cattolicism';
+    dcterms:relation <http://lodproject/pro-reformation.github.io/bulla.ttl>;
+    owl:sameAs <http://dbpedia.org/page/Pope_Leo_X>;
+    owl:sameAs <https://en.wikipedia.org/wiki/Pope_Leo_X>;
+    foaf:knows <http://lodproject/pro-reformation.github.io/martin-luther.ttl>.

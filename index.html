@@ -1198,29 +1198,54 @@
       <div class="w-100">
         <h2 class="mb-5">RDF &amp; data connection</h2>
 
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Abstract</h3>
+            <div class="subheading mb-3">1. RDF &amp; TURTLE</div>
+            <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for some entities belonging to our project. Our <i>URIs</i> can be found in our <a href="https://github.com/LODproject/pro-reformation">GitHub repository</a>. 
+			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/RDF/">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, RDF is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triples of statement composed by:</p>
+			<ul>
+				<li>a <i>subject</i>;
+				<li>a <i>predicate</i>;
+				<li>an <i>object</i>.
+			</ul>
+			<p align="justify">We have decided to propose a graphical serialization of our RDF description through the web service <a href="http://www.ldf.fi/service/rdf-grapher">RDF Grapher</a>, useful for parsing RDF data and visualizing it as a graph. As output image format, we choose the <a href="https://www.w3.org/2007/02/turtle/primer/">Turtle</a> serialization syntax.</p>
+			<div class="subheading mb-3">2. Data connection</div>
+			<p align="justify">In the meantime, through our RDF and TURTLE serialization, we connected our data to other related items and resources on the World Wide Web. In particular, we linked the same authorities using the property "owl:sameAs" for what regards the names (people, places, concepts). That property is part of the <a href="https://www.w3.org/TR/2012/REC-owl2-overview-20121211/#Documentation_Roadmap">Web Ontology Language</a> (OWL), a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things.
+			<br> Moreover, we found at least five associations to other resources or entities of our projects exploiting the sharing of one of the features of the object.</p>
+          </div>
+        </div>
+		
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Who</h3>
-            <div class="subheading mb-3">People</div>
-            <p>People involved in the Protestant Reformation: Martin Luther, Pope Leo X, John Calvin.</p>
+            <div class="subheading mb-3">Person</div>
+            <p align="justify">For the entity <b>Person</b> we have created URIs for all the protagonists of our project. By clicking on the links below, you can also see the connections with other resources.</p>
+			<ul>
+				<li><a href="http://lodproject.github.io/pro-reformation/martin-luther.ttl">Martin Luther</a>. See the <a data-toggle="modal" href="#rdfmartin">RDF</a> or the <a data-toggle="modal" href="#turtlemartin">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/john-calvin.ttl">John Calvin</a>. See the <a data-toggle="modal" href="#rdfcalvin">RDF</a> or the <a data-toggle="modal" href="#turtlecalvin">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/leo-x.ttl">Pope Leo X</a> See the <a data-toggle="modal" href="#rdfleo">RDF</a> or the <a data-toggle="modal" href="#turtleleo">TURTLE</a>.
+			</ul>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
-          </div>
-        </div>
+        </div>	
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">What</h3>
-            <div class="subheading mb-3">Artifacts</div>
-            <p>Manuscripts, paintings, medals, books, broadsheets and so on.</p>
-			<div class="subheading mb-3">Events</div>
-            <p>The most important event: the Protestant Reformation.</p>
-			<div class="subheading mb-3">Concepts</div>
-            <p>The concepts underlying the artifact and connected to our event: Lutheranism, Evangelism and Catholicism.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+            <div class="subheading mb-3">Artifact</div>
+            <p>For the entity <b>Artifact</b> we have created URIs and RDF framework for:
+			<ul>
+				<li><a href="http://lodproject.github.io/pro-reformation/disputatio.ttl"><i>Disputatio pro declaratione virtutis indulgentiarum</i></a>. See the <a data-toggle="modal" href="#rdfdisputatio">RDF</a> or the <a data-toggle="modal" href="#turtledisputatio">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/bulla.ttl"><i>Bulla contra errores Martini Lutheri &amp; sequacium</i></a>. See the <a data-toggle="modal" href="#rdfbulla">RDF</a> or the <a data-toggle="modal" href="#turtlebulla">TURTLE</a>;
+			</ul>
+			<div class="subheading mb-3">Event</div>
+            <p>For the <b>Event</b> category, we analyzed our only event: the <a href="http://lodproject.github.io/pro-reformation/pro-reformation.ttl">Protestant Reformation</a>. See the <a data-toggle="modal" href="#rdfproref">RDF</a> or the <a data-toggle="modal" href="#turtleproref">TURTLE</a>;</p>
+			<div class="subheading mb-3">Concept</div>
+            <p>Here, we present the concepts underlying our artifacts and connected to our event:</p>
+			<ul>
+				<li><a href="http://lodproject.github.io/pro-reformation/lutheranism.ttl">Lutheranism</a>. See the <a data-toggle="modal" href="#rdflutheranism">RDF</a> or the <a data-toggle="modal" href="#turtlelutheranism">TURTLE</a>;
+				<li><a href="http://lodproject.github.io/pro-reformation/calvinism.ttl">Calvinism</a>. See the <a data-toggle="modal" href="#rdfcalvinism">RDF</a> or the <a data-toggle="modal" href="#turtlecalvinism">TURTLE</a>;
+			</ul>
           </div>
         </div>
 
@@ -1228,101 +1253,856 @@
           <div class="resume-content">
             <h3 class="mb-0">Where</h3>
             <div class="subheading mb-3">Places</div>
-            <p>The places related to the items and the Protestant Reformation: Nurimberg and Wittenberg.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+            <p>The <b>Place</b> par excellence that we have chosen in this <a data-toggle="modal" href="#rdfwitt">RDF</a> and <a data-toggle="modal" href="#turtlewitt">TURTLE</a> serialization is <a href="http://lodproject.github.io/pro-reformation/lutheranism.ttl">Wittenberg</a>.</p>
           </div>
         </div>
       </div>
     </section>
-	
-    <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-        </ul>
+	<!--Modal for Martin Luther RDF-->
+  <div class="portfolio-modal modal fade" id="rdfmartin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Martin Luther: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix person: < http://www.w3.org/ns/person# >.
+@prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
+@prefix owl:< http://www.w3.org/2002/07/owl# >.
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
+< http://lodproject.github.io/pro-reformation/martin-luther.ttl >
+    foaf:Agent 'Person';
+    foaf:name 'Martin Luther';
+    foaf:gender 'Male';
+    person:placeOfBirth 'Eisleben';
+    core:dateOfBirth '10/11/1483';
+    person:placeOfDeath 'Eisleben';
+    core:dateOfDeath '18/02/1546';
+    core:occupation 'Theologist';
+    core:knownFor 'Being a seminal figure in the Protestant Reformation';
+    dcterms:relation < http://lodproject.github.io/pro-reformation/disputatio.ttl >;
+    dcterms:relation < http://lodproject.github.io/pro-reformation/septembertestament.ttl >;
+    owl:sameAs < http://dbpedia.org/page/Martin_Luther >;
+    owl:sameAs < https://www.wikidata.org/wiki/Q9554 >;
+    foaf:knows < http://dbpedia.org/page/Pope_Leo_X >.</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Martin Luther TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlemartin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Martin Luther: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/martin-luther.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/martin-luther.png">here</a> to see it larger.</p>
 
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  
+  	<!--Modal for Calvin RDF-->
+  <div class="portfolio-modal modal fade" id="rdfcalvin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">John Calvin: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix person: < http://www.w3.org/ns/person# >.
+@prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
+@prefix owl:< http://www.w3.org/2002/07/owl# >.
 
+< http://lodproject/pro-reformation.github.io/john-calvin.ttl >
+    foaf:Agent 'Person';
+    foaf:name 'John Calvin';
+    foaf:gender 'Male';
+    person:placeOfBirth 'Noyon';
+    core:dateOfBirth '10/7/1509';
+    person:placeOfDeath 'Geneva';
+    core:dateOfDeath '27/5/1564';
+    core:occupation 'Theologist', 'Pastor';
+    core:traditionMovement < http://lodproject/pro-reformation.github.io/calvinism.ttl >;
+    core:knownFor 'Being the principal figure in the development of Calvinism';
+    dcterms:relation "Institutio christianae religionis, Iohanne Caluuino authore";
+    owl:sameAs < http://dbpedia.org/page/John_Calvin >;
+    owl:sameAs < https://en.wikipedia.org/wiki/John_Calvin >;
+    foaf:knows < http://lodproject/pro-reformation.github.io/martin-luther.ttl >.
+
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Calvin TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlecalvin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">John Calvin: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/john-calvin.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/john-calvin.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+       	<!--Modal for Leo RDF-->
+  <div class="portfolio-modal modal fade" id="rdfwitt" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Pope Leo X: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>
+				@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix dc: < http://purl.org/dc/terms/ >.
+@prefix person: < http://www.w3.org/ns/person# >.
+@prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
+@prefix owl:< http://www.w3.org/2002/07/owl# >.
+
+< http://lodproject/pro-reformation.github.io/leo-x.ttl >
+    foaf:Agent 'Person';
+    foaf:name 'Giovanni di Lorenzo de Medici';
+    dc:alternate 'Pope Leo X';
+    foaf:gender 'Male';
+    person:placeOfBirth 'Firenze';
+    core:dateOfBirth '11/12/1475';
+    person:placeOfDeath 'Rome';
+    core:dateOfDeath '1/12/1521';
+    core:occupation 'Pope';
+    core:knownFor 'Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised.';
+    core:traditionMovement 'Cattolicism';
+    dcterms:relation < http://lodproject/pro-reformation.github.io/bulla.ttl >;
+    owl:sameAs < http://dbpedia.org/page/Pope_Leo_X >;
+    owl:sameAs < https://en.wikipedia.org/wiki/Pope_Leo_X >;
+    foaf:knows < http://lodproject/pro-reformation.github.io/martin-luther.ttl >.
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Leo TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlewitt" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Pope Leo X: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/leo-x.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/leo-x.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+   	<!--Modal for Disputatio RDF-->
+  <div class="portfolio-modal modal fade" id="rdfdisputatio" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Disputatio pro declaratione virtutis indulgentiarum: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix rdai: < http://www.rdaregistry.info/Elements/i/ >.
+@prefix owl: < http://www.w3.org/2002/07/owl# >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+@prefix dbo: < http://dbpedia.org/property/ >.
+@prefix dc: < http://purl.org/dc/elements/1.1/ >.
+@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+
+< http://lodproject.github.io/pro-reformation/disputatio.ttl > 
+    rdai:P40082 "Disputatio pro declaratione virtutis indulgentiarum";
+    dcterms:creator < http://lodproject.github.io/pro-reformation/martin-luther.ttl >;
+    dcterms:publisher "Hieronymus Holtzel";
+    dcterms:created "1517";
+    dcterms:coverage "Nuremberg";
+    dcterms:spatial "Berlin";
+    rdai:P40061 "95 Theses";
+    dcterms:description "Central document of the Protestant Reformation";
+    dcterms:type "Broadsheet";
+    dcterms:medium "Parchment";
+    dcterms:format "Print";
+    rdai:P40010 "Two pages";
+    dc:language "Latin";
+    rdai:P40001 "SBB00003DCA00000000";
+    rdai:P40004 "Staatsbibliothek zu Berlin";
+    rdai:P40048 "Staatsbibliothek zu Berlin";
+    dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Ninety-five_Theses >;
+    owl:sameAs < https://www.wdl.org/en/item/7497/ >;
+    owl:sameAs < http://es.dbpedia.org/page/Las_95_tesis>;
+    foaf:depiction < https://upload.wikimedia.org/wikipedia/commons/8/81/95Thesen.jpg >;
+    owl:sameAs < https://www.wdl.org/en/item/7497/ >.
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Disputatio TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtledisputatio" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Disputatio pro declaratione virtutis indulgentiarum: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/disputatio.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/disputatio.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+   	<!--Modal for Bulla RDF-->
+  <div class="portfolio-modal modal fade" id="rdfbulla" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Bulla contra errores Martini Lutheri: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix rdai: < http://www.rdaregistry.info/Elements/i/ >.
+@prefix owl: < http://www.w3.org/2002/07/owl# >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+@prefix dbo: < http://dbpedia.org/property/ >.
+@prefix dc: < http://purl.org/dc/elements/1.1/ >.
+@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+
+< http://lodproject.github.io/pro-reformation/bulla.ttl > 
+    rdai:P40082 "Bulla contra errores Martini Lutheri et sequacium";
+    dc:alternate 'Exsurge domine';
+    dcterms:creator < http://lodproject.github.io/pro-reformation/leo-x.ttl >;
+    dcterms:created "15/6/1520";
+    dcterms:coverage "Rome";
+    dcterms:spatial "Rome";
+    rdai:P40061 "Opposition to Martin Luther";
+    dcterms:description "A papal bull written in response to the teachings of Martin Luther, who opposed the views of the Church.";
+    dcterms:type "Text";
+    dcterms:medium "Paper";
+    dcterms:format "Print";
+    dc:language "Latin";
+    rdai:P40001 "RMLE005568";
+    rdai:P40004 "Biblioteca Casanatense";
+    rdai:P40048 "Biblioteca Casanatense";
+    dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Exsurge-Domine >;
+    owl:sameAs < https://www.wdl.org/en/item/7497/ >.
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Bulla TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlebulla" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Bulla contra errores Martini Lutheri: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/bulla2.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/bulla2.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+   	<!--Modal for Protestant Reformation RDF-->
+  <div class="portfolio-modal modal fade" id="rdfproref" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Protestant Reformation: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix owl: < http://www.w3.org/2002/07/owl# >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix dbo: < http://dbpedia.org/property/ >.
+@prefix dc: < http://purl.org/dc/elements/1.1/ >.
+@prefix crm: < http://www.cidoc-crm.org/official_release_cidoc.html >.
+
+< http://lodproject.github.io/pro-reformation/pro-reformation.ttl > 
+    crm:P1_is_identified_by "Protestant Reformation" ;
+    dcterms:alternative "Protestantism", "Reformation", "European Reformation", "Lutheranism" ;
+    dcterms:abstract "Schism from the Roman Catholic Church initiated by Martin Luther in 16th century" ;
+    crm:P92_brought_into_existence "1517" ;
+    crm:P11_had_participant "Martin Luther", "Thomas Müntzer", "John Calvin", "Pope Leo X " ;
+    crm:P12_occured_in_the_presence_of < http://lodproject.github.io/pro-reformation/disputatio.ttl > , "Septembertestament", "Das Zeitalter der Reformation", <http://lodproject.github.io/pro-reformation/bulla.ttl> , "Verdammnis und Erlösung" ;
+    dc:isReferencedBy "Medal on the introduction of the Reformation in Saxony in 1839", "Ein feste Burg ist unser Gott : Kantate am Reformationsfest", "Gedenkstein zum 400. Jahrestag der Reformation", "Broadsheet for the Centenary of the Reformation", "Gli effetti della Riforma protestante" ;
+    crm:P14_carried_out_by < http://lodproject.github.io/pro-reformation/martin-luther.ttl > ;
+    crm:P17_motivated "Lutheranism", "Calvinism" ;
+    dbo:wikiPageDisambiguates <https://en.wikipedia.org/wiki/Reformation_(disambiguation) > ;
+    dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Reformation > ;
+    owl:sameAs < https://www.britannica.com/event/Reformation > ;
+    owl:sameAs < https://www.history.com/topics/reformation/reformation > ;
+    owl:differentFrom < https://en.wikipedia.org/wiki/Catholic_Church > .
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Protestant Reformation TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtleproref" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Protestant Reformation: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/pro-reformation.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/pro-reformation.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+   	<!--Modal for Lutheranism RDF-->
+  <div class="portfolio-modal modal fade" id="rdflutheranism" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Lutheranism: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix owl: < http://www.w3.org/2002/07/owl# >.
+@prefix dcterms: < http://purl.org/dc/terms/ >.
+@prefix dbo: < http://dbpedia.org/property/ >.
+@prefix dc: < http://purl.org/dc/elements/1.1/ >.
+@prefix crm: < http://www.cidoc-crm.org/official_release_cidoc.html >.
+
+< http://lodproject.github.io/pro-reformation/lutheranism.ttl > 
+    crm:P1_is_identified_by "Lutheranism" ;
+    dcterms:alternative "Protestantism";
+    dcterms:abstract "Christian religious confession of the Protestant Reformation developed by Martin Luther" ;
+    crm:P14_carried_out_by "Martin Luther" ;
+    dc:isReferencedBy < http://lodproject.github.io/pro-reformation/disputatio.ttl > ;
+    dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Lutheranism > ;
+    owl:sameAs < https://www.britannica.com/topic/Lutheranism > ;
+    owl:differentFrom < https://simple.wikipedia.org/wiki/Catholicism > .
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Lutheranism TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlelutheranism" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Lutheranism: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/lutheranism.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/lutheranism.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    	<!--Modal for Calvinism RDF-->
+  <div class="portfolio-modal modal fade" id="rdfcalvinism" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">John Calvin: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix owl: < http://www.w3.org/2002/07/owl# > .
+@prefix dcterms: < http://purl.org/dc/terms/ > .
+@prefix dbo: < http://dbpedia.org/property/ > .
+@prefix dc: < http://purl.org/dc/elements/1.1/ > .
+@prefix crm: < http://www.cidoc-crm.org/official_release_cidoc.html > .
+
+< http://lodproject.github.io/pro-reformation/calvinism.ttl >
+    crm:P1_is_identified_by "Calvinism";
+    dcterms:alternative "Reformed tradition" , "Reformed Christianity" , "Reformed Protestantism" , "The Reformed faith" ;
+    dcterms:abstract "Branch of Protestantism that follows the theological tradition set down by John Calvin";
+    crm:P14_carried_out_by < http://lodproject.github.io/pro-reformation/john-calvin.ttl >;
+    dc:isReferencedBy "Institutio christianae religionis, Iohanne Caluuino authore";
+    dbo:wikiPageExternalLink < https://simple.wikipedia.org/wiki/Lutheranism >;
+    owl:sameAs < https://www.britannica.com/topic/Calvinism >;
+    owl:differentFrom < https://simple.wikipedia.org/wiki/Catholicism >;
+    owl:differentFrom < https://simple.wikipedia.org/wiki/Lutheranism >.
+
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Calvinism TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlecalvinism" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">John Calvin: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<p>Click <a href="http://lodproject.github.io/pro-reformation/img/calvinism.png">here</a> to see it larger.</p>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/calvinism.png" alt=""></p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+     	<!--Modal for Wittenberg RDF-->
+  <div class="portfolio-modal modal fade" id="rdfwitt" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Wittenberg: RDF</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <pre><small>@prefix gn: < http://www.geonames.org/ontology# >.
+@prefix owl:< http://www.w3.org/2002/07/owl# >.
+@prefix dbo: < http://dbpedia.org/property/ >.
+@prefix wgs84_pos: < http://www.w3.org/2003/01/geo/wgs84_pos# >.
+@prefix wn: < http://www.w3.org/2006/03/wn/wn20/schema/ >.
+@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
+
+< http://lodproject.github.io/pro-reformation/wittenberg.ttl > 
+    gn:name "Wittenberg";
+    gn:alternateName "Lutherstadt Wittenberg";
+    dbo:type "City";
+    dbo:areaCode "06886";
+    dbo:country "Germany";
+    gn:countryCode "DE";
+    wgs84_pos:lat "51° 86’ 61″ N";
+    wgs84_pos:long "12° 64’ 97″ E";
+    gn:population "46 475";
+    dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Wittenberg >;
+    owl:sameAs < http://dbpedia.org/page/Wittenberg >;
+    owl:sameAs < http://yago-knowledge.org/resource/Wittenberg >;
+    owl:differentFrom < http://dbpedia.org/page/Wittenberg,_Missouri >;
+    foaf:primaryTopic < https://en.wikipedia.org/wiki/Wittenberg >.
+				</pre></small>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Wittenberg TURTLE-->
+  <div class="portfolio-modal modal fade" id="turtlewitt" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Wittenberg: TURTLE</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><img class="img-fluid" src="img/wittenberg.png" alt=""></p>
+				<p>Click <a href="http://lodproject.github.io/pro-reformation/img/wittenberg.png">here</a> to see it larger.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Section Copyright-->
+  
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Copyright and License</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i> The MIT License (MIT).
-			<p>Copyright (c) 2013-2019 Blackrock Digital LLC.<br>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-			<ul>
-			<li>
-			<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+		<div class="subheading mb-3">Official</div>
+        <ul>
+			<li><a href="https://opensource.org/licenses/MIT">The MIT License (MIT)</a>.
 			</li>
-			<li>
-			<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+			<li>Copyright (c) 2013-2019 <a href="https://github.com/BlackrockDigital/startbootstrap-resume">Blackrock Digital LLC.</a>
 			</li>
-			</ul>
 		</ul>
+		<pre>
+		
+		</pre>
+        <div class="subheading mb-3">Developers</div>
+		<ul class="fa-ul mb-0">
+			<li>
+            <i class="fas fa-pizza-slice"></i> Simay G&uuml;zel
+			</li>
+		</ul>
+		<ul class="fa-ul mb-0">
+			<li>
+            <i class="fas fa-fish"></i> Chantal Lengua
+			</li>
+		</ul>
+		<ul class="fa-ul mb-0">
+			<li>
+            <i class="fas fa-ice-cream"></i> Vittoria Moccia
+			</li>
+		</ul>
+		<ul class="fa-ul mb-0">
+			<li>
+            <i class="fas fa-hamburger"></i> Lisa Siurina
+			</li>
+		</ul>
+
+		<pre>
+		
+		</pre>
+		<div class="subheading mb-3">Learned programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <a href="https://www.w3.org/TR/html52/"><i class="fab fa-html5"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="http://www.w3.org/Style/CSS/Overview.en.html"><i class="fab fa-css3-alt"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.javascript.com/"><i class="fab fa-js-square"></i></a>
+		  </li>
+          <li class="list-inline-item">
+            <a href="https://www.javascript.com/"><i class="fab fa-node-js"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html"><i class="fab fa-sass"></i></a>
+          </li>
+        </ul>
+		
 		</div>
 	</section>
+
 	
 
 
