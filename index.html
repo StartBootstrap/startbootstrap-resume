@@ -67,9 +67,6 @@
           <a class="nav-link js-scroll-trigger" href="#ermodel">E/R model</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#entities">Entities</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#items">Items</a>
         </li>
         <li class="nav-item">
@@ -117,19 +114,57 @@
     </section>
 
 	<hr class="m-0">
+	
+	
+	<!-- E/R model section-->
 		
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="ermodel">
       <div class="w-100">
         <h2 class="mb-5">E/R Model</h2>
 		<div><p align="justify">In this section, we present our project through an E/R Model (i.e. Entity / Relationship model), a theoretical and conceptual way of showing data relationships. 
 		<br>Below, the E/R Model is shown as an abstract diagram for the visual representation of our relational database. 
-		</p><p>Click on the <a href="img/whaleoriginal.png">image</a> to see it bigger.
-		<br><a data-toggle="modal" href="#modaler"><b>Here</b></a> its structure, entities and attributes are described.</p></div>
+		</p><p>Click on the <a href="img/whaleoriginal.png">image</a> to see it bigger.</p>
+		</div>
 		    <div align="center">		
 				<a href="img/whaleoriginal.png"><img class="img-fluid img-profile mx-auto mb-2" src="img/whale.png" alt=""></a>
 			</div>
-      </div>
-    </section>
+     
+      <div class="w-100">
+        <h3 class="mb-5"><u>Entities</u></h3>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <p align="justify">In our E/R model, we chose to take into consideration five types of entities. Click on the following <b>icons</b> to discover which entities we chose for each category and the relative connections with the others.</p>
+          </div>
+		 </div>
+		 
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <div class="subheading mb-3"><a data-toggle="modal" href="#entity-event"><img src="img/entity-event.png" width="160" alt=""></a></div>
+			<h3 class="mb-0" align="center">Event</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><a data-toggle="modal" href="#entity-artifact"><img src="img/entity-artifact.png" width="160" alt=""></a></div>
+			<h3 class="mb-0" align="center">Artifact</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><a data-toggle="modal" href="#entity-concept"><img src="img/entity-concept.png" width="160" alt=""></a></div>
+			<h3 class="mb-0" align="center">Concept</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><a data-toggle="modal" href="#entity-person"><img src="img/entity-person.png" width="160" alt=""></a></div>
+			<h3 class="mb-0" align="center">Person</h3>
+          </div>
+          <div class="resume-content">
+            <div class="subheading mb-3"><a data-toggle="modal" href="#entity-place"><img src="img/entity-place.png" width="160" alt=""></a></div>
+			<h3 class="mb-0" align="center">Place</h3>
+          </div>
+        </div>	
+		</div>		
+	</section>
+
+
+
 
 	
 	<!--Modal of the E/R Model-->
@@ -169,48 +204,263 @@
     </div>
   </div>
 	
-	
-	<!-- section "Entities"-->
-	
-	<hr class="m-0">
-		
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="entities">
-      <div class="w-100">
 
-        <h2 class="mb-5">Entities</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">What</h3>
-			<div class="subheading mb-3">Event</div>
-            <p>The central event of our project is the <a href="https://en.wikipedia.org/wiki/Reformation">Protestant Reformation</a>. Insert things</p>
-            <div class="subheading mb-3">Artifacts</div>
-            <p>In this project we chose to present lot of bla bla bla Manuscripts, paintings, medals, books, broadsheets and so on.</p>
-			<div class="subheading mb-3">Concepts</div>
-            <p>The concepts underlying the artifact and connected to our event: Lutheranism, Evangelism and Calvinism. If we still want Evangelism. Again, take things from Wikipedia. Maybe even pictures.</p>
+<!--Modal entity-event-->
+  <div class="portfolio-modal modal fade" id="entity-event" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Event entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
           </div>
         </div>
-		
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Who</h3>
-            <div class="subheading mb-3">People</div>
-            <p>People involved in the Protestant Reformation: Martin Luther, Pope Leo X, John Calvin. why we choose them, their role in the reformation... just take something from Wikipedia. Maybe even pictures?</p>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Where</h3>
-            <div class="subheading mb-3">Places</div>
-            <p>The places related to the items and the Protestant Reformation: Nuremberg and Wittenberg.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify">The central event of our project is the <b>Protestant Reformation</b>. 
+				<br>The Protestant Reformation is the religious separation movement from the Catholic Church occurred in the 16th century. The cornerstones of the movement are described in the <a data-toggle="modal" href="#portfolioModal1"><i>"Ninety-Five Theses"</i></a> document, whose publication in 1517 also marks the beginning of the revolution itself. The heart of the event consists in a protest against the sale of indulgences, the corruption and the lack of adherence to the evangelical message by the Catholic Church. 
+				<br>Lutheranism and Calvinism are the main currents of the movement, taking their names and principles from their pioneers, Martin Luther and John Calvin.</p>
+				
+				
+				<hr class="m-0">
+			<br>
+			<div class="subheading mb-3">The Relations</div>
+			<p align="justify">The central Entity EVENT has relationships with all the other entities:
+					<ul>
+						<li align="justify">The edge between EVENT and CONCEPT is labeled with “resultedIn” to show that the Reformation resulted in 2 branches of Christianity which are Lutheranism and Calvinism.</li>
+						<li align="justify">The interactions between EVENT and PERSON are labeled as “carriedOutBy” and “HasAgent”.  The first label “carriedOutBy” point out key figures that embodied the Protestant Reformation: Martin Luther, John Calvin, and Pope Leo X. The second label “HasAgent” labeling people that can be related in different ways to EVENT entity. </li>
+						<li align="justify">The relationship between EVENT and ARTIFACT is labeled with “referencedIn” to link those artifacts that make references to the idea of Protestant Reformation.</li>
+						<li align="justify">The edge between EVENT and PLACE is labeled with “tookPlaceIn” to present the Wittenberg where the Protestant Reformation took place in. </li>
+					</ul></p>
+			<br>
+				
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-	
-<!-- This is the section with the "Portoflio", i.e. all the icons of the 11 items. The icons are 220 x 220-->
+
+<!--Modal entity-artifact-->
+  <div class="portfolio-modal modal fade" id="entity-artifact" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Artifact entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify"><p>To describe the central idea of the project, the Protestant Reformation, we have collected <b>11</b> items, mixing:
+			<ul>
+				<li align="justify"><b>archival documents</b> (a photograph, a document, a sound recording);</li>
+				<li align="justify"><b>bibliographical entries</b> (two prints, three books, a monograph, a broadsheet);</li>
+				<li align="justify"><b>artifacts</b> (a painting, a medal).</li>
+			</ul>
+			</p>
+			<p align="justify">For a better description of the chosen items, see the next section (<a href="#items">ITEMS</a>).
+			</p>
+			
+			<hr class="m-0">
+			<br>
+			<div class="subheading mb-3">The Relations</div>
+			<p><ul>
+				<li align="justify">The relationship between ARTIFACT Entity and PLACE Entity is labeled with “hasbeenIn” to present the physical presence of artefacts in Nuremberg.</li>
+				<li align="justify">The interaction between ARTIFACT Entity and PERSON Entity has label “isCreatedBy” to represent people involved in the creation of the artifacts.</li>
+			</ul>
+			</p>
+			<br>
+			
+			
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+ <!--Modal entity-concept-->
+  <div class="portfolio-modal modal fade" id="entity-concept" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Concept entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+			  <div class="subheading mb-3">The Entity</div>
+                <p align="justify"><p>The Concept entity depicts the two prominent religious movements that arised from the Protestant Reformation: Lutheranism and Calvinism.
+			<ul>
+				<li align="justify">We could say that the birth of <a href="img/imglutheranism.png"><b>Lutheranism <i class="far fa-image"></i></b></a> as a concept and as a branch of Christianity occurred simultaneously with the beginning of the Protestant Reformation. In 1521, with the Edict of Worms - a few years after the 95 Theses publishment -, Lutherans and Catholics officially splitted into two different beliefs.
+				<br>The main points of the division were primarily two: 
+					<ul>
+						<li align="justify">the so-called <i>formal principle</i>, according to which Lutheranism did not see the Church (represented by the Pope) as the main source of authority for doctrine, but the Bible itself;</li>
+						<li align="justify">following the Holy Scriptures as the sole authority, the Lutherans abolished many liturgical practices typical of Catholicism, maintaining only the Eucharist and of the Lord's Supper;
+					</ul>
+				The creed of Lutheranism could be summarized in this sentence, which contains the founding <i>five solae</i>:
+				<br><i>“Based on <b>Scripture alone</b>, we affirm that justification is by <b>grace alone</b>, through <b>faith alone</b>, because of <b>Christ alone</b>, and all to the glory of <b>God alone</b>”</i>.</li>
+				<p><li align="justify">As long as Lutheranism, the <a href="img/imgcalvinism.jpg"><b>Calvinism <i class="far fa-image"></i></b></a> has to be considered the other major branch of Protestantism. Pioneered by the pastor and theologian <b>John Calvin</b>, this creed - also known as <i>Reformed Protestantism</i> - has <b>predestination</b> and <b>election</b> as core doctrines. Those principles, together with the rejection of the principle of consubstantiation in the Eucharistic liturgy, constitute not only the difference between Calvinism and Catholicism, but also a <b>detachment from Lutheranism</b>. In fact, the concept of Calvinism, although it presents several internal currents of thought, it differs in many points from Lutheranism, with which it shares only the principle of <i>sola scriptura</i> and the protest against the Catholic tradition.
+				</li>
+				</p>
+			</ul>
+			</p>
+			
+			<hr class="m-0">
+			<br>
+			<div class="subheading mb-3">The Relations</div>
+			<p align="justify">The CONCEPT Entity has relationship with the ARTIFACT Entity which is expressed by “representedThrough” label that connect Lutheranism and Calvinism to the set of ARTIFACT Entity.
+			</p>
+			<br>
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+
+<!--Modal entity-person-->
+  <div class="portfolio-modal modal fade" id="entity-person" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Person entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify">The core of our project is the Protestant Reformation event, which has had numerous public figures as participants. Among these, we decided to present three of the most important ones, namely those who seemed us more representative of the various currents of the movement, both as <b>supporters</b> and as <b>opponents</b>. 
+				<br>For their prominent role in this historic religious dispute, we focused on Martin Luther, John Calvin and Pope Leo X.
+					<ul>
+						<li><p align="justify"><a href="img/imgluther.jpg"><b>Martin Luther <i class="far fa-image"></i></b></a> was a German professor of theology and a seminal figure in the Protestant Reformation.
+							<br> The reason why we have chosen to present him as the first entity among the PERSON category is that his figure - as it is shown in our conceptual mapping - is directly connected with the main and only event of our project, the Protestant Reformation, of which he was the absolute pioneer. He is, in fact, the author of <a data-toggle="modal" href="#portfolioModal1"><i>"Ninety-Five Theses"</i></a>, an academic discussion of the practice and inefficacy of indulgences, and the translator of the entire <i>New Testament</i> in German (<a data-toggle="modal" href="#portfolioModal2"><i>"Septembertestament"</i></a>), both documents that had a lot of influence over the Reformation itself. Those documents are considered as the representation of the fundamental principles of the Lutheran creed and the Protestant Reformation in general, as well as having inspired many subsequent theologians. Furthermore, for these reasons, while presenting ‘Martin Luther’, we kept in mind not only his occupation as ‘theolog’ but also his academic career at the University of Wittenberg and his contributions to the translation field.</p></li>
+						<li><p align="justify"><a href="img/imgcalvin.jpg"><b>John Calvin <i class="far fa-image"></i></b></a> was a French theologian, a pastor and one of the main characters of the Protestant Reformation. He was also a religious theorist and the principal figure in the development of the later called <b>Calvinist</b> movement, as it can be deduced from his monograph <a data-toggle="modal" href="#portfolioModal6"><i>“Institutio christianae religionis”</i></a>, described in our project. 
+							<br>The reason why we chose to present John Calvin is that he got inspired after reading Martin Luther’s documents and, as a result, he wrote his paper to support the Protestant Reformation.</p></li>
+						<li> <p align="justify"><a href="img/imgleo.jpg"><b>Pope Leo X <i class="far fa-image"></i></b></a> was a powerful member of the Medici family. His papacy began in 1513, a few years before the Protestant Reformation started. Pope Leo X is historically associated with granting <b>indulgences</b> for those who donated money to reconstruct St. Peter's Basilica, a practice that was soon challenged by Martin Luther's <a data-toggle="modal" href="#portfolioModal1"><i>"Ninety-Five Theses"</i></a>. 
+							<br>The reason why we chose to represent him as one of the main characters in our project is that we wanted to illustrate our event from different points of view. In our case, the <b>Catholic Church</b> - of which Pope Leo X was representative and chief at that time - was in opposition to the Reformed one. This contrasting position was demonstrated by the <a data-toggle="modal" href="#portfolioModal5"><i>"Bulla contra errores Martini Lutheri"</i></a> - which is an item examined in our project - written in 1521 by the Pope himself. Within the document, the Pope declared Luther's thought officially <b>heretic</b> and threatened him with excommunication, in case he wouldn’t retract his statements. The greatest detachment between such a document and those published by Martin Luther lies in the language used: while the latter always wrote in <b>German</b> so that common people could understand, the Pope still maintained the traditional use of the <b>Latin</b> language.</p></li>
+						</ul>
+					</ul>
+					</p>
+				
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+ <!--Modal entity-place-->
+  <div class="portfolio-modal modal fade" id="entity-place" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Place entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify">Eventually, we included the Place entity, linked to the Artifact and to the Event: we wanted, in fact, to analyze in depth the place of creation and the current location of our artifacts, as well as the most important places of the Protestant Reformation, Wittenberg and Nuremberg:</p>
+			<ul>
+				<li align="justify"><a href="img/imgwittenberg.jpg"><b>Wittenberg <i class="far fa-image"></i></b></a> is the first city that comes to mind when it comes to the Protestant Reformation since it played a crucial role in Reformation history. The small town of 50.000 inhabitants in the state of Saxony-Anhalt was the place where Martin Luther posted the ’95 Theses’ to the Castle Church’s door which marked the starting point for significant changes. What is more, Martin Luther worked at the University of Wittenberg. UNESCO recognized the importance of both the Castle Church making it the World Heritage in 1996.</li>
+				<p><li align="justify">For Martin Luther, <a href="img/imgnuremberg.jpg"><b>Nuremberg <i class="far fa-image"></i></a></b> was 'the eyes and ears of Germany'. The city was a 'media center', a hub to 21 printing houses, which helped to rapidly spread the messages of the Reformation. Nuremberg is the city which helped Luther ideas go “viral”.  In particular, in December 1517 printed editions of the theses, in the form of pamphlets and broadsheets, appeared simultaneously in several Nuremberg helped quickly reach a wide audience. 
+				<br>“They are printed and circulated far beyond my expectation,”  wrote Martin Luther in March 1518 to a publisher in Nuremberg who had published a German translation of the theses.</li></p>
+			</ul>
+			</p>
+			<hr class="m-0">
+			<br>
+			<div class="subheading mb-3">The Relations</div>
+			<p align="justify">We didn't link this entity to the CONCEPT entity due to its abstractness, and we didn't connect it to the PERSON one because we decided not to focus ourselves on the deepening on birthplaces and deathplaces of our people (such as Einsleben, regarding Martin Luther, Florence or Noyon).
+			</p>
+			<br>
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+ 
+	<!-- Section Items. (The icons of the items are 220 x 220)-->
 	<hr class="m-0">
 		
 	<section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="items">
@@ -825,7 +1075,7 @@
 					<td><a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Mapping_Guidelines_v2.4_102017.pdf">EDM</a></td>
 				</tr>
 				<tr>
-					<td>Music</td>
+					<td>Sound<br>recording</td>
 					<td><i>"Ein feste Burg ist unser Gott”</i></td>
 					<td><a href="https://www.europeana.eu/portal/it/record/2048024/Athena_Plus_ProvidedCHO_Biblioteca_nazionale_centrale_di_Roma_oai_bncrm_librari_beniculturali_it_disco_BVE0241712_1.html?q=Ein+feste+Burg+ist+unser+Gott#dcId=1554199050544&p=3">Europeana</a> (<a href="http://digitale.bnc.roma.sbn.it/tecadigitale/disco/BVE0241712/1">Biblioteca Nazionale Centrale di Roma</a>)</td>
 					<td><a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Mapping_Guidelines_v2.4_102017.pdf">EDM</a></td>
@@ -869,42 +1119,105 @@
       <div class="w-100">
         <h2 class="mb-5">Theoretical model</h2>
 
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <p align="justify">The drawing up of our <b>theoretical model</b> is aimed at explaining how we use the existent ontologies and their properties in the description of the entities belonging to our five categories (EVENT, PERSON, CONCEPT, ARTIFACT, PLACE).
+			<br>This has been done replying to four questions:
+				<ul>
+					<li align="justify"><b>WHO? - people</b>: creators, influencers, predecessors, successors. How to describe them?</li>
+					<li align="justify"><b>WHERE? - places</b>: original places, locations at a certain time period. Which information do we have to represent about them?</li>
+					<li align="justify"><b>WHEN? - dates</b>: crucial life events, historical events. In which format do you need to express the notion of time?</li>
+					<li align="justify"><b>WHAT? - objects</b>: concepts and items of cultural heritage. What are the main contents and properties of the objects?</li>
+				</ul></p>
+          </div>
+        </div>
+		
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Who</h3>
             <div class="subheading mb-3">People</div>
-            <p>People involved in the Protestant Reformation: Martin Luther, Pope Leo X, John Calvin.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+            <p align="justify">It was of utmost importance for us to point out a <b>person</b> as an entity, so that it could be related in different ways to all types of cultural objects we had selected. In particular, we have chosen to enrich knowledge about a person by including such important properties as <i>Name</i>, <i>Gender</i>, <i>Citizenship</i>, <i>Education</i>, <i>Occupation</i> and his and her <i>Role</i> in the event, as a representative of a religious movement. 
+				<br>In order to achieve our goal of describing people involved in our project in the most complete and profound way possible, we choose: 
+					<ul>
+						<li align="justify"><a href="http://xmlns.com/foaf/spec/"><b>FOAF Vocabulary Specification</b></a>, which is a widely used ontology for describing persons and their <b>relationships</b>;</li>
+						<li align="justify"><a href="https://www.w3.org/ns/person"><b>Person Core Vocabulary</b></a>, that provides a minimum set of classes and properties for describing a natural person as opposed to any <b>role</b> they may play in society or the <b>relationships</b> they have to other people, organizations and properties; we used this ontology especially for the reason that Person Core Vocabulary is an ontology meant specifically to describe <b>historical people</b>.</li>
+						<li align="justify"><a href="https://www.bbc.co.uk/ontologies/coreconcepts"><b>Core Concepts Ontology</b></a>, which is the generic <b>BBC ontology</b> for people, places, events, organizations, concepts.</li>
+						<li align="justify"><a href="https://wiki.dbpedia.org/services-resources/ontology"><b>DBpedia</b></a>, due to our approach based also on the need to present each individual from the perspective of a person’s crucial <b>life events</b>. While examining the ontologies, we decided to opt for it because it allowed us to add such properties as <i>Date Of Birth</i> and <i>Date Of Death</i>, but also unusual properties like <i>Citizenship</i>.</li>
+					</ul>
+					</p>
+				<p align="justify">Moreover, the ‘person’ as a metadata element can be interpreted as in relationship with the other entities. In particular, for what regards the connection with the ARTIFACT entity, we took into consideration several ontologies:
+					<ul>
+						<li align="justify"><a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"><b>Dublin Core Metadata Initiative</b></a>, for the properties that indicate the creator (painter, author), the publisher and the contributors of the items;</li>
+						<li align="justify"><a href=""https://labs.regesta.com/progettoReload/wp-content/uploads/2013/08/oadNew.html><b>OAD</b></a>, the ontology for archival description, to depict the provider of the items kept in <b>archives;</b></li>
+						<li align="justify"><b><a href="http://www.rdaregistry.info/">RDA</b></a>, to express the creator and the keeper  of the bibliographical entries of <b>libraries</b>.</li>
+						<li align="justify"><a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf"><b>CIDOC-CRM</b></a>, a formal ontology intended to facilitate the integration, mediation and interchange of heterogeneous cultural heritage information. We used it to indicate the creator of <b>museum</b> items.
+							<br>This ontology was ideal for our purpose because of its precision on the definition of the entities and the related predicates. For this reason, we used it also in the context of the other different entities:</li>
+								<ul>
+									<li align="justify">CONCEPT: it has been used to express the main protagonists of the religious movements Lutheranism and Calvinism;</li>
+									<li align="justify">EVENT: to depict the participants of the Protestant Reformation.</li>
+								</ul>
+					</ul>
+				</p>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">What</h3>
-            <div class="subheading mb-3">Artifacts</div>
-            <p>Manuscripts, paintings, medals, books, broadsheets and so on.</p>
-			<div class="subheading mb-3">Events</div>
-            <p>The most important event: the Protestant Reformation.</p>
-			<div class="subheading mb-3">Concepts</div>
-            <p>The concepts underlying the artifact and connected to our event: Lutheranism, Evangelism and Catholicism.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
-          </div>
-        </div>
-
+		
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Where</h3>
             <div class="subheading mb-3">Places</div>
-            <p>The places related to the items and the Protestant Reformation: Nuremberg and Wittenberg.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Text</span>
+            <p align="justify">In an event-centric approach, as the one we decided to use in our project, the representation and description of <b>places</b> is mandatory. In the context of the description of the entity PLACE, we used the most used ontologies in this field:
+				<ul>
+					<li align="justify"><a href="http://www.geonames.org/ontology/documentation.html"><b>GeoName Ontology</b></a> (GN), excellent in adding geospatial semantic information to the Word Wide Web because of its 11 million geonames toponyms that have an unique URL;</li>
+					<li align="justify"><a href="https://www.w3.org/2003/01/geo/"><b>Basic Geo (WGS84) Vocabulary</b></a>, a basic RDF vocabulary that provides the Semantic Web community only with a namespace for representing latitude and longitude;</li>
+					<li align="justify"><a href="https://wiki.dbpedia.org/services-resources/ontology"><b>DBpedia</b></a>, when the previous two lacked of certain properties (such as <i>Country</i> or <i>Abstract</i> as a brief description of the place).</li>
+				</ul>
+				</p>
+				<p>Moreover, the reason why, in our case, the geographical aspect becomes important and meaningful is that a <b>city</b> (or more widely, a country) can be be linked to the other entities:
+				<ul>
+					<li align="justify">ARTIFACT: in this category, the places are identified in the place of creation of the chosen item and in its current location. For this reasons, we used three different ontologies: <a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf"><b>Dublin Core Metadata Initiative</b></a> in the duo '<i>dcterms:coverage</i>' and '<i>dcterms:spatial</i>', <a href=""https://labs.regesta.com/progettoReload/wp-content/uploads/2013/08/oadNew.html><b>OAD</b></a> (for archival items) and <a href="https://www.bbc.co.uk/ontologies/coreconcepts"><b>CIDOC-CRM</b></a> (for museum items);</li>
+					<li align="justify">EVENT: the Protestant Reformation, only entity in this class, took place in a city, but due to its great reach and extent, we chose to identify it with a nation (Germany) rather than a city. <a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf"><b>CIDOC-CRM</b></a>, again, was the best option, because its perspective is supra-institutional and abstracted from any specific local context;</li>
+					<li align="justify">PERSON: the locations connected with a certain life period of a person were handled by <a href="https://www.w3.org/ns/person"><b>Person Core Vocabulary</b></a>, as already specified above.</li> 
+				</ul>
+				</p>
           </div>
         </div>
+		
+	
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">When</h3>
+            <div class="subheading mb-3">Dates</div>
+            <p align="justify">While dealing with dates, we represented them in the format suggested by <b><a href="https://www.w3.org/TR/NOTE-datetime">w3Consortium - <i>Date and Time Formats</i></a></b> (i.e. <b>DD/MM/YYYY</b>). Hence, our data present date either as YYYY or, when possible, DD/MM/YYYY.</p>
+          </div>
+        </div>
+		
+		
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">What</h3>
+            <div class="subheading mb-3">Artifacts</div>
+            <p align="justify">In order to describe our <b>artifacts</b> in a deeper way, we adopted those vocabularies that provided us with necessary properties for an accurate and consistent identification of a resource. As far as possible, we have tried to make use of the most popular and widely accepted ontologies that already exist in the field of cultural heritage.
+			<br>For a better understanding of the objects related to people, places, and concepts, we distinguished our artifacts according to their institutions (museum, archive, library) and labeled them as books, manuscripts, paintings, broadsheets and so on. Our need for detailed metadata description has led us to combine various ontologies.
+			<br>Without forgetting what institution objects belong to, we employed the following ontologies:
+			<ul>
+				<li align="justify"><b>Archives</b> - <a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"><b>Dublin Core Metadata Initiative</b></a>, <a href=""https://labs.regesta.com/progettoReload/wp-content/uploads/2013/08/oadNew.html><b>OAD</b></a>, <b><a href="http://archivi.ibc.regione.emilia-romagna.it/ontology/reference_document/referencedocument.html#LAD">EAC-CPF</a></b>;</li>
+				<li align="justify"><b>Libraries</b> - <a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"><b>Dublin Core Metadata Initiative</b></a>, <b><a href="http://www.rdaregistry.info/">RDA</b></a>;</li>
+				<li align="justify"><b>Museums</b> - <a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"><b>Dublin Core Metadata Initiative</b></a>, <a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf"><b>CIDOC-CRM</b></a>.</li>
+			</ul>
+			</p>
+			
+			<div class="subheading mb-3">Events</div>
+            <p align="justify">For our LOD project, the <b>event</b> (the <b>Protestant Reformation</b>) is the real core and it is connected to concepts, people and artifacts. We have chosen <a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf"><b>CIDOC-CRM</b></a> in order to describe our core event by the ‘class’ E5_Event, that already exists in the ontology. The great variety of CIDOC-CRM predicates has led us to be as very specific as we wanted. For example, it was possible for us to show the relationship between the Protestant Reformation and Martin Luther by using a very specific property (i.e. <i>E5_Event > P11_had_participant > E39_Actor</i>) or between it and the <i>Ninety-Five Theses</i> (i.e. <i>E5_Event > P12_occured in_the_presence_of > E77_Persisent_Item</i>).</p>
+			
+			<div class="subheading mb-3">Concepts</div>
+            <p align="justify">From the very beginning, we were looking for an extensible ontology for <b>concepts</b> and relationships that was currently used in cultural heritage domain. Almost all the needs of the project regarding concepts was satisfied by making use of <a href="http://www.cidoc-crm.org/sites/default/files/2018-05-16%23CIDOC%20CRM_v6.2.3_esIP%28XDP%29%28XM%29.pdf"><b>CIDOC-CRM</b></a>. Furthermore, we could represent the relationship of each concept with the other entities (person, event) through this same ontology.
+			<br>We further made use of <a href="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/?v=elements"><b>Dublin Core Metadata Initiative</b></a> and <a href="https://wiki.dbpedia.org/services-resources/ontology"><b>DBpedia</b></a> in order to link the concept to other referenced documents and resources, such as the Wikipedia page describing it, so to enrich our Linked Data space with external URIs.</p>
+			
+          </div>
+        </div>
+
+
       </div>
     </section>
 	
@@ -1639,6 +1952,11 @@
 					<td>CIDOC-CRM</td>
 				</tr>
 				<tr>
+					<td>Relation with Event</td>
+					<td>E93_Presence > P167_at > E53_Place</td>
+					<td>CIDOC-CRM</td>
+				</tr>
+				<tr>
 					<td>Disambiguation Wiki page</td>
 					<td>dbo:wikiPageDisambiguates</td>
 					<td>DBpedia</td>
@@ -1729,7 +2047,7 @@
 					<li> <b>3</b> <a href="data-persons.html" title="Table">persons</a> (<a href="data-persons.html#luther" title="Table">Martin Luther</a>, <a href="data-persons.html#calvin" title="Table">John Calvin</a>, <a href="data-persons.html#leo" title="Table">Pope Leo X</a>);
 					<li> <b>2</b> <a href="data-concepts.html" title="Table">concepts</a> (<a href="data-concepts.html#lutheranism" title="Table">Lutheranism</a>, <a href="data-concepts.html#calvinism" title="Table">Calvinism</a>);
 					<li> <b>2</b> <a href="data-places.html" title="Table">places</a> (<a href="data-places.html#wittenberg" title="Table">Wittenberg</a>, <a href="data-places.html#nuremberg" title="Table">Nuremberg</a>);
-					<li> <b>1</b> central entity, the <a href="data-event.html" title="Table">Protestant Reformation</a> event.
+					<li> <b>1</b> central <a href="data-event.html" title="Table">event</a> entity, the <a href="data-event.html" title="Table">Protestant Reformation</a>.
 				</ul>
 				</p>
 				<p align="justify"> All tables can be clicked and contain links to <b>anchors</b> placed in other places of the same page or of other tables, to enrich the exploration of the deep interconnection of our entities.</p>
