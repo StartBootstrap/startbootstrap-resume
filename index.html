@@ -38,6 +38,13 @@
     padding: 5px;
     text-align: left;
   }
+  
+#caca {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #343a40;
+}
+
 </style>
 
 <!-- for music-->
@@ -84,6 +91,9 @@
 		<li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#rdf">RDF &amp; connection</a>
         </li>
+		<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#copyright">Copyright</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -97,8 +107,8 @@
 	  		  <div class="resume-date text-md-right">
             <span class="text-primary"> <a href="mailto:simay.guzel@studio.unibo.it">Simay G&uuml;zel</a><br><a href="mailto:chantal.lengua@studio.unibo.it">Chantal Lengua</a><br><a href="mailto:vittoria.moccia@studio.unibo.it">Vittoria Moccia</a><br><a href="mailto:elizaveta.siurina@studio.unibo.it"> Lisa Siurina</a> </span>
           </div>
-        <h1 class="mb-0">LOD 
-          <span class="text-primary">project</span>
+        <h1 class="mb-0">PRO 
+          <span class="text-primary">Reformation</span>
         </h1>
         <div class="subheading mb-5"> Digital Humanities and Digital Knowledge · Bologna, BO · Italy · <i class="far fa-envelope"></i>
           <a href="mailto:dhdk@gmail.com">dhdk@gmail.com</a>
@@ -1065,7 +1075,7 @@
 			<br>Regarding the <b>WHEN</b> category, it has been inserted as a property (i.e. as an attribute, in the E/R model) under the category WHAT: this was done for the need to specify the date only of our entity Artifact.</p>
 			<p>Click on the <a href="align-table2.html" title="Table2" target="_blank">image</a> below to see the table.</p>
 			<div><a href="align-table2.html" title="table2" target="_blank"><img class="img-fluid" src="img/preview4.png" alt=""></a></div>
-			<p><br>Click here to download the <a href="pdf/table2.pdf" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>.</p>
+			<p><br>Click here to download the <a href="pdf/table2.pdf" title="Table2" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>.</p>
 			<img src="">
 	  </div>
     </section>
@@ -1192,7 +1202,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <p align="justify">In this section, we present the formal/<b>conceptual model</b> created in order to transform the previous <b>theoretical model</b> in something <b>computable</b>. A conceptual model, in fact, is a model that defines, for our five categories of entities (Person, Place, Concept, Artifact, Event), the way in which we will write the properties according to the ontologies chosen and described in the theoretical model, and then their objects (in form of the triple <b>subject-property-object</b>).</p>
+            <p align="justify">In this section, we present the formal/<b>conceptual model</b> created in order to transform the previous <b>theoretical model</b> in something <b>computable</b>. A conceptual model, in fact, is a model that defines, for our five categories of entities (Person, Place, Concept, Artifact, Event), the way in which we will write the properties according to the ontologies chosen and described in the theoretical model, and then their objects (in form of the triplet <b>subject-property-object</b>).</p>
 			<p>Click on the following <b>icons</b> to open the related sections of the conceptual model.</p>
           </div>
 		 </div>
@@ -2029,7 +2039,7 @@
             <h3 class="mb-0">Abstract</h3>
             <div class="subheading mb-3">1. RDF &amp; TURTLE</div>
             <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for some entities belonging to our project. Our <i>URIs</i> can be found in our <a href="https://github.com/LODproject/pro-reformation" target="_blank">GitHub repository</a>. 
-			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/RDF/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, RDF is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triples of statement composed by:</p>
+			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/RDF/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, RDF is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triplets of statement composed by:</p>
 			<ul>
 				<li>a <i>subject</i>;
 				<li>a <i>predicate</i>;
@@ -2115,9 +2125,9 @@
 @prefix dcterms: < http://purl.org/dc/terms/ >.
 @prefix person: < http://www.w3.org/ns/person# >.
 @prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
-@prefix owl:< http://www.w3.org/2002/07/owl# >.
+@prefix owl: < http://www.w3.org/2002/07/owl# >.
 
-< http://lodproject.github.io/pro-reformation/martin-luther.ttl >
+< http://lodproject.github.io/pro-reformation/ttl/martin-luther.ttl >
     foaf:Agent 'Person';
     foaf:name 'Martin Luther';
     foaf:gender 'Male';
@@ -2127,8 +2137,8 @@
     core:dateOfDeath '18/02/1546';
     core:occupation 'Theologist';
     core:knownFor 'Being a seminal figure in the Protestant Reformation';
-    dcterms:relation < http://lodproject.github.io/pro-reformation/disputatio.ttl >;
-    dcterms:relation < http://lodproject.github.io/pro-reformation/septembertestament.ttl >;
+    dcterms:relation < http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl >;
+    dcterms:relation 'Septemertestament';
     owl:sameAs < http://dbpedia.org/page/Martin_Luther >;
     owl:sameAs < https://www.wikidata.org/wiki/Q9554 >;
     foaf:knows < http://dbpedia.org/page/Pope_Leo_X >.</pre></small>
@@ -2202,7 +2212,7 @@
 @prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
 @prefix owl:< http://www.w3.org/2002/07/owl# >.
 
-< http://lodproject/pro-reformation.github.io/john-calvin.ttl >
+< http://lodproject/pro-reformation.github.io/ttl/john-calvin.ttl >
     foaf:Agent 'Person';
     foaf:name 'John Calvin';
     foaf:gender 'Male';
@@ -2211,12 +2221,12 @@
     person:placeOfDeath 'Geneva';
     core:dateOfDeath '27/5/1564';
     core:occupation 'Theologist', 'Pastor';
-    core:traditionMovement < http://lodproject/pro-reformation.github.io/calvinism.ttl >;
+    core:traditionMovement < http://lodproject/pro-reformation.github.io/ttl/calvinism.ttl >;
     core:knownFor 'Being the principal figure in the development of Calvinism';
     dcterms:relation "Institutio christianae religionis, Iohanne Caluuino authore";
     owl:sameAs < http://dbpedia.org/page/John_Calvin >;
     owl:sameAs < https://en.wikipedia.org/wiki/John_Calvin >;
-    foaf:knows < http://lodproject/pro-reformation.github.io/martin-luther.ttl >.
+    foaf:knows < http://lodproject/pro-reformation.github.io/ttl/martin-luther.ttl >.
 
 				</pre></small>
 
@@ -2291,7 +2301,7 @@
 @prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
 @prefix owl:< http://www.w3.org/2002/07/owl# >.
 
-< http://lodproject/pro-reformation.github.io/leo-x.ttl >
+< http://lodproject/pro-reformation.github.io/ttl/leo-x.ttl >
     foaf:Agent 'Person';
     foaf:name 'Giovanni di Lorenzo de Medici';
     dc:alternate 'Pope Leo X';
@@ -2303,10 +2313,10 @@
     core:occupation 'Pope';
     core:knownFor 'Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised.';
     core:traditionMovement 'Cattolicism';
-    dcterms:relation < http://lodproject/pro-reformation.github.io/bulla.ttl >;
+    dcterms:relation < http://lodproject/pro-reformation.github.io/ttl/bulla.ttl >;
     owl:sameAs < http://dbpedia.org/page/Pope_Leo_X >;
     owl:sameAs < https://en.wikipedia.org/wiki/Pope_Leo_X >;
-    foaf:knows < http://lodproject/pro-reformation.github.io/martin-luther.ttl >.
+    foaf:knows < http://lodproject/pro-reformation.github.io/ttl/martin-luther.ttl >.
 				</pre></small>
 
 				        <div class="modal-footer">
@@ -2379,9 +2389,9 @@
 @prefix dc: < http://purl.org/dc/elements/1.1/ >.
 @prefix foaf: < http://xmlns.com/foaf/0.1/ >.
 
-< http://lodproject.github.io/pro-reformation/disputatio.ttl > 
+< http://lodproject.github.io/pro-reformation/ttl/ttl/disputatio.ttl > 
     rdai:P40082 "Disputatio pro declaratione virtutis indulgentiarum";
-    dcterms:creator < http://lodproject.github.io/pro-reformation/martin-luther.ttl >;
+    dcterms:creator < http://lodproject.github.io/pro-reformation/ttl/martin-luther.ttl >;
     dcterms:publisher "Hieronymus Holtzel";
     dcterms:created "1517";
     dcterms:coverage "Nuremberg";
@@ -2474,10 +2484,10 @@
 @prefix dc: < http://purl.org/dc/elements/1.1/ >.
 @prefix foaf: < http://xmlns.com/foaf/0.1/ >.
 
-< http://lodproject.github.io/pro-reformation/bulla.ttl > 
+< http://lodproject.github.io/pro-reformation/ttl/bulla.ttl > 
     rdai:P40082 "Bulla contra errores Martini Lutheri et sequacium";
     dc:alternate 'Exsurge domine';
-    dcterms:creator < http://lodproject.github.io/pro-reformation/leo-x.ttl >;
+    dcterms:creator < http://lodproject.github.io/pro-reformation/ttl/leo-x.ttl >;
     dcterms:created "15/6/1520";
     dcterms:coverage "Rome";
     dcterms:spatial "Rome";
@@ -2563,15 +2573,15 @@
 @prefix dc: < http://purl.org/dc/elements/1.1/ >.
 @prefix crm: < http://www.cidoc-crm.org/official_release_cidoc.html >.
 
-< http://lodproject.github.io/pro-reformation/pro-reformation.ttl > 
+< http://lodproject.github.io/pro-reformation/ttl/pro-reformation.ttl > 
     crm:P1_is_identified_by "Protestant Reformation" ;
     dcterms:alternative "Protestantism", "Reformation", "European Reformation", "Lutheranism" ;
     dcterms:abstract "Schism from the Roman Catholic Church initiated by Martin Luther in 16th century" ;
     crm:P92_brought_into_existence "1517" ;
     crm:P11_had_participant "Martin Luther", "Thomas Müntzer", "John Calvin", "Pope Leo X " ;
-    crm:P12_occured_in_the_presence_of < http://lodproject.github.io/pro-reformation/disputatio.ttl > , "Septembertestament", "Das Zeitalter der Reformation", <http://lodproject.github.io/pro-reformation/bulla.ttl> , "Verdammnis und Erlösung" ;
+    crm:P12_occured_in_the_presence_of < http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl > , "Septembertestament", "Das Zeitalter der Reformation", <http://lodproject.github.io/pro-reformation/bulla.ttl> , "Verdammnis und Erlösung" ;
     dc:isReferencedBy "Medal on the introduction of the Reformation in Saxony in 1839", "Ein feste Burg ist unser Gott : Kantate am Reformationsfest", "Gedenkstein zum 400. Jahrestag der Reformation", "Broadsheet for the Centenary of the Reformation", "Gli effetti della Riforma protestante" ;
-    crm:P14_carried_out_by < http://lodproject.github.io/pro-reformation/martin-luther.ttl > ;
+    crm:P14_carried_out_by < http://lodproject.github.io/pro-reformation/ttl/martin-luther.ttl > ;
     crm:P17_motivated "Lutheranism", "Calvinism" ;
     dbo:wikiPageDisambiguates <https://en.wikipedia.org/wiki/Reformation_(disambiguation) > ;
     dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Reformation > ;
@@ -2649,12 +2659,12 @@
 @prefix dc: < http://purl.org/dc/elements/1.1/ >.
 @prefix crm: < http://www.cidoc-crm.org/official_release_cidoc.html >.
 
-< http://lodproject.github.io/pro-reformation/lutheranism.ttl > 
+< http://lodproject.github.io/pro-reformation/ttl/lutheranism.ttl > 
     crm:P1_is_identified_by "Lutheranism" ;
     dcterms:alternative "Protestantism";
     dcterms:abstract "Christian religious confession of the Protestant Reformation developed by Martin Luther" ;
     crm:P14_carried_out_by "Martin Luther" ;
-    dc:isReferencedBy < http://lodproject.github.io/pro-reformation/disputatio.ttl > ;
+    dc:isReferencedBy < http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl > ;
     dbo:wikiPageExternalLink < https://en.wikipedia.org/wiki/Lutheranism > ;
     owl:sameAs < https://www.britannica.com/topic/Lutheranism > ;
     owl:differentFrom < https://simple.wikipedia.org/wiki/Catholicism > .
@@ -2728,11 +2738,11 @@
 @prefix dc: < http://purl.org/dc/elements/1.1/ > .
 @prefix crm: < http://www.cidoc-crm.org/official_release_cidoc.html > .
 
-< http://lodproject.github.io/pro-reformation/calvinism.ttl >
+< http://lodproject.github.io/pro-reformation/ttl/calvinism.ttl >
     crm:P1_is_identified_by "Calvinism";
     dcterms:alternative "Reformed tradition" , "Reformed Christianity" , "Reformed Protestantism" , "The Reformed faith" ;
     dcterms:abstract "Branch of Protestantism that follows the theological tradition set down by John Calvin";
-    crm:P14_carried_out_by < http://lodproject.github.io/pro-reformation/john-calvin.ttl >;
+    crm:P14_carried_out_by < http://lodproject.github.io/pro-reformation/ttl/john-calvin.ttl >;
     dc:isReferencedBy "Institutio christianae religionis, Iohanne Caluuino authore";
     dbo:wikiPageExternalLink < https://simple.wikipedia.org/wiki/Lutheranism >;
     owl:sameAs < https://www.britannica.com/topic/Calvinism >;
@@ -2812,7 +2822,7 @@
 @prefix wn: < http://www.w3.org/2006/03/wn/wn20/schema/ >.
 @prefix foaf: < http://xmlns.com/foaf/0.1/ >.
 
-< http://lodproject.github.io/pro-reformation/wittenberg.ttl > 
+< http://lodproject.github.io/pro-reformation/ttl/wittenberg.ttl > 
     gn:name "Wittenberg";
     gn:alternateName "Lutherstadt Wittenberg";
     dbo:type "City";
@@ -2878,15 +2888,20 @@
   
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="copyright">
       <div class="w-100">
         <h2 class="mb-5">Copyright and License</h2>
-		<div class="subheading mb-3">Official</div>
+		<div class="subheading mb-3">Template copyright</div>
         <ul>
 			<li><a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License (MIT)</a>.
 			</li>
-			<li>Copyright (c) 2013-2019 <a href="https://github.com/BlackrockDigital/startbootstrap-resume" target="_blank">Blackrock Digital LLC.</a>
+			<li>Copyright &copy; 2013-2019 <a href="https://github.com/BlackrockDigital/startbootstrap-resume" target="_blank">Blackrock Digital LLC.</a>
 			</li>
+		</ul>
+		<br><div class="subheading mb-3">Content copyright</div>
+        <ul>
+			<li><p><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Copyright Creative Commons</a>.
+			</li></p>
 		</ul>
 		<pre>
 		
@@ -2925,11 +2940,8 @@
             <a href="http://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><i class="fab fa-css3-alt"></i></a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.javascript.com/" target="_blank"><i class="fab fa-js-square"></i></a>
-		  </li>
-          <li class="list-inline-item">
             <a href="https://www.javascript.com/" target="_blank"><i class="fab fa-node-js"></i></a>
-          </li>
+		  </li>
           <li class="list-inline-item">
             <a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank"><i class="fab fa-sass"></i></a>
           </li>

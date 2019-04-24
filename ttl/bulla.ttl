@@ -6,10 +6,10 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<http://lodproject.github.io/pro-reformation/bulla.ttl> 
+<http://lodproject.github.io/pro-reformation/ttl/bulla.ttl> 
     rdai:P40082 "Bulla contra errores Martini Lutheri et sequacium";
     dc:alternate 'Exsurge domine';
-    dcterms:creator <http://lodproject.github.io/pro-reformation/leo-x.ttl>;
+    dcterms:creator <http://lodproject.github.io/pro-reformation/ttl/leo-x.ttl>;
     dcterms:created "15/6/1520";
     dcterms:coverage "Rome";
     dcterms:spatial "Rome";

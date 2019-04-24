@@ -4,11 +4,11 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix crm: <http://www.cidoc-crm.org/official_release_cidoc.html> .
 
-<http://lodproject.github.io/pro-reformation/calvinism.ttl>
+<http://lodproject.github.io/pro-reformation/ttl/calvinism.ttl>
     crm:P1_is_identified_by "Calvinism";
     dcterms:alternative "Reformed tradition" , "Reformed Christianity" , "Reformed Protestantism" , "The Reformed faith" ;
     dcterms:abstract "Branch of Protestantism that follows the theological tradition set down by John Calvin";
-    crm:P14_carried_out_by <http://lodproject.github.io/pro-reformation/john-calvin.ttl>;
+    crm:P14_carried_out_by <http://lodproject.github.io/pro-reformation/ttl/john-calvin.ttl>;
     dc:isReferencedBy "Institutio christianae religionis, Iohanne Caluuino authore";
     dbo:wikiPageExternalLink <https://simple.wikipedia.org/wiki/Lutheranism>;
     owl:sameAs <https://www.britannica.com/topic/Calvinism>;

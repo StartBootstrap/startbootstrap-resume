@@ -5,7 +5,7 @@
 @prefix wn: <http://www.w3.org/2006/03/wn/wn20/schema/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<http://lodproject.github.io/pro-reformation/wittenberg.ttl> 
+<http://lodproject.github.io/pro-reformation/ttl/wittenberg.ttl> 
     gn:name "Wittenberg";
     gn:alternateName "Lutherstadt Wittenberg";
     dbo:type "City";
