@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>LOD project</title>
+  <title>PRO-Reformation</title>
   <link rel='icon' href='img/redhat.ico' type='image/x-icon' sizes="16x16" />
 
   <!-- Bootstrap core CSS -->
@@ -38,11 +38,21 @@
     padding: 5px;
     text-align: left;
   }
-  
-#caca {
+ 
+#caca1 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   color: #343a40;
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+#caca {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #BD5D38;
+  font-size: 6rem;
+  line-height: 5.5rem;
 }
 
 </style>
@@ -57,7 +67,7 @@
   <!-- The navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">LOD project</span>
+      <span class="d-block d-lg-none">PRO-Reformation</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/luther.jpg" alt="">
       </span>
@@ -92,7 +102,7 @@
           <a class="nav-link js-scroll-trigger" href="#rdf">RDF &amp; connection</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#copyright">Copyright</a>
+          <a class="nav-link js-scroll-trigger" href="#copyright">- Copyright -</a>
         </li>
       </ul>
     </div>
@@ -107,15 +117,13 @@
 	  		  <div class="resume-date text-md-right">
             <span class="text-primary"> <a href="mailto:simay.guzel@studio.unibo.it">Simay G&uuml;zel</a><br><a href="mailto:chantal.lengua@studio.unibo.it">Chantal Lengua</a><br><a href="mailto:vittoria.moccia@studio.unibo.it">Vittoria Moccia</a><br><a href="mailto:elizaveta.siurina@studio.unibo.it"> Lisa Siurina</a> </span>
           </div>
-        <h1 class="mb-0">PRO 
-          <span class="text-primary">Reformation</span>
-        </h1>
+        <span id="caca1">PRO </span> <span id="caca"> Reformation</span>
         <div class="subheading mb-5"> Digital Humanities and Digital Knowledge · Bologna, BO · Italy · <i class="far fa-envelope"></i>
           <a href="mailto:dhdk@gmail.com">dhdk@gmail.com</a>
         </div>
         <p class="lead mb-5" align="justify"> This project belongs to the 'Knowledge Organization and Digital Methods in the Cultural Heritage Domain' course of University of Bologna, a.y. 2018/2019. Its aim is to create a <b>Linked Open Data</b> sample for describing data related to the event of the <b>Protestant Reformation</b>. </p>
 		<p class="lead mb-5" align="justify"> The Protestant Reformation is the religious separation movement from the Catholic Church in the 16th century. It represented, both from the historical and cultural point of view, a strong influence on the society of that time and thus gave origin to many <b>artifacts</b> – from paintings, to documents, to music – which testify its undeniable relevance. For this reason, we chose to deepen this event by analyzing it in all its possible manifestations. </p>
-        <div class="social-icons">
+        <div class="social-icons" align="right">
           <a href="https://github.com/LODproject/pro-reformation" target="_blank">
             <i class="fab fa-github"></i>
           </a>
@@ -2038,14 +2046,19 @@
           <div class="resume-content">
             <h3 class="mb-0">Abstract</h3>
             <div class="subheading mb-3">1. RDF &amp; TURTLE</div>
-            <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for some entities belonging to our project. Our <i>URIs</i> can be found in our <a href="https://github.com/LODproject/pro-reformation" target="_blank">GitHub repository</a>. 
-			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/RDF/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, RDF is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triplets of statement composed by:</p>
+            <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for some entities belonging to our project. All the <i>URIs</i> can be found in our <a href="https://github.com/LODproject/pro-reformation" target="_blank">GitHub repository</a>.
+			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/RDF/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, RDF is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triplets of statements, each composed of:</p>
 			<ul>
 				<li>a <i>subject</i>;
 				<li>a <i>predicate</i>;
 				<li>an <i>object</i>.
 			</ul>
-			<p align="justify">We have decided to propose a graphical serialization of our RDF description through the web service <a href="http://www.ldf.fi/service/rdf-grapher" target="_blank">RDF Grapher</a>, useful for parsing RDF data and visualizing it as a graph. As output image format, we choose the <a href="https://www.w3.org/2007/02/turtle/primer/" target="_blank">Turtle</a> serialization syntax.</p>
+			<p align="justify">We have decided to propose a graphical serialization of our RDF description through the web service <a href="http://www.ldf.fi/service/rdf-grapher" target="_blank">RDF Grapher</a>, useful for parsing RDF data and visualizing it as a graph. As output image format, we choose the <a href="https://www.w3.org/2007/02/turtle/primer/" target="_blank">Turtle</a> serialization syntax. This serialization is divided in two parts:
+			<ul>
+				<li align="justify">The first one contains the <b>@prefix</b> keywords, i.e. the namespace declarations: they are the association of a prefix used in the document with a URI, linked to the official documentation of the used ontology. The Turtle syntax provides a number of abbreviations (e.g. '<i>crm</i>' for  CIDOC-CRM) to make common uses easier to write;</li>
+				<li align="justify">The second one is made of <b>triplets</b>, that firstly identify the subject, here always as a <i>URI</i>, and secondly all the relative properties and values (that could be URIs or literals).</li>
+			</ul>
+			</p>
 			<div class="subheading mb-3">2. Data connection</div>
 			<p align="justify">In the meantime, through our RDF and TURTLE serialization, we connected our data to other related items and resources on the World Wide Web. In particular, we linked the same authorities using the property "owl:sameAs" for what regards the names (people, places, concepts). That property is part of the <a href="https://www.w3.org/TR/2012/REC-owl2-overview-20121211/#Documentation_Roadmap" target="_blank">Web Ontology Language</a> (OWL), a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things.
 			<br> Moreover, we found at least five associations to other resources or entities of our projects exploiting the sharing of one of the features of the object.</p>
@@ -2903,10 +2916,7 @@
 			<li><p><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Copyright Creative Commons</a>.
 			</li></p>
 		</ul>
-		<pre>
-		
-		</pre>
-        <div class="subheading mb-3">Developers</div>
+		<br><div class="subheading mb-3">Developers</div>
 		<ul class="fa-ul mb-0">
 			<li>
             <i class="fas fa-pizza-slice"></i> Simay G&uuml;zel
@@ -2927,10 +2937,9 @@
             <i class="fas fa-hamburger"></i> Lisa Siurina
 			</li>
 		</ul>
-
-		<pre>
 		
-		</pre>
+		<br>
+		<p> </p>
 		<div class="subheading mb-3">Learned programming Languages &amp; Tools</div>
           <ul class="list-inline dev-icons">
           <li class="list-inline-item">
