@@ -1,0 +1,97 @@
+{
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "foaf:name" : [ { "value" : "Martin Luther", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "foaf:gender" : [ { "value" : "Male", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "person:placeOfBirth" : [ { "value" : "Eisleben", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "core:dateOfBirth" : [ { "value" : "10/11/1483", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "person:placeOfDeath" : [ { "value" : "Eisleben", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "person:dateOfDeath" : [ { "value" : "18/02/1546", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "core:occupation" : [ { "value" : "Priest", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "core:occupation" : [ { "value" : "Professor", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "core:occupation" : [ { "value" : "Friar", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "core:occupation" : [ { "value" : "Theologist", 
+                                             "type" : "literal"} ] 
+  }
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "core:knownFor" : [ { "value" : "Being a seminal figure in the Protestant Reformation", 
+                                             "type" : "literal"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "foaf:img" : [ { "value" : "http://www.lodproject.github.io/4lodsake/img/imgluther.jpg", 
+                                             "type" : "uri"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "dcterms:relation" : [ { "value" : "http://lodproject/4lodsake/xml/disputatio.xml", 
+                                             "type" : "uri"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "dcterms:relation" : [ { "value" : "Septembertestament", 
+                                             "type" : "literal"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "owl:sameAs" : [ { "value" : "http://dbpedia.org/page/Martin_Luther", 
+                                             "type" : "uri"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "owl:sameAs" : [ { "value" : "https://www.wikidata.org/wiki/Q9554", 
+                                             "type" : "uri"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "foaf:knows" : [ { "value" : "http://dbpedia.org/page/Pope_Leo_X", 
+                                             "type" : "uri"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "foaf:knows" : [ { "value" : "http://www.lodproject.github.io/4lodsake/xml/pope-leo-x.xml", 
+                                             "type" : "uri"} ] 
+}
+,
+  "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" : {
+      "dcterms:relation" : [ { "value" : "http://lodproject.github.io/4lodsake/xml/protestant-reformation.xml", 
+                                             "type" : "uri"} ] 
+}
+}
+

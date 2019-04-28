@@ -102,7 +102,7 @@
           <a class="nav-link js-scroll-trigger" href="#datadescription">Data description</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#xml">xml &amp; connection</a>
+          <a class="nav-link js-scroll-trigger" href="#rdf">RDF &amp; connection</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#copyright">- Copyright -</a>
@@ -2037,19 +2037,19 @@
 		
 	
 	
-	<!-- xml section-->
+	<!-- RDF section-->
 	
 	<hr class="m-0">
 		
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="xml">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="rdf">
       <div class="w-100">
-        <h2 class="mb-5">xml &amp; data connection</h2>
+        <h2 class="mb-5">RDF &amp; data connection</h2>
 
 		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Abstract</h3>
             <div class="subheading mb-3">1. RDF &amp; TURTLE</div>
-            <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for some entities belonging to our project. All the <i>URIs</i> can be found in our <a href="https://github.com/LODproject/4lodsake" target="_blank">GitHub repository</a>.
+            <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for the most important entities belonging to our project, for a total number of <b>9</b> different URIs. All of them can be found in our <a href="https://github.com/LODproject/4lodsake" target="_blank">GitHub repository</a>.
 			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/TR/xml11-concepts/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, xml is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triples of statements, each composed of:</p>
 			<ul>
 				<li>a <i>subject</i>;
@@ -2074,7 +2074,7 @@
             <div class="subheading mb-3">Person</div>
             <p align="justify">For the entity <b>Person</b> we have created URIs for all the protagonists of our project. By clicking on the links below, you can also see the connections with other resources.</p>
 			<ul>
-				<li><b>Martin Luther</b>. See the <a data-toggle="modal" href="#xmlmartin">XML </a>file, the <a data-toggle="modal" href="#turtlemartin">TURTLE </a>file, the <a data-toggle="modal" href="#ntmartin">N-Triples</a> file or the <a data-toggle="modal" href="#graphmartin">graph</a> representation;
+				<li><b>Martin Luther</b>. See the <a data-toggle="modal" href="#xmlmartin">XML </a>file, the <a data-toggle="modal" href="#turtlemartin">TURTLE </a>file, the <a data-toggle="modal" href="#ntmartin">N-Triples</a> file, the <a data-toggle="modal" href="#jsonmartin">JSON</a> file or the <a data-toggle="modal" href="#graphmartin">graph</a> representation;
 				<li><b>John Calvin</b>. See the <a data-toggle="modal" href="#xmlcalvin">XML </a>file, the <a data-toggle="modal" href="#turtlecalvin">TURTLE </a>file or the <a data-toggle="modal" href="#graphcalvin">graph</a> representation;
 				<li><b>Pope Leo X</b> See the <a data-toggle="modal" href="#xmlmartin">XML </a>file, the <a data-toggle="modal" href="#turtleleo">TURTLE </a>file or the <a data-toggle="modal" href="#graphleo">graph</a> representation.
 			</ul>
@@ -2204,7 +2204,41 @@
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <p align="justify"><a href="http://lodproject.github.io/4lodsake/nt/martin-luther.nt" target="_blank"><img class="img-fluid" src="img/martin-luther-nt.png" alt=""></a></p>
-				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/nt/martin-luther.nt" target="_blank">here</a> or on the image to download the real <b>.nt</b> file.</p>
+				<p>This is just a preview. 
+				<br>Click <a href="http://lodproject.github.io/4lodsake/nt/martin-luther.nt" target="_blank">here</a> or on the image to download the real <b>.nt</b> file. Otherwise, click <a href="http://lodproject.github.io/4lodsake/img/martin-luther-nt.png" target="_blank">here</a> to see the image in a bigger size.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 	<!--Modal for Martin Luther JSOON-->
+  <div class="portfolio-modal modal fade" id="jsonmartin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Martin Luther: JSON</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <p align="justify"><a href="http://lodproject.github.io/4lodsake/json/martin-luther.json" target="_blank"><img class="img-fluid" src="img/martin-luther-json.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/json/martin-luther.json" target="_blank">here</a> or on the image to see the real file.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -2540,7 +2574,8 @@
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <p align="justify"><a href="http://lodproject.github.io/4lodsake/nt/disputatio.nt" target="_blank"><img class="img-fluid" src="img/disputatio-nt.png" alt=""></a></p>
-				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/nt/disputatio.nt" target="_blank">here</a> or on the image to download the real <b>.nt</b> file.</p>
+				<p>This is just a preview. 
+				<br>Click <a href="http://lodproject.github.io/4lodsake/nt/disputatio.nt" target="_blank">here</a> or on the image to download the real <b>.nt</b> file. Otherwise, click <a href="http://lodproject.github.io/4lodsake/img/disputatio-nt.png" target="_blank">here</a> to see the image in a bigger size.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -2775,7 +2810,8 @@
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <p align="justify"><a href="http://lodproject.github.io/4lodsake/nt/protestant-reformation.nt" target="_blank"><img class="img-fluid" src="img/protestant-reformation-nt.png" alt=""></a></p>
-				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/nt/protestant-reformation.nt" target="_blank">here</a> or on the image to download the real <b>.nt</b> file.</p>
+				<p>This is just a preview. 
+				<br>Click <a href="http://lodproject.github.io/4lodsake/nt/protestant-reformation.nt" target="_blank">here</a> or on the image to download the real <b>.nt</b> file. Otherwise, click <a href="http://lodproject.github.io/4lodsake/img/protestant-reformation-nt.png" target="_blank">here</a> to see the image in a bigger size.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
