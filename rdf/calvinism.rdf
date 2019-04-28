@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:dbo="http://dbpedia.org/property/"
+		 xmlns:crm="http://www.cidoc-crm.org/official_release_cidoc.html"
+		 xmlns:dcterms="http://purl.org/dc/terms/" 
+		 xmlns:dc="http://purl.org/dc/elements/1.1/"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#"
+		 xmlns:skos="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">
+
+<skos:Concept rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/calvinism.rdf">
+	<crm:P1_is_identified_by>Calvinism</crm:P1_is_identified_by>
+	<dcterms:alternative>Reformed tradition</dcterms:alternative>
+	<dcterms:alternative>Reformed Christianity</dcterms:alternative>
+	<dcterms:alternative>Reformed Protestantism</dcterms:alternative>
+	<dcterms:alternative>The Reformed faith</dcterms:alternative>
+	<dcterms:abstract>Branch of Protestantism that follows the theological tradition set down by John Calvin</dcterms:abstract>
+	<crm:P14_carried_out_by rdf:resource="http://lodproject.github.io/4lodsake/ttl/john-calvin.rdf" />
+	<dc:isReferencedBy>"Institutio christianae religionis, Iohanne Caluuino authore"</dc:isReferencedBy>
+	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Calvinism" />
+	<owl:sameAs rdf:resource="https://www.britannica.com/topic/Calvinism" />
+	<owl:differentFrom rdf:resource="https://simple.wikipedia.org/wiki/Catholicism" />
+	<owl:differentFrom rdf:resource="http://lodproject.github.io/4lodsake/rdf/lutheranism.rdf" />
+	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
+</skos:Concept>
+</rdf:RDF>
