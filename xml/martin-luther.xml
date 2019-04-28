@@ -27,7 +27,7 @@
 	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q9554" />
 	<foaf:knows rdf:resource="http://dbpedia.org/page/Pope_Leo_X" />
     <foaf:knows rdf:resource="http://www.lodproject.github.io/4lodsake/xml/pope-leo-x.xml" />
-	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
+	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/xml/protestant-reformation.xml" />
 </foaf:Person>
 </rdf:RDF>
 
