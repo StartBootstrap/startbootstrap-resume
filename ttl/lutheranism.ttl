@@ -4,12 +4,13 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix crm: <http://www.cidoc-crm.org/official_release_cidoc.html>.
 
-<http://lodproject.github.io/pro-reformation/ttl/lutheranism.ttl> 
+<http://lodproject.github.io/4lodsake/ttl/lutheranism.ttl> 
     crm:P1_is_identified_by "Lutheranism" ;
-    dcterms:alternative "Protestantism";
     dcterms:abstract "Christian religious confession of the Protestant Reformation developed by Martin Luther" ;
-    crm:P14_carried_out_by "Martin Luther" ;
-    dc:isReferencedBy <http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl> ;
+    crm:P14_carried_out_by <http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> ;
+    dc:isReferencedBy <http://lodproject.github.io/4lodsake/ttl/disputatio.ttl> ;
     dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Lutheranism> ;
     owl:sameAs <https://www.britannica.com/topic/Lutheranism> ;
-    owl:differentFrom <https://simple.wikipedia.org/wiki/Catholicism> . 
+    owl:differentFrom <https://simple.wikipedia.org/wiki/Catholicism> ;
+	owl:differentFrom <httep://lodproject.github.io/4lodsake/ttl/calvinism.ttl> ;
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

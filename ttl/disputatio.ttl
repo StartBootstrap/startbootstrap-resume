@@ -1,19 +1,19 @@
 @prefix rdai: <http://www.rdaregistry.info/Elements/i/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dbo: <http://dbpedia.org/property/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<http://lodproject.github.io/pro-reformation/ttl/disputatio.ttl> 
+<http://lodproject.github.io/4lodsake/ttl/disputatio.ttl> 
     rdai:P40082 "Disputatio pro declaratione virtutis indulgentiarum";
-    dcterms:creator <http://lodproject.github.io/pro-reformation/ttl/martin-luther.ttl>;
+    dcterms:creator <http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl>;
     dcterms:publisher "Hieronymus Holtzel";
     dcterms:created "1517";
     dcterms:coverage "Nuremberg";
     dcterms:spatial "Berlin";
-    rdai:P40061 "95 Theses";
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/wittenberg.ttl>;
+    rdai:P40061 "Ninety-Five Theses";
     dcterms:description "Central document of the Protestant Reformation";
     dcterms:type "Broadsheet";
     dcterms:medium "Parchment";
@@ -27,4 +27,4 @@
     owl:sameAs <https://www.wdl.org/en/item/7497/>;
     owl:sameAs <http://es.dbpedia.org/page/Las_95_tesis>;
     foaf:depiction <https://upload.wikimedia.org/wikipedia/commons/8/81/95Thesen.jpg>;
-    owl:sameAs <https://www.wdl.org/en/item/7497/>.
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

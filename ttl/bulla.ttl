@@ -6,15 +6,15 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<http://lodproject.github.io/pro-reformation/ttl/bulla.ttl> 
+<http://lodproject.github.io/4lodsake/ttl/bulla.ttl> 
     rdai:P40082 "Bulla contra errores Martini Lutheri et sequacium";
     dc:alternate 'Exsurge domine';
-    dcterms:creator <http://lodproject.github.io/pro-reformation/ttl/leo-x.ttl>;
+    dcterms:creator <http://lodproject.github.io/4lodsake/ttl/pope-leo-x.ttl>;
     dcterms:created "15/6/1520";
     dcterms:coverage "Rome";
     dcterms:spatial "Rome";
     rdai:P40061 "Opposition to Martin Luther";
-    dcterms:description "A papal bull written in response to the teachings of Martin Luther, who opposed the views of the Church.";
+    dcterms:description "A papal bull written in response to the teachings of Martin Luther, who opposed the views of the Church";
     dcterms:type "Text";
     dcterms:medium "Paper";
     dcterms:format "Print";
@@ -23,4 +23,5 @@
     rdai:P40004 "Biblioteca Casanatense";
     rdai:P40048 "Biblioteca Casanatense";
     dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Exsurge-Domine>;
-    owl:sameAs <https://www.wdl.org/en/item/7497/>.
+    owl:sameAs <https://www.wdl.org/en/item/7497/>;
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:gn="http://www.geonames.org/ontology#"
+		 xmlns:dbo="http://dbpedia.org/property/"
+		 xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#" 
+		 xmlns:wn="http://www.w3.org/2006/03/wn/wn20/schema/"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#"
+		 xmlns:dcterms="http://purl.org/dc/terms/">
+
+<dbo:Place rdf:about = "http://lodproject.github.io/4lodsake/rdf/wittenberg.rdf">
+	<gn:name>Wittenberg</gn:name>
+	<gn:alternateName>Lutherstadt Wittenberg</gn:alternateName>
+	<dbo:type>City</dbo:type>
+	<dbo:areaCode>06886</dbo:areaCode>
+	<dbo:country>Germany</dbo:country>
+	<gn:countryCode>DE</gn:countryCode>
+	<wgs84_pos:lat>51° 86’ 61″ N</wgs84_pos:lat>
+	<wgs84_pos:long>12° 64’ 97″ E</wgs84_pos:long>
+	<gn:population>46 475</gn:population>
+	<dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/disputatio.rdf"/>
+	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Wittenberg" />
+	<owl:sameAs rdf:resource="http://dbpedia.org/page/Wittenberg" />
+	<owl:sameAs rdf:resource="http://yago-knowledge.org/resource/Wittenberg" />
+	<owl:differentFrom rdf:resource="http://dbpedia.org/page/Wittenberg,_Missouri"/>
+    <foaf:primaryTopic rdf:resource="https://en.wikipedia.org/wiki/Wittenberg" />
+	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
+</dbo:Place>
+</rdf:RDF>

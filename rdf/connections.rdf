@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:person="http://www.w3.org/ns/person#"
+		 xmlns:core="http://www.bbc.co.uk/ontologies/coreconcepts"
+		 xmlns:dcterms="http://purl.org/dc/terms/" 
+		 xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<foaf:Person rdf:about = "http://www.lodproject/pro-reformation/rdf/martin-luther.rdf">
+	<foaf:name>Martin Luther</foaf:name>
+	<foaf:img rdf:resource="http://www.lodproject/pro-reformation/img/martin-luther.jpg"/>
+	<person:placeOfBirth>Eisleben</person:placeOfBirth>
+	<core:dateOfBirth>10/11/1483</core:dateOfBirth>
+	<person:placeOfDeath>Eisleben</person:placeOfDeath>
+	<core:dateOfDeath>18/02/1546</core:dateOfDeath>
+	<core:occupation>Theologist</core:occupation>
+	<core:occupation>Priest</core:occupation>
+	<core:occupation>Friar</core:occupation>
+	<core:occupation>Professor</core:occupation>
+	<core:knownFor>Being a seminal figure in the Protestant Reformation</core:knownFor>
+	<owl:sameAs rdf:resource="http://dbpedia.org/page/Martin_Luther"/>
+	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q9554"/>
+	<foaf:knows rdf:resource="http://dbpedia.org/page/Pope_Leo_X"/>
+    <foaf:knows rdf:resource="http://www.lodproject/pro-reformation/rdf/pope-leo-x.rdf"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="http://www.lodproject/pro-reformation/rdf/pope-leo-x.rdf">
+	<foaf:name>Pope Leo X</foaf:name>
+</foaf:Person>
+</rdf:RDF>

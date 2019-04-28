@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:person="http://www.w3.org/ns/person#"
+		 xmlns:core="http://www.bbc.co.uk/ontologies/coreconcepts"
+		 xmlns:dcterms="http://purl.org/dc/terms/" 
+		 xmlns:dc="http://purl.org/dc/elements/1.1/"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<foaf:Person rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/pope-leo-x.rdf">
+	<foaf:name>Giovanni di Lorenzo de Medici</foaf:name>
+	<dc:alternate>Giovanni di Lorenzo de Medici</dc:alternate>
+	<foaf:gender>Male</foaf:gender>
+	<person:placeOfBirth>Florence</person:placeOfBirth>
+	<core:dateOfBirth>11/12/1475</core:dateOfBirth>
+	<person:placeOfDeath>Rome</person:placeOfDeath>
+	<core:dateOfDeath>1/12/1521</core:dateOfDeath>
+	<core:occupation>Pope</core:occupation>
+	<core:knownFor>Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised</core:knownFor>
+	<core:traditionMovement>Cattolicism</core:traditionMovement>
+	<foaf:img rdf:resource="http://www.lodproject.github.io/4lodsake/img/imgleo.jpg"/>
+    <dcterms:relation rdf:resource="http://www.lodproject.github.io/4lodsake/rdf/bulla.rdf" />
+	<owl:sameAs rdf:resource="http://dbpedia.org/page/Pope_Leo_X" />
+	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q49237" />
+	<foaf:knows rdf:resource="http://dbpedia.org/page/Martin_Luther"/>
+    <foaf:knows rdf:resource="http://www.lodproject.github.io/4lodsake/rdf/martin-luther.rdf" />
+	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
+</foaf:Person>
+</rdf:RDF>

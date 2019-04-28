@@ -4,8 +4,9 @@
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix wn: <http://www.w3.org/2006/03/wn/wn20/schema/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
 
-<http://lodproject.github.io/pro-reformation/ttl/wittenberg.ttl> 
+<http://lodproject.github.io/4lodsake/ttl/wittenberg.ttl> 
     gn:name "Wittenberg";
     gn:alternateName "Lutherstadt Wittenberg";
     dbo:type "City";
@@ -15,8 +16,10 @@
     wgs84_pos:lat "51° 86’ 61″ N";
     wgs84_pos:long "12° 64’ 97″ E";
     gn:population "46 475";
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/disputatio.ttl>;
     dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Wittenberg>;
     owl:sameAs <http://dbpedia.org/page/Wittenberg>;
     owl:sameAs <http://yago-knowledge.org/resource/Wittenberg>;
     owl:differentFrom <http://dbpedia.org/page/Wittenberg,_Missouri>;
-    foaf:primaryTopic <https://en.wikipedia.org/wiki/Wittenberg>.
+    foaf:primaryTopic <https://en.wikipedia.org/wiki/Wittenberg>;
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

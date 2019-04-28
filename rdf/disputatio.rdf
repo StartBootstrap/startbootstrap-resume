@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:dbo="http://dbpedia.org/property/"
+		 xmlns:rdai="http://www.rdaregistry.info/Elements/i/"
+		 xmlns:dcterms="http://purl.org/dc/terms/" 
+		 xmlns:dc="http://purl.org/dc/elements/1.1/"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<dbo:Thing rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/disputatio.rdf">
+	<rdai:P40082>"Disputatio pro declaratione virtutis indulgentiarum"</rdai:P40082>
+	<dcterms:creator rdf:resource="http://lodproject.github.io/4lodsake/rdf/martin-luther.rdf"/>
+	<dcterms:publisher>Hieronymus Holtzel</dcterms:publisher>
+	<dcterms:created>1517</dcterms:created>
+	<dcterms:coverage>Nuremberg</dcterms:coverage>
+	<dcterms:spatial>Berlin</dcterms:spatial>
+	<dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/wittenberg.rdf"/>
+	<rdai:P40061>Ninety-Five theses</rdai:P40061>
+	<dcterms:description>Central document of the Protestant Reformation</dcterms:description>
+	<dcterms:type>Broadsheet</dcterms:type>
+	<dcterms:medium>Parchment</dcterms:medium>
+	<dcterms:format>Print</dcterms:format>
+	<rdai:P40010>Two pages</rdai:P40010>
+	<dc:language>Latin</dc:language>
+	<rdai:P40001>SBB00003DCA00000000</rdai:P40001>
+	<rdai:P40004>Staatsbibliothek zu Berlin</rdai:P40004>
+	<rdai:P40048>Staatsbibliothek zu Berlin</rdai:P40048>
+	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Ninety-five_Theses" />
+	<owl:sameAs rdf:resource="https://www.wdl.org/en/item/7497/" />
+	<owl:sameAs rdf:resource="http://es.dbpedia.org/page/Las_95_tesis" />
+	<foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/8/81/95Thesen.jpg" />
+	<dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/protestant-reformation.rdf"/>
+</dbo:Thing>
+</rdf:RDF>

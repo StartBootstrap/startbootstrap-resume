@@ -5,19 +5,22 @@
 @prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts>.
 @prefix owl:<http://www.w3.org/2002/07/owl#>.
 
-<http://lodproject/pro-reformation.github.io/ttl/leo-x.ttl>
+<http://lodproject.github.io/4lodsake/ttl/pope-leo-x.ttl>
     foaf:Agent 'Person';
     foaf:name 'Giovanni di Lorenzo de Medici';
     dc:alternate 'Pope Leo X';
     foaf:gender 'Male';
-    person:placeOfBirth 'Firenze';
+    person:placeOfBirth 'Florence';
     core:dateOfBirth '11/12/1475';
     person:placeOfDeath 'Rome';
     core:dateOfDeath '1/12/1521';
     core:occupation 'Pope';
-    core:knownFor 'Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised.';
+    core:knownFor 'Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised';
     core:traditionMovement 'Cattolicism';
-    dcterms:relation <http://lodproject/pro-reformation.github.io/ttl/bulla.ttl>;
+	foaf:img <http://www.lodproject.github.io/4lodsake/img/imgleo.jpg>;
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/bulla.ttl>;
     owl:sameAs <http://dbpedia.org/page/Pope_Leo_X>;
-    owl:sameAs <https://en.wikipedia.org/wiki/Pope_Leo_X>;
-    foaf:knows <http://lodproject/pro-reformation.github.io/ttl/martin-luther.ttl>.
+    owl:sameAs <https://www.wikidata.org/wiki/Q49237>;
+	foaf:knows <http://dbpedia.org/page/Martin_Luther>;
+    foaf:knows <http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl>;
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

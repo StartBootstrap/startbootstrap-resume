@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:dbo="http://dbpedia.org/property/"
+		 xmlns:rdai="http://www.rdaregistry.info/Elements/i/"
+		 xmlns:dcterms="http://purl.org/dc/terms/" 
+		 xmlns:dc="http://purl.org/dc/elements/1.1/"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<dbo:Thing rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/bulla.rdf">
+	<rdai:P40082>"Bulla contra errores Martini Lutheri et sequacium"</rdai:P40082>
+	<dc:alternate>"Exsurge Domine"</dc:alternate>
+	<dcterms:creator rdf:resource="http://lodproject.github.io/4lodsake/rdf/pope-leo-x.rdf"/>
+	<dcterms:created>15/6/1520</dcterms:created>
+	<dcterms:coverage>Rome</dcterms:coverage>
+	<dcterms:spatial>Rome</dcterms:spatial>
+	<rdai:P40061>Opposition to Martin Luther</rdai:P40061>
+	<dcterms:description>A papal bull written in response to the teachings of Martin Luther, who opposed the views of the Church</dcterms:description>
+	<dcterms:type>Text</dcterms:type>
+	<dcterms:medium>Paper</dcterms:medium>
+	<dcterms:format>Print</dcterms:format>
+	<dc:language>Latin</dc:language>
+	<rdai:P40001>RMLE005568</rdai:P40001>
+	<rdai:P40004>Biblioteca Casanatense</rdai:P40004>
+	<rdai:P40048>Biblioteca Casanatense</rdai:P40048>
+	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Exsurge-Domine" />
+	<owl:sameAs rdf:resource="https://www.wdl.org/en/item/7497/" />
+	<dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/protestant-reformation.rdf"/>
+</dbo:Thing>
+</rdf:RDF>
