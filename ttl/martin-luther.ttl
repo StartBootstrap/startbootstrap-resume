@@ -5,23 +5,29 @@
 @prefix owl:<http://www.w3.org/2002/07/owl#>.
 
 <http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl>
-    foaf:Agent 'Person';
-    foaf:name 'Martin Luther';
-    foaf:gender 'Male';
-    person:placeOfBirth 'Eisleben';
-    core:dateOfBirth '10/11/1483';
-    person:placeOfDeath 'Eisleben';
-    core:dateOfDeath '18/02/1546';
-    core:occupation 'Theologist';
+	foaf:Agent 'Person';
+	foaf:name 'Martin Luther';
+	foaf:gender 'Male';
+	person:placeOfBirth 'Eisleben';
+	core:dateOfBirth '10/11/1483';
+	person:placeOfDeath 'Eisleben';
+	core:dateOfDeath '18/02/1546';
+	core:occupation 'Theologist';
 	core:occupation 'Priest';
 	core:occupation 'Friar';
 	core:occupation 'Professor';
-    core:knownFor 'Being a seminal figure in the Protestant Reformation';
+	core:knownFor 'Being a seminal figure in the Protestant Reformation';
 	foaf:img <http://www.lodproject.github.io/4lodsake/img/imgluther.jpg>;
-    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/disputatio.ttl>;
-    dcterms:relation '"Septembertestament"';
-    owl:sameAs <http://dbpedia.org/page/Martin_Luther>;
-    owl:sameAs <https://www.wikidata.org/wiki/Q9554>;
-    foaf:knows <http://dbpedia.org/page/Pope_Leo_X>;
+	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/disputatio.ttl>;
+	dcterms:relation '"Septembertestament"';
+	owl:sameAs <http://dbpedia.org/page/Martin_Luther>;
+	owl:sameAs <https://www.wikidata.org/wiki/Q9554>;
+	foaf:knows <http://dbpedia.org/page/Pope_Leo_X>;
 	foaf:knows <http://www.lodproject.github.io/4lodsake/ttl/pope-leo-x.ttl>;
 	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.
+	
+	
+	
+	
+	
+	

@@ -9,10 +9,10 @@
 		 xmlns:dc="http://purl.org/dc/elements/1.1/"
 		 xmlns:owl="http://www.w3.org/2002/07/owl#">
 
-<dbo:Thing rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/bulla.rdf">
+<dbo:Thing rdf:about = "http://www.lodproject.github.io/4lodsake/xml/bulla.xml">
 	<rdai:P40082>"Bulla contra errores Martini Lutheri et sequacium"</rdai:P40082>
 	<dc:alternate>"Exsurge Domine"</dc:alternate>
-	<dcterms:creator rdf:resource="http://lodproject.github.io/4lodsake/rdf/pope-leo-x.rdf"/>
+	<dcterms:creator rdf:resource="http://lodproject.github.io/4lodsake/xml/pope-leo-x.xml"/>
 	<dcterms:created>15/6/1520</dcterms:created>
 	<dcterms:coverage>Rome</dcterms:coverage>
 	<dcterms:spatial>Rome</dcterms:spatial>
@@ -27,6 +27,6 @@
 	<rdai:P40048>Biblioteca Casanatense</rdai:P40048>
 	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Exsurge-Domine" />
 	<owl:sameAs rdf:resource="https://www.wdl.org/en/item/7497/" />
-	<dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/protestant-reformation.rdf"/>
+	<dcterms:relation rdf:resource="http://lodproject/4lodsake/xml/protestant-reformation.xml"/>
 </dbo:Thing>
 </rdf:RDF>

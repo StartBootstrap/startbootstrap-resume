@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:rdf xmlns:xml="http://www.w3.org/1999/02/22-xml-syntax-ns#"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
-		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:xmls="http://www.w3.org/2000/01/xml-schema#"
 		 xmlns:person="http://www.w3.org/ns/person#"
 		 xmlns:core="http://www.bbc.co.uk/ontologies/coreconcepts"
 		 xmlns:dcterms="http://purl.org/dc/terms/" 
 		 xmlns:owl="http://www.w3.org/2002/07/owl#">
 
-<foaf:Person rdf:about = "http://www.lodproject/pro-reformation/rdf/martin-luther.rdf">
+<foaf:Person rdf:about = "http://www.lodproject/pro-reformation/xml/martin-luther.xml">
 	<foaf:name>Martin Luther</foaf:name>
 	<foaf:img rdf:resource="http://www.lodproject/pro-reformation/img/martin-luther.jpg"/>
 	<person:placeOfBirth>Eisleben</person:placeOfBirth>
@@ -23,10 +23,10 @@
 	<owl:sameAs rdf:resource="http://dbpedia.org/page/Martin_Luther"/>
 	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q9554"/>
 	<foaf:knows rdf:resource="http://dbpedia.org/page/Pope_Leo_X"/>
-    <foaf:knows rdf:resource="http://www.lodproject/pro-reformation/rdf/pope-leo-x.rdf"/>
+    <foaf:knows rdf:resource="http://www.lodproject/pro-reformation/xml/pope-leo-x.xml"/>
 </foaf:Person>
 
-<foaf:Person rdf:about="http://www.lodproject/pro-reformation/rdf/pope-leo-x.rdf">
+<foaf:Person rdf:about="http://www.lodproject/pro-reformation/xml/pope-leo-x.xml">
 	<foaf:name>Pope Leo X</foaf:name>
 </foaf:Person>
-</rdf:RDF>
+</rdf:rdf>

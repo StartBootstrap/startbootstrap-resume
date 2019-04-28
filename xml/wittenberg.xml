@@ -10,7 +10,7 @@
 		 xmlns:owl="http://www.w3.org/2002/07/owl#"
 		 xmlns:dcterms="http://purl.org/dc/terms/">
 
-<dbo:Place rdf:about = "http://lodproject.github.io/4lodsake/rdf/wittenberg.rdf">
+<dbo:Place rdf:about = "http://lodproject.github.io/4lodsake/xml/wittenberg.xml">
 	<gn:name>Wittenberg</gn:name>
 	<gn:alternateName>Lutherstadt Wittenberg</gn:alternateName>
 	<dbo:type>City</dbo:type>
@@ -20,7 +20,7 @@
 	<wgs84_pos:lat>51° 86’ 61″ N</wgs84_pos:lat>
 	<wgs84_pos:long>12° 64’ 97″ E</wgs84_pos:long>
 	<gn:population>46 475</gn:population>
-	<dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/disputatio.rdf"/>
+	<dcterms:relation rdf:resource="http://lodproject/4lodsake/xml/disputatio.xml"/>
 	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Wittenberg" />
 	<owl:sameAs rdf:resource="http://dbpedia.org/page/Wittenberg" />
 	<owl:sameAs rdf:resource="http://yago-knowledge.org/resource/Wittenberg" />

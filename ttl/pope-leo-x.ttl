@@ -17,10 +17,10 @@
     core:occupation 'Pope';
     core:knownFor 'Being the Pope who introduced the sale of indulgences, from which the controversy of Martin Luther arised';
     core:traditionMovement 'Cattolicism';
-	foaf:img <http://www.lodproject.github.io/4lodsake/img/imgleo.jpg>;
+    foaf:img <http://www.lodproject.github.io/4lodsake/img/imgleo.jpg>;
     dcterms:relation <http://lodproject.github.io/4lodsake/ttl/bulla.ttl>;
     owl:sameAs <http://dbpedia.org/page/Pope_Leo_X>;
     owl:sameAs <https://www.wikidata.org/wiki/Q49237>;
-	foaf:knows <http://dbpedia.org/page/Martin_Luther>;
+    foaf:knows <http://dbpedia.org/page/Martin_Luther>;
     foaf:knows <http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl>;
-	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

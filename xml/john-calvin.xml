@@ -9,7 +9,7 @@
 		 xmlns:dc="http://purl.org/dc/elements/1.1/"
 		 xmlns:owl="http://www.w3.org/2002/07/owl#">
 
-<foaf:Person rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/john-calvin.rdf">
+<foaf:Person rdf:about = "http://www.lodproject.github.io/4lodsake/xml/john-calvin.xml">
 	<foaf:name>John Calvin</foaf:name>
 	<foaf:gender>Male</foaf:gender>
 	<person:placeOfBirth>Noyon</person:placeOfBirth>
@@ -18,14 +18,14 @@
 	<core:dateOfDeath>27/5/1564</core:dateOfDeath>
 	<core:occupation>Theologist</core:occupation>
 	<core:occupation>Pastor</core:occupation>
-	<core:traditionMovement rdf:resource="http://lodproject.github.io/4lodsake/rdf/calvinism.rdf" />
+	<core:traditionMovement rdf:resource="http://lodproject.github.io/4lodsake/xml/calvinism.xml" />
 	<core:knownFor>Being the principal figure in the development of Calvinism</core:knownFor>
 	<foaf:img rdf:resource="http://www.lodproject.github.io/4lodsake/img/imgcalvin.jpg"/>
     <dcterms:relation>"Institutio christianae religionis, Iohanne Caluuino authore"</dcterms:relation>
 	<owl:sameAs rdf:resource="http://dbpedia.org/page/John_Calvin" />
 	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q37577" />
 	<foaf:knows rdf:resource="https://en.wikipedia.org/wiki/John_Calvin"/>
-    <foaf:knows rdf:resource="http://www.lodproject.github.io/4lodsake/rdf/martin-luther.rdf" />
+    <foaf:knows rdf:resource="http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" />
 	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
 </foaf:Person>
 </rdf:RDF>

@@ -99,7 +99,7 @@
           <a class="nav-link js-scroll-trigger" href="#datadescription">Data description</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#rdf">RDF &amp; connection</a>
+          <a class="nav-link js-scroll-trigger" href="#xml">xml &amp; connection</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#copyright">- Copyright -</a>
@@ -1037,7 +1037,7 @@
 				<tr>
 					<td>Document</td>
 					<td><i>“Bulla contra errores Martini Lutheri & sequacium”</i></td>
-					<td><a href="http://www.culturaitalia.it/opencms/opencms/system/modules/culturaitalia/templates/viewItem.jsp?language=it&case=&id=oai%3Awww.internetculturale.it%2Fmetaoaicat%3Aoai%3Awww.internetculturale.sbn.it%2FTeca%3A20%3ANT0000%3ARMLE005568" target="_blank">CulturaItalia</a> (<a href="http://opac.casanatense.it/Record.htm?idlist=1&record=10111102124929393849" target="_blank">Biblioteca Casanatense</a>)</td>
+					<td><a href="http://www.culturaitalia.it/opencms/opencms/system/modules/culturaitalia/templates/viewItem.jsp?language=it&case=&id=oai%3Awww.internetculturale.it%2Fmetaoaicat%3Aoai%3Awww.internetculturale.sbn.it%2FTeca%3A20%3ANT0000%3ARMLE005568" target="_blank">CulturaItalia</a></td>
 					<td><a href="http://www.culturaitalia.it/opencms/export/sites/culturaitalia/attachments/documenti/picoap/picoap1.0.xml" target="_blank">PICO</a></td>
 				</tr>
 				<tr>
@@ -1049,7 +1049,7 @@
 				<tr>
 					<td>Photograph</td>
 					<td><i>"Memorial stone to the 400th anniversary of the Reformation"</i></td>
-					<td><a href="https://www.europeana.eu/portal/it/record/2048417/item_AH6QQNATTHUAM3PF5TQEWZFH3HMAD67L.html?q=reformation#dcId=1554195429282&p=16" target="_blank">Europeana</a> (<a href="http://www.deutschefotothek.de/documents/obj/33028140" target="_blank">Deutsche National Bibliothek</a>)</td>
+					<td><a href="https://www.europeana.eu/portal/it/record/2048417/item_AH6QQNATTHUAM3PF5TQEWZFH3HMAD67L.html?q=reformation#dcId=1554195429282&p=16" target="_blank">Europeana</a></td>
 					<td><a href="https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Mapping_Guidelines_v2.4_102017.pdf" target="_blank">EDM</a></td>
 				</tr>
 				<tr>
@@ -1147,7 +1147,7 @@
             <p align="justify">In an event-centric approach, as the one we decided to use in our project, the representation and description of <b>places</b> is mandatory. In the context of the description of the entity PLACE, we used the most used ontologies in this field:
 				<ul>
 					<li align="justify"><a href="http://www.geonames.org/ontology/documentation.html" target="_blank"><b>GeoName Ontology</b></a> (GN), excellent in adding geospatial semantic information to the Word Wide Web because of its 11 million geonames toponyms that have an unique URL;</li>
-					<li align="justify"><a href="https://www.w3.org/2003/01/geo/" target="_blank"><b>Basic Geo (WGS84) Vocabulary</b></a>, a basic RDF vocabulary that provides the Semantic Web community only with a namespace for representing latitude and longitude;</li>
+					<li align="justify"><a href="https://www.w3.org/2003/01/geo/" target="_blank"><b>Basic Geo (WGS84) Vocabulary</b></a>, a basic xml vocabulary that provides the Semantic Web community only with a namespace for representing latitude and longitude;</li>
 					<li align="justify"><a href="https://wiki.dbpedia.org/services-resources/ontology" target="_blank"><b>DBpedia</b></a>, when the previous two lacked of certain properties (such as <i>Country</i> or <i>Abstract</i> as a brief description of the place).</li>
 				</ul>
 				</p>
@@ -2034,28 +2034,28 @@
 		
 	
 	
-	<!-- RDF section-->
+	<!-- xml section-->
 	
 	<hr class="m-0">
 		
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="rdf">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="xml">
       <div class="w-100">
-        <h2 class="mb-5">RDF &amp; data connection</h2>
+        <h2 class="mb-5">xml &amp; data connection</h2>
 
 		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Abstract</h3>
             <div class="subheading mb-3">1. RDF &amp; TURTLE</div>
             <p align="justify">In this section we create <i>URIs</i> (<i>Uniform Resource Identifiers</i>: strings of characters that unambiguously identify a resource) for some entities belonging to our project. All the <i>URIs</i> can be found in our <a href="https://github.com/LODproject/4lodsake" target="_blank">GitHub repository</a>.
-			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/TR/rdf11-concepts/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, RDF is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triples of statements, each composed of:</p>
+			<br>Thus, we described our chosen entities through <a href="https://www.w3.org/TR/xml11-concepts/" target="_blank">RDF</a> (Resource Description Framework), a language for representing information about resources in the World Wide Web. In fact, xml is based on the idea of identifying things using Web identifiers (URIs) and then connecting them to simple properties and values, in order to create triples of statements, each composed of:</p>
 			<ul>
 				<li>a <i>subject</i>;
 				<li>a <i>predicate</i>;
 				<li>an <i>object</i>.
 			</ul>
-			<p align="justify">We have decided to propose a graphical serialization of our RDF description through the web service <a href="http://www.ldf.fi/service/rdf-grapher" target="_blank">RDF Grapher</a>, useful for parsing RDF data and visualizing it as a graph. As output image format, we choose the <a href="https://www.w3.org/2007/02/turtle/primer/" target="_blank">Turtle</a> serialization syntax. This serialization is divided in two parts:
+			<p align="justify">We have decided to propose a graphical serialization of our RDF description through the web service <a href="http://www.ldf.fi/service/xml-grapher" target="_blank">RDF Grapher</a>, useful for parsing RDF data and visualizing it as a graph. As output image format, we choose the <a href="https://www.w3.org/2007/02/turtle/primer/" target="_blank">Turtle</a> serialization syntax. This serialization is divided in two parts:
 			<ul>
-				<li align="justify">The first one contains the <b>@prefix</b> keywords, i.e. the namespace declarations: they are the association of a prefix used in the document with a URI, linked to the official documentation of the used ontology. The Turtle syntax provides a number of abbreviations (e.g. '<i>crm</i>' for  CIDOC-CRM) to make common uses easier to write;</li>
+				<li align="justify">The first one contains the <b>@prefix</b> keywords, i.e. the namespace declarations: they are the association of a prefix used in the document with a URI, linked to the official documentation of the used ontology. The TURTLE syntax provides a number of abbreviations (e.g. '<i>crm</i>' for  CIDOC-CRM) to make common uses easier to write;</li>
 				<li align="justify">The second one is made of <b>triples</b>, that firstly identify the subject, here always as a <i>URI</i>, and secondly all the relative properties and values (that could be URIs or literals).</li>
 			</ul>
 			</p>
@@ -2071,9 +2071,9 @@
             <div class="subheading mb-3">Person</div>
             <p align="justify">For the entity <b>Person</b> we have created URIs for all the protagonists of our project. By clicking on the links below, you can also see the connections with other resources.</p>
 			<ul>
-				<li><b>Martin Luther</b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/martin-luther.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfmartin">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtlemartin">TURTLE graph</a>;
-				<li><b>John Calvin</b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/john-calvin.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfcalvin">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtlecalvin">TURTLE graph</a>;
-				<li><b>Pope Leo X</b> See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/pope-leo-x.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfleo">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtleleo">TURTLE graph</a>.
+				<li><b>Martin Luther</b>. See the <a data-toggle="modal" href="#xmlmartin">XML </a>file, the <a data-toggle="modal" href="#xmlmartin">TURTLE </a>file or the <a data-toggle="modal" href="#turtlemartin">graph</a> representation;
+				<li><b>John Calvin</b>. See the <a data-toggle="modal" href="#xmlcalvin">XML </a>file, the <a data-toggle="modal" href="#xmlcalvin">TURTLE </a>file or the <a data-toggle="modal" href="#turtlecalvin">graph</a> representation;
+				<li><b>Pope Leo X</b> See the <a data-toggle="modal" href="#xmlmartin">XML </a>file, the <a data-toggle="modal" href="#xmlleo">TURTLE </a>file or the <a data-toggle="modal" href="#turtleleo">graph</a> representation.
 			</ul>
           </div>
         </div>	
@@ -2084,20 +2084,20 @@
             <div class="subheading mb-3">Artifact</div>
             <p>For the entity <b>Artifact</b> we have created URIs and RDF framework for:
 			<ul>
-				<li><b><i>"Disputatio pro declaratione virtutis indulgentiarum"</i></b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/disputatio.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfdisputatio">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtledisputatio">TURTLE graph</a>;
-				<li><b><i>"Bulla contra errores Martini Lutheri &amp; sequacium"</i></b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/bulla.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfbulla">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtlebulla">TURTLE graph</a>.
+				<li><b><i>"Disputatio pro declaratione virtutis indulgentiarum"</i></b>. See the <a data-toggle="modal" href="#xmldisputatio">XML </a>file, the <a data-toggle="modal" href="#xmldisputatio">TURTLE </a>file or the <a data-toggle="modal" href="#turtledisputatio">graph</a> representation;
+				<li><b><i>"Bulla contra errores Martini Lutheri &amp; sequacium"</i></b>. See the <a data-toggle="modal" href="#xmlbulla">XML </a>file, the <a data-toggle="modal" href="#xmlbulla">TURTLE </a>file or the <a data-toggle="modal" href="#turtlebulla">graph</a> representation.
 			</ul>
 			<div class="subheading mb-3">Event</div>
             <p>For the <b>Event</b> category, we analyzed our only event: 
 			<ul>
-				<li><b>Protestant Reformation</b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/protestant-reformation.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfproref">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtleproref">TURTLE graph</a>.
+				<li><b>Protestant Reformation</b>. See the <a data-toggle="modal" href="#xmlproref">XML </a>file, the <a data-toggle="modal" href="#xmlproref">TURTLE </a>file or the <a data-toggle="modal" href="#turtleproref">graph</a> representation.
 			</ul>
 			</p>
 			<div class="subheading mb-3">Concept</div>
             <p>Here, we present the concepts underlying our artifacts and connected to our event:</p>
 			<ul>
-				<li><b>Lutheranism</b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/lutheranism.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdflutheranism">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtlelutheranism">TURTLE graph</a>;
-				<li><b>Calvinism</b>. See the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/calvinism.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfcalvinism">TURTLE syntax</a> or the <a data-toggle="modal" href="#turtlecalvinism">TURTLE graph</a>.
+				<li><b>Lutheranism</b>. See the <a data-toggle="modal" href="#xmllutheranism">XML </a>file, the <a data-toggle="modal" href="#xmllutheranism">TURTLE </a>file or the <a data-toggle="modal" href="#turtlelutheranism"> graph</a> representation;
+				<li><b>Calvinism</b>. See the <a data-toggle="modal" href="#xmlcalvinism"">XML </a>file, the <a data-toggle="modal" href="#xmlcalvinism">TURTLE </a>file or the <a data-toggle="modal" href="#turtlecalvinism"> graph</a> representation.
 			</ul>
           </div>
         </div>
@@ -2108,7 +2108,7 @@
             <div class="subheading mb-3">Places</div>
             <p>Regarding the <b>Place</b> entity, in this section we have chosen to describe our place par excellence:
 			<ul>
-				<li><b>Wittenberg</b>. See it in the <a data-toggle="modal" href="http://lodproject.github.io/4lodsake/rdf/wittenberg.rdf" target="_blank">XML syntax</a>, the <a data-toggle="modal" href="#rdfwitt">TURTLE syntax</a> or in the <a data-toggle="modal" href="#turtlewitt">TURTLE graph</a>.
+				<li><b>Wittenberg</b>. See it in the <a data-toggle="modal" href="#xmlwitt">XML </a>file, the <a data-toggle="modal" href="#xmlwitt">TURTLE </a>file or in the <a data-toggle="modal" href="#turtlewitt"> graph</a> representation.
 			</ul>
 			</p>
 			</div>
@@ -2117,15 +2117,15 @@
     </section>
 
 
-	<!--Modal for Martin Luther RDF-->
-  <div class="portfolio-modal modal fade" id="rdfmartin" tabindex="-1" role="dialog" aria-hidden="true">
+ 	<!--Modal for Martin Luther XML-->
+  <div class="portfolio-modal modal fade" id="xmlmartin" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Martin Luther: RDF</h4>
+					<h4 class="modal-title">Martin Luther: XML</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2134,27 +2134,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <pre><small>@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
-@prefix dcterms: < http://purl.org/dc/terms/ >.
-@prefix person: < http://www.w3.org/ns/person# >.
-@prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
-@prefix owl: < http://www.w3.org/2002/07/owl# >.
-
-< http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl >
-    foaf:Agent 'Person';
-    foaf:name 'Martin Luther';
-    foaf:gender 'Male';
-    person:placeOfBirth 'Eisleben';
-    core:dateOfBirth '10/11/1483';
-    person:placeOfDeath 'Eisleben';
-    core:dateOfDeath '18/02/1546';
-    core:occupation 'Theologist';
-    core:knownFor 'Being a seminal figure in the Protestant Reformation';
-    dcterms:relation < http://lodproject.github.io/4lodsake/ttl/disputatio.ttl >;
-    dcterms:relation 'Septemertestament';
-    owl:sameAs < http://dbpedia.org/page/Martin_Luther >;
-    owl:sameAs < https://www.wikidata.org/wiki/Q9554 >;
-    foaf:knows < http://dbpedia.org/page/Pope_Leo_X >.</pre></small>
+                <p align="justify"><a href="http://lodproject.github.io/4lodsake/xml/martin-luther.xml" target="_blank"><img class="img-fluid" src="img/martin-luther-xml.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/xml/martin-luther.xml" target="_blank">here</a> or on the image to see the real file.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -2170,7 +2151,7 @@
   
  
  	<!--Modal for Martin Luther TURTLE-->
-  <div class="portfolio-modal modal fade" id="turtlemartin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="xmlmartin" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -2186,8 +2167,41 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
+                <p align="justify"><a href="http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl" target="_blank"><img class="img-fluid" src="img/martin-luther-ttl.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl" target="_blank">here</a> or on the image to see the real file.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+ 	<!--Modal for Martin Luther GRAPH-->
+  <div class="portfolio-modal modal fade" id="turtlemartin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Martin Luther: graph</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
                 <p align="justify"><a href="http://lodproject.github.io/4lodsake/img/martin-luther.png" target="_blank"><img class="img-fluid" src="img/martin-luther.png" alt=""></a></p>
-				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/img/martin-luther.png" target="_blank">here</a> to see it bigger.</p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/img/martin-luther.png" target="_blank">here</a> or on the image to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -2202,15 +2216,18 @@
   </div>
 
   
-  	<!--Modal for Calvin RDF-->
-  <div class="portfolio-modal modal fade" id="rdfcalvin" tabindex="-1" role="dialog" aria-hidden="true">
+  
+  
+  
+ 	<!--Modal for Calvin XML-->
+  <div class="portfolio-modal modal fade" id="xmlmartin" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">John Calvin: RDF</h4>
+					<h4 class="modal-title">John Calvin: XML</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2219,29 +2236,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <pre><small>@prefix foaf: < http://xmlns.com/foaf/0.1/ >.
-@prefix dcterms: < http://purl.org/dc/terms/ >.
-@prefix person: < http://www.w3.org/ns/person# >.
-@prefix core: < http://www.bbc.co.uk/ontologies/coreconcepts >.
-@prefix owl:< http://www.w3.org/2002/07/owl# >.
-
-< http://lodproject/4lodsake.github.io/ttl/john-calvin.ttl >
-    foaf:Agent 'Person';
-    foaf:name 'John Calvin';
-    foaf:gender 'Male';
-    person:placeOfBirth 'Noyon';
-    core:dateOfBirth '10/7/1509';
-    person:placeOfDeath 'Geneva';
-    core:dateOfDeath '27/5/1564';
-    core:occupation 'Theologist', 'Pastor';
-    core:traditionMovement < http://lodproject/4lodsake.github.io/ttl/calvinism.ttl >;
-    core:knownFor 'Being the principal figure in the development of Calvinism';
-    dcterms:relation "Institutio christianae religionis, Iohanne Caluuino authore";
-    owl:sameAs < http://dbpedia.org/page/John_Calvin >;
-    owl:sameAs < https://en.wikipedia.org/wiki/John_Calvin >;
-    foaf:knows < http://lodproject/4lodsake.github.io/ttl/martin-luther.ttl >.
-
-				</pre></small>
+                <p align="justify"><a href="http://lodproject.github.io/4lodsake/xml/john-calvin.xml" target="_blank"><img class="img-fluid" src="img/john-calvin-xml.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/xml/john-calvin.xml" target="_blank">here</a> or on the image to see the real file.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -2257,7 +2253,7 @@
   
  
  	<!--Modal for Calvin TURTLE-->
-  <div class="portfolio-modal modal fade" id="turtlecalvin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="xmlmartin" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -2273,8 +2269,41 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
+                <p align="justify"><a href="http://lodproject.github.io/4lodsake/ttl/john-calvin.ttl" target="_blank"><img class="img-fluid" src="img/john-calvin-ttl.png" alt=""></a></p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/ttl/john-calvin.ttl" target="_blank">here</a> or on the image to see the real file.</p>
+
+				        <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  	<!--Modal for Calvin GRAPH-->
+  <div class="portfolio-modal modal fade" id="turtlemartin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">John Calvin: graph</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
                 <p align="justify"><a href="http://lodproject.github.io/4lodsake/img/john-calvin.png" target="_blank"><img class="img-fluid" src="img/john-calvin.png" alt=""></a></p>
-				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/img/john-calvin.png" target="_blank">here</a> to see it bigger.</p>
+				<p>This is just a preview. Click <a href="http://lodproject.github.io/4lodsake/img/john-calvin.png" target="_blank">here</a> or on the image to see it bigger.</p>
 
 				        <div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal"> <i class="fas fa-times"></i>
@@ -2288,16 +2317,18 @@
     </div>
   </div>
   
+  
+  
 
-       	<!--Modal for Leo RDF-->
-  <div class="portfolio-modal modal fade" id="rdfleo" tabindex="-1" role="dialog" aria-hidden="true">
+       	<!--Modal for Leo xml-->
+  <div class="portfolio-modal modal fade" id="xmlleo" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Pope Leo X: RDF</h4>
+					<h4 class="modal-title">Pope Leo X: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2377,15 +2408,15 @@
     </div>
   </div>
  
-   	<!--Modal for Disputatio RDF-->
-  <div class="portfolio-modal modal fade" id="rdfdisputatio" tabindex="-1" role="dialog" aria-hidden="true">
+   	<!--Modal for Disputatio xml-->
+  <div class="portfolio-modal modal fade" id="xmldisputatio" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Disputatio pro declaratione virtutis indulgentiarum: RDF</h4>
+					<h4 class="modal-title">Disputatio pro declaratione virtutis indulgentiarum: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2472,15 +2503,15 @@
   </div>
   
  
-   	<!--Modal for Bulla RDF-->
-  <div class="portfolio-modal modal fade" id="rdfbulla" tabindex="-1" role="dialog" aria-hidden="true">
+   	<!--Modal for Bulla xml-->
+  <div class="portfolio-modal modal fade" id="xmlbulla" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Bulla contra errores Martini Lutheri: RDF</h4>
+					<h4 class="modal-title">Bulla contra errores Martini Lutheri: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2563,15 +2594,15 @@
   </div>
   
   
-   	<!--Modal for Protestant Reformation RDF-->
-  <div class="portfolio-modal modal fade" id="rdfproref" tabindex="-1" role="dialog" aria-hidden="true">
+   	<!--Modal for Protestant Reformation xml-->
+  <div class="portfolio-modal modal fade" id="xmlproref" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Protestant Reformation: RDF</h4>
+					<h4 class="modal-title">Protestant Reformation: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2649,15 +2680,15 @@
   </div>
 
  
-   	<!--Modal for Lutheranism RDF-->
-  <div class="portfolio-modal modal fade" id="rdflutheranism" tabindex="-1" role="dialog" aria-hidden="true">
+   	<!--Modal for Lutheranism xml-->
+  <div class="portfolio-modal modal fade" id="xmllutheranism" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Lutheranism: RDF</h4>
+					<h4 class="modal-title">Lutheranism: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2727,15 +2758,15 @@
     </div>
   </div>
 
-    	<!--Modal for Calvinism RDF-->
-  <div class="portfolio-modal modal fade" id="rdfcalvinism" tabindex="-1" role="dialog" aria-hidden="true">
+    	<!--Modal for Calvinism xml-->
+  <div class="portfolio-modal modal fade" id="xmlcalvinism" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">John Calvin: RDF</h4>
+					<h4 class="modal-title">John Calvin: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>
@@ -2809,15 +2840,15 @@
   </div>
  
  
-     	<!--Modal for Wittenberg RDF-->
-  <div class="portfolio-modal modal fade" id="rdfwitt" tabindex="-1" role="dialog" aria-hidden="true">
+     	<!--Modal for Wittenberg xml-->
+  <div class="portfolio-modal modal fade" id="xmlwitt" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"> </div>
 			        <div class="modal-header">
-					<h4 class="modal-title">Wittenberg: RDF</h4>
+					<h4 class="modal-title">Wittenberg: xml</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
           </div>

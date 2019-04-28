@@ -15,10 +15,10 @@
     core:occupation 'Theologist', 'Pastor';
     core:traditionMovement <http://lodproject.github.io/4lodsake/ttl/calvinism.ttl>;
     core:knownFor 'Being the principal figure in the development of Calvinism';
-	foaf:img <http://www.lodproject.github.io/4lodsake/img/imgcalvin.jpg>;
+    foaf:img <http://www.lodproject.github.io/4lodsake/img/imgcalvin.jpg>;
     dcterms:relation "Institutio christianae religionis, Iohanne Caluuino authore";
     owl:sameAs <http://dbpedia.org/page/John_Calvin>;
-	owl:sameAs <https://www.wikidata.org/wiki/Q37577>;
+    owl:sameAs <https://www.wikidata.org/wiki/Q37577>;
     owl:sameAs <https://en.wikipedia.org/wiki/John_Calvin>;
     foaf:knows <http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl>;
-	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

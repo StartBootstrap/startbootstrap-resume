@@ -12,7 +12,7 @@
     dcterms:created "1517";
     dcterms:coverage "Nuremberg";
     dcterms:spatial "Berlin";
-	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/wittenberg.ttl>;
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/wittenberg.ttl>;
     rdai:P40061 "Ninety-Five Theses";
     dcterms:description "Central document of the Protestant Reformation";
     dcterms:type "Broadsheet";
@@ -27,4 +27,4 @@
     owl:sameAs <https://www.wdl.org/en/item/7497/>;
     owl:sameAs <http://es.dbpedia.org/page/Las_95_tesis>;
     foaf:depiction <https://upload.wikimedia.org/wikipedia/commons/8/81/95Thesen.jpg>;
-	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

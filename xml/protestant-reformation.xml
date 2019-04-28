@@ -8,18 +8,18 @@
 		 xmlns:dc="http://purl.org/dc/elements/1.1/"
 		 xmlns:owl="http://www.w3.org/2002/07/owl#">
 
-<dbo:Event rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/protestant-reformation.rdf">
+<dbo:Event rdf:about = "http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml">
 	<crm:P1_is_identified_by>Protestant Reformation</crm:P1_is_identified_by>
 	<dc:alternate>Protestantism</dc:alternate>
 	<dc:alternate>Reformation</dc:alternate>
 	<dc:alternate>European Reformation</dc:alternate>
 	<dcterms:abstract>Schism from the Roman Catholic Church initiated by Martin Luther in 16th century</dcterms:abstract>
 	<crm:P92_brought_into_existence>1517</crm:P92_brought_into_existence>
-	<crm:P11_had_participant rdf:resource="http://www.lodproject.github.io/4lodsake/rdf/martin-luther.rdf" />
+	<crm:P11_had_participant rdf:resource="http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml" />
 	<crm:P11_had_participant>Thomas Müntzer</crm:P11_had_participant>
-	<crm:P11_had_participant rdf:resource="http://www.lodproject.github.io/4lodsake/rdf/john-calvin.rdf" />
-	<crm:P12_occured_in_the_presence_of rdf:resource="http://lodproject.github.io/4lodsake/rdf/disputatio.rdf" />
-	<crm:P12_occured_in_the_presence_of rdf:resource="http://lodproject.github.io/4lodsake/rdf/bulla.rdf" />
+	<crm:P11_had_participant rdf:resource="http://www.lodproject.github.io/4lodsake/xml/john-calvin.xml" />
+	<crm:P12_occured_in_the_presence_of rdf:resource="http://lodproject.github.io/4lodsake/xml/disputatio.xml" />
+	<crm:P12_occured_in_the_presence_of rdf:resource="http://lodproject.github.io/4lodsake/xml/bulla.xml" />
 	<crm:P12_occured_in_the_presence_of>"Septembertestament"</crm:P12_occured_in_the_presence_of>
 	<crm:P12_occured_in_the_presence_of>"Verdammnis und Erlösung"</crm:P12_occured_in_the_presence_of>
 	<dc:isReferencedBy>"Medal on the introduction of the Reformation in Saxony in 1839"</dc:isReferencedBy>
@@ -28,9 +28,9 @@
 	<dc:isReferencedBy>"Gedenkstein zum 400. Jahrestag der Reformation"</dc:isReferencedBy>
 	<dc:isReferencedBy>"Broadsheet for the Centenary of the Reformation"</dc:isReferencedBy>
 	<dc:isReferencedBy>"Gli effetti della Riforma protestante"</dc:isReferencedBy>
-	<crm:P14_carried_out_by rdf:resource="http://lodproject.github.io/4lodsake/rdf/martin-luther.rdf" />
-	<dc:motivated rdf:resource="http://lodproject.github.io/4lodsake/rdf/lutheranism.rdf" />
-	<dc:motivated rdf:resource="http://lodproject.github.io/4lodsake/rdf/calvinism.rdf" />
+	<crm:P14_carried_out_by rdf:resource="http://lodproject.github.io/4lodsake/xml/martin-luther.xml" />
+	<dc:motivated rdf:resource="http://lodproject.github.io/4lodsake/xml/lutheranism.xml" />
+	<dc:motivated rdf:resource="http://lodproject.github.io/4lodsake/xml/calvinism.xml" />
 	<dbo:wikiPageDisambiguates rdf:resource="https://en.wikipedia.org/wiki/Reformation_(disambiguation)" />
 	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Reformation" />
 	<owl:sameAs rdf:resource="https://www.britannica.com/event/Reformation" />

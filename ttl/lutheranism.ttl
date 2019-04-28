@@ -12,5 +12,5 @@
     dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Lutheranism> ;
     owl:sameAs <https://www.britannica.com/topic/Lutheranism> ;
     owl:differentFrom <https://simple.wikipedia.org/wiki/Catholicism> ;
-	owl:differentFrom <httep://lodproject.github.io/4lodsake/ttl/calvinism.ttl> ;
-	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.
+    owl:differentFrom <httep://lodproject.github.io/4lodsake/ttl/calvinism.ttl> ;
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

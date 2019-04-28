@@ -24,4 +24,4 @@
     rdai:P40048 "Biblioteca Casanatense";
     dbo:wikiPageExternalLink <https://en.wikipedia.org/wiki/Exsurge-Domine>;
     owl:sameAs <https://www.wdl.org/en/item/7497/>;
-	dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.
+    dcterms:relation <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl>.

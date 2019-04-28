@@ -8,7 +8,7 @@
 		 xmlns:dcterms="http://purl.org/dc/terms/" 
 		 xmlns:owl="http://www.w3.org/2002/07/owl#">
 
-<foaf:Person rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/martin-luther.rdf">
+<foaf:Person rdf:about = "http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml">
 	<foaf:name>Martin Luther</foaf:name>
 	<foaf:gender>Male</foaf:gender>
 	<person:placeOfBirth>Eisleben</person:placeOfBirth>
@@ -21,12 +21,13 @@
 	<core:occupation>Professor</core:occupation>
 	<core:knownFor>Being a seminal figure in the Protestant Reformation</core:knownFor>
 	<foaf:img rdf:resource="http://www.lodproject.github.io/4lodsake/img/imgluther.jpg"/>
-    <dcterms:relation rdf:resource="http://lodproject/4lodsake/rdf/disputatio.rdf"/>
+    <dcterms:relation rdf:resource="http://lodproject/4lodsake/xml/disputatio.xml"/>
     <dcterms:relation>"Septembertestament"</dcterms:relation>
 	<owl:sameAs rdf:resource="http://dbpedia.org/page/Martin_Luther" />
 	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q9554" />
 	<foaf:knows rdf:resource="http://dbpedia.org/page/Pope_Leo_X" />
-    <foaf:knows rdf:resource="http://www.lodproject.github.io/4lodsake/rdf/pope-leo-x.rdf" />
+    <foaf:knows rdf:resource="http://www.lodproject.github.io/4lodsake/xml/pope-leo-x.xml" />
 	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
 </foaf:Person>
 </rdf:RDF>
+

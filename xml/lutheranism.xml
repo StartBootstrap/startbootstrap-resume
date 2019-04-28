@@ -9,15 +9,15 @@
 		 xmlns:owl="http://www.w3.org/2002/07/owl#"
 		 xmlns:skos="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">
 
-<skos:Concept rdf:about = "http://www.lodproject.github.io/4lodsake/rdf/lutheranism.rdf">
+<skos:Concept rdf:about = "http://www.lodproject.github.io/4lodsake/xml/lutheranism.xml">
 	<crm:P1_is_identified_by>Lutheranism</crm:P1_is_identified_by>
 	<dcterms:abstract>Christian religious confession of the Protestant Reformation developed by Martin Luther</dcterms:abstract>
-	<crm:P14_carried_out_by rdf:resource="http://lodproject.github.io/4lodsake/ttl/martin-luther.rdf" />
-	<dc:isReferencedBy rdf:resource="http://lodproject.github.io/4lodsake/rdf/disputatio.rdf" />
+	<crm:P14_carried_out_by rdf:resource="http://lodproject.github.io/4lodsake/ttl/martin-luther.xml" />
+	<dc:isReferencedBy rdf:resource="http://lodproject.github.io/4lodsake/xml/disputatio.xml" />
 	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Lutheranism" />
 	<owl:sameAs rdf:resource="https://www.britannica.com/topic/Lutheranism" />
 	<owl:differentFrom rdf:resource="https://simple.wikipedia.org/wiki/Catholicism" />
-	<owl:differentFrom rdf:resource="http://lodproject.github.io/4lodsake/rdf/calvinism.rdf" />
+	<owl:differentFrom rdf:resource="http://lodproject.github.io/4lodsake/xml/calvinism.xml" />
 	<dcterms:relation rdf:resource="http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl" />
 </skos:Concept>
 </rdf:RDF>
