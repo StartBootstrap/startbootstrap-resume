@@ -1,23 +1,23 @@
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <foaf:Agent> "Person" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <foaf:name> "Martin Luther" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <foaf:gender> "Male" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <person:placeOfBirth> "Eisleben" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:dateOfBirth> "10/11/1483" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <person:placeOfDeath> "Eisleben" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:dateOfDeath> "18/02/1546" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:occupation> "Theologist" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:occupation> "Priest" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:occupation> "Friar" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:occupation> "Professor" 
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <core:knownFor> "Being a seminal figure in the Protestant Reformation" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <foaf:img> <http://www.lodproject.github.io/4lodsake/img/imgluther.jpg> .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <dcterms:relation> <http://lodproject.github.io/4lodsake/ttl/disputatio.ttl> .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <dcterms:relation> "Septembertestament" .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <owl:sameAs> <http://dbpedia.org/page/Martin_Luther> .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <owl:sameAs> <https://www.wikidata.org/wiki/Q9554> .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <foaf:knows> <http://dbpedia.org/page/Pope_Leo_X> .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <foaf:knows> <http://www.lodproject.github.io/4lodsake/ttl/pope-leo-x.ttl> .
-<http://lodproject.github.io/4lodsake/ttl/martin-luther.ttl> <dcterms:relation> <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <foaf:Agent> "Person" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <foaf:name> "Martin Luther" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <foaf:gender> "Male" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <person:placeOfBirth> "Eisleben" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:dateOfBirth> "10/11/1483" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <person:placeOfDeath> "Eisleben" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:dateOfDeath> "18/02/1546" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:occupation> "Theologist" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:occupation> "Priest" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:occupation> "Friar" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:occupation> "Professor" 
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <core:knownFor> "Being a seminal figure in the Protestant Reformation" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <foaf:img> <http://www.lodproject.github.io/4lodsake/img/imgluther.jpg> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <dcterms:relation> <http://lodproject.github.io/4lodsake/ttl/disputatio.ttl> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <dcterms:relation> "Septembertestament" .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <owl:sameAs> <http://dbpedia.org/page/Martin_Luther> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <owl:sameAs> <https://www.wikidata.org/wiki/Q9554> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <foaf:knows> <http://dbpedia.org/page/Pope_Leo_X> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <foaf:knows> <http://www.lodproject.github.io/4lodsake/ttl/pope-leo-x.ttl> .
+<http://lodproject.github.io/4lodsake/xml/martin-luther.xml> <dcterms:relation> <http://lodproject.github.io/4lodsake/ttl/protestant-reformation.ttl> .
 
 
 

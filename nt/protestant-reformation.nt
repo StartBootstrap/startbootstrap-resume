@@ -1,0 +1,27 @@
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P1_is_identified_by> "Protestant Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:alternate> "Protestantism" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:alternate> "Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:alternate> "European Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dcterms:abstract> "Schism from the Roman Catholic Church initiated by Martin Luther in 16th century" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P92_brought_into_existence> "1517" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P11_had_participant> <http://www.lodproject.github.io/4lodsake/xml/martin-luther.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P11_had_participant> "Thomas Müntzer" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P11_had_participant> <http://www.lodproject.github.io/4lodsake/xml/john-calvin.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P12_occured_in_the_presence_of> <http://lodproject.github.io/4lodsake/xml/disputatio.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P12_occured_in_the_presence_of> <http://lodproject.github.io/4lodsake/xml/bulla.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P12_occured_in_the_presence_of> ""Septembertestament"" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P12_occured_in_the_presence_of> ""Verdammnis und Erlösung"" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:isReferencedBy> "Medal on the introduction of the Reformation in Saxony in 1839" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:isReferencedBy> "Das Zeitalter der Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:isReferencedBy> "Ein feste Burg ist unser Gott : Kantate am Reformationsfest" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:isReferencedBy> "Gedenkstein zum 400. Jahrestag der Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:isReferencedBy> "Broadsheet for the Centenary of the Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:isReferencedBy> "Gli effetti della Riforma protestante" .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <crm:P14_carried_out_by> <http://lodproject.github.io/4lodsake/xml/martin-luther.xml>.
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:motivated> <http://lodproject.github.io/4lodsake/xml/lutheranism.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dc:motivated> <http://lodproject.github.io/4lodsake/xml/calvinism.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dbo:wikiPageDisambiguates> <https://en.wikipedia.org/wiki/Reformation_(disambiguation)> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <dbo:wikiPageExternalLink> <https://en.wikipedia.org/wiki/Reformation> . 
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <owl:sameAs> <https://www.britannica.com/event/Reformation> .
+<http://www.lodproject.github.io/4lodsake/xml/protestant-reformation.xml> <owl:sameAs> <https://www.history.com/topics/reformation/reformation> .
+

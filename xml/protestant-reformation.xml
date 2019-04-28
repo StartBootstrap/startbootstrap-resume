@@ -34,7 +34,6 @@
 	<dbo:wikiPageDisambiguates rdf:resource="https://en.wikipedia.org/wiki/Reformation_(disambiguation)" />
 	<dbo:wikiPageExternalLink rdf:resource="https://en.wikipedia.org/wiki/Reformation" />
 	<owl:sameAs rdf:resource="https://www.britannica.com/event/Reformation" />
-	<owl:sameAs rdf:resource="https://www.britannica.com/event/Reformation" />
 	<owl:sameAs rdf:resource="https://www.history.com/topics/reformation/reformation" />
 </dbo:Event>
 </rdf:RDF>
