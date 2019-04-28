@@ -1,0 +1,22 @@
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <rdai:P40082> "Disputatio pro declaratione virtutis indulgentiarum" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:creator> <http://lodproject.github.io/4lodsake/xml/martin-luther.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:publisher> "Hieronymus Holtzel" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:created> "1517" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:coverage> "Nuremberg" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:spatial> "Berlin" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:relation> <http://lodproject/4lodsake/xml/wittenberg.xml> .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <rdai:P40061> "Ninety-Five theses" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:description> "Central document of the Protestant Reformation" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:type> "Broadsheet" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:medium> "Parchment" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:format> "Print" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <rdai:P40010> "Two pages" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dc:language> "Latin" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <rdai:P40001> "SBB00003DCA00000000" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dc:isReferencedBy> "Staatsbibliothek zu Berlin" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <rdai:P40004> "Staatsbibliothek zu Berlin" .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dbo:wikiPageExternalLink> <https://en.wikipedia.org/wiki/Ninety-five_Theses> . 
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <owl:sameAs> <https://www.wdl.org/en/item/7497/> .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <owl:sameAs> <http://es.dbpedia.org/page/Las_95_tesis> .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <foaf:depiction> <https://upload.wikimedia.org/wikipedia/commons/8/81/95Thesen.jpg> .
+<http://www.lodproject.github.io/4lodsake/xml/disputatio.xml> <dcterms:relation> <http://lodproject/4lodsake/xml/protestant-reformation.xml> .
