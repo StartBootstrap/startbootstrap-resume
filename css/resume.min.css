@@ -12,7 +12,7 @@ body{
     }
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:'Press Start 2P', cursive,'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-family:'Allerta Stencil', sans-serif,'Press Start 2P', cursive,'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-weight:700;
     text-transform:uppercase;
     color:#343a40
@@ -53,13 +53,13 @@ p.lead{
     margin-right:0
 }
 .social-icons a:hover{
-    background-color:#bd5d38
+    background-color:#00B8DE
 }
 .dev-icons{
     font-size:3rem
 }
 .dev-icons .list-inline-item i:hover{
-    color:#bd5d38
+    color:#00B8DE
 }
 #sideNav .navbar-nav .nav-item .nav-link{
     font-weight:800;
@@ -129,14 +129,14 @@ p.lead{
 section.resume-section{
     padding-top:5rem!important;
     padding-bottom:5rem!important;
-    max-width:75rem
+    max-width:100%;
 }
 section.resume-section .resume-item .resume-date{
     min-width:none
 }
 @media (min-width:768px){
     section.resume-section{
-        min-height:100vh
+        min-height:95vh
     }
     section.resume-section .resume-item .resume-date{
         min-width:18rem
@@ -145,17 +145,17 @@ section.resume-section .resume-item .resume-date{
 @media (min-width:992px){
     section.resume-section{
         padding-top:20rem!important;
-        padding-bottom:20rem!important
+        padding-bottom:10rem!important
     }
 }
 .bg-primary{
-    background-color:#bd5d38!important
+    background-color:#9ADBE8!important
 }
 .text-primary{
-    color:#bd5d38!important
+    color:#00B8DE!important
 }
 a{
-    color:#bd5d38
+    color:#00B8DE
 }
 a:active,a:focus,a:hover{
     color:#824027
