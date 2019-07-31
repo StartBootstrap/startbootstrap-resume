@@ -28,6 +28,7 @@
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
     },
+    "browserslist": ["last 2 versions"],
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.9.0",
         "bootstrap": "4.3.1",
