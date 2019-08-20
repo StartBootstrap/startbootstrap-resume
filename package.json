@@ -1,6 +1,6 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
+    "title": "Amuscara-Resume",
+    "name": "amuscara-resume",
     "version": "5.0.7",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
