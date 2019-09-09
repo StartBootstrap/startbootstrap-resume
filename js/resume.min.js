@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
+ * Start Bootstrap - Resume v5.0.7 (https://baileystein.com/)
+ * Copyright 2013-2019 Bailey Stein
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
