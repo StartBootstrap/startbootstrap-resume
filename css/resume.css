@@ -76,6 +76,45 @@ p.lead {
   background-color: #BD5D38;
 }
 
+.back-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.back-button a {
+  padding: 3rem;
+  color: #fff !important;
+}
+
+.back-button a > i {
+  height: 4rem;
+  width: 4rem;
+  font-size: 4rem;
+}
+
+.back-button-small {
+  height: 40px;
+}
+
+.back-button-small a {
+  padding: 0rem;
+}
+
+.back-button-small a > i {
+  height: 40px;
+  width: 40px;
+  font-size: 40px;
+}
+
 .portfolio {
   margin-bottom: -15px;
 }

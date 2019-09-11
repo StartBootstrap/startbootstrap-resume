@@ -71,6 +71,37 @@ p.lead {
   }
 }
 
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+
+  a {
+    padding: 3rem;
+    color: $white !important;
+  }
+
+  a > i {
+    height: 4rem;
+    width: 4rem;
+    font-size: 4rem;
+  }
+}
+
+.back-button-small {
+  height: 40px;
+  a {
+    padding: 0rem;
+  }
+  a > i {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
+}
+
 .portfolio {
   margin-bottom: -15px;
 }
