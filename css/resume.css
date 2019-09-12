@@ -86,27 +86,43 @@ p.lead {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
-  margin: auto;
 }
 
 .back-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.back-button-big {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.back-button-big a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 3rem;
+  height: 100%;
+  width: 100%;
   color: #fff !important;
 }
 
-.back-button a > i {
-  height: 4rem;
-  width: 4rem;
-  font-size: 4rem;
-}
-
 .back-button-small {
-  height: 40px;
-}
-
-.back-button-small a {
-  padding: 0rem;
+  margin-right: auto;
 }
 
 .back-button-small a > i {

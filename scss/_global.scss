@@ -75,26 +75,34 @@ p.lead {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin: auto;
 
   a {
-    padding: 3rem;
+    display: flex;
+    align-items: center;
     color: $white !important;
+    text-decoration: none;
   }
+}
 
-  a > i {
-    height: 4rem;
-    width: 4rem;
-    font-size: 4rem;
+.back-button-big {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+    color: $white !important;
   }
 }
 
 .back-button-small {
-  height: 40px;
-  a {
-    padding: 0rem;
-  }
+  margin-right: auto;
+  
   a > i {
     height: 40px;
     width: 40px;
