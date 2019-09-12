@@ -22,6 +22,7 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: $gray-800;
+  letter-spacing: 0.01em;
 }
 
 h1 {
@@ -70,11 +71,83 @@ p.lead {
   }
 }
 
-.dev-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $primary;
-    }
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $white !important;
+    text-decoration: none;
   }
+}
+
+.back-button-big {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+    color: $white !important;
+  }
+}
+
+.back-button-small {
+  margin-right: auto;
+  
+  a > i {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
+}
+
+.portfolio {
+  margin-bottom: -15px;
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: $gray-600;
+  text-decoration: none;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background-color: $primary-alpha;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .portfolio {
+    margin-bottom: -30px;
+  }
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio .portfolio-item .portfolio-item-name {
+  text-align: center;
 }
