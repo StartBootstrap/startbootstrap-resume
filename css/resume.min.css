@@ -173,7 +173,7 @@
 
 
  .active, .collapsiblesection:hover{
- 	background-color:#555555;
+ 	background-color:#282753 /*#555555*/;
  	}
 
  
@@ -185,7 +185,7 @@
  	padding:0 20px;
  	max-height:0;
  	overflow:hidden;
- 	background-color:#f1f1f1;
+ 	background-color:#282753 /*#f1f1f1*/;
  	transition:max-height 0.5s ease-out;
  	}
 
