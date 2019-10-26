@@ -201,3 +201,20 @@ a:focus,
 a:active {
   color: #824027;
 }
+
+@media (max-width: 767px) {
+  .hero-address {
+    font-size: 3em;
+    margin-top: -273px;
+    margin-bottom: 200px !important;
+    margin-left: 10px;
+  }
+  .navbar {
+    /* background-color: #000000 !important; */
+    transition: top 0.3s;
+  }
+}
+
+.nav-up {
+  top: -40px;
+}

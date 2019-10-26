@@ -1,5 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict
+  ("use strict"); // Start of use strict
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -36,6 +36,18 @@
   // click to send email
   $(".scheduale").click(() => sendEmail());
   $(".hero-email").click(() => sendEmail());
+
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      $(".bg-primary").css("top", 0);
+    } else {
+      $(".bg-primary").css("top", "-50px");
+    }
+    prevScrollpos = currentScrollPos;
+  };
 })(jQuery); // End of use strict
 
 const sendEmail = () => {
