@@ -205,11 +205,28 @@ section.resume-section .resume-item .resume-date {
     top: 0;
     float: right;
   }
-  .col.info {
-    width: 400px;
+  #house-info h2 {
+    margin-left: 20px;
+  }
+  .floor-plan-container {
   }
 }
 
+#map {
+  width: 70%;
+  height: 100%;
+  float: right;
+}
+.map-container {
+}
+#content-window {
+  float: left;
+  font-family: "Roboto", "sans-serif";
+  height: 100%;
+  line-height: 30px;
+  padding-left: 20px;
+  width: 30%;
+}
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
