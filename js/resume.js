@@ -37,6 +37,7 @@
   $(".scheduale").click(() => sendEmail());
   $(".hero-email").click(() => sendEmail());
 })(jQuery); // End of use strict
+
 const sendEmail = () => {
   const subject = "3910 Kinsale Schedualing Appoitment";
   const body = "Hi, I would like to view the house.";
