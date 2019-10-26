@@ -205,6 +205,9 @@ section.resume-section .resume-item .resume-date {
     top: 0;
     float: right;
   }
+  .col.info {
+    width: 400px;
+  }
 }
 
 @media (min-width: 992px) {
