@@ -185,6 +185,26 @@ section.resume-section .resume-item .resume-date {
   .hide-img {
     font-size: 45px;
   }
+  .fa-check {
+    font-size: 1.2em;
+  }
+  .info-section {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    height: 400px;
+    width: 300px;
+  }
+  .info-heading {
+    margin: 20px;
+    padding-top: 20px;
+  }
+  .info-section ul li {
+    margin-left: 20px;
+  }
+  .info-right-section {
+    top: 0;
+    float: right;
+  }
 }
 
 @media (min-width: 992px) {
