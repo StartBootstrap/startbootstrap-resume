@@ -24,6 +24,12 @@
     />
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
 
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet" />
     <link href="css/resume.css" rel="stylesheet" />
@@ -143,83 +149,439 @@
         id="experience"
       >
         <div class="w-100">
-          <h2 class="mb-5">Experience</h2>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-start mb-5 previous-slide"
+          ></div>
 
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="resume-item d-flex flex-column flex-md-row justify-content-center mb-5 slideshow-container"
           >
-            <div class="resume-content">
-              <h3 class="mb-0">Senior Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </p>
+            <!-- Jssor Slider Begin -->
+            <script
+              type="text/javascript"
+              src="js/jquery-1.9.1.min.js"
+            ></script>
+            <script
+              type="text/javascript"
+              src="js/jssor.slider.min.js"
+            ></script>
+            <script>
+              jQuery(document).ready(function($) {
+                var options = {
+                  $AutoPlay: 1, //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
+                  $Idle: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                  $SlideDuration: 500, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                  $DragOrientation: 3, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+                  $UISearchMode: 0, //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+
+                  $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$, //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $Loop: 1, //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, default value is 1
+                    $SpacingX: 3, //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 3, //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+
+                    $ArrowNavigatorOptions: {
+                      $Class: $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
+                      $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
+                      $Steps: 6 //[Optional] Steps to go for each navigation request, default value is 1
+                    }
+                  }
+                };
+
+                var jssor_slider1 = new $JssorSlider$(
+                  "slider1_container",
+                  options
+                );
+
+                /*#region responsive code begin*/
+                //you can remove responsive code if you don't want the slider scales while window resizing
+                function ScaleSlider() {
+                  var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                  if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 720));
+                  else $Jssor$.$Delay(ScaleSlider, 30);
+                }
+
+                ScaleSlider();
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+              });
+            </script>
+
+            <div
+              id="slider1_container"
+              style="position: relative; width: 720px;
+            height: 480px; overflow: hidden;"
+            >
+              <!-- Loading Screen -->
+              <div
+                data-u="loading"
+                class="jssorl-009-spin"
+                style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);"
+              >
+                <img
+                  style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
+                  src="svg/loading/static-svg/spin.svg"
+                />
+              </div>
+
+              <!-- Slides Container -->
+              <div
+                data-u="slides"
+                style="position: absolute; left: 0px; top: 0px; width: 720px; height: 480px;
+                overflow: hidden;"
+              >
+                <div>
+                  <img data-u="image" src="img/img2.JPG" />
+                  <img data-u="thumb" src="img/img2.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img3.JPG" />
+                  <img data-u="thumb" src="img/img3.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img4.JPG" />
+                  <img data-u="thumb" src="img/img4.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img5.JPG" />
+                  <img data-u="thumb" src="img/img5.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img6.JPG" />
+                  <img data-u="thumb" src="img/img6.JPG" />
+                </div>
+
+                <div>
+                  <img data-u="image" src="img/img8.JPG" />
+                  <img data-u="thumb" src="img/img8.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img9.JPG" />
+                  <img data-u="thumb" src="img/img9.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img10.JPG" />
+                  <img data-u="thumb" src="img/img10.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img11.JPG" />
+                  <img data-u="thumb" src="img/img11.JPG" />
+                </div>
+
+                <div>
+                  <img data-u="image" src="img/img12.JPG" />
+                  <img data-u="thumb" src="img/img12.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img13.JPG" />
+                  <img data-u="thumb" src="img/img13.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img14.JPG" />
+                  <img data-u="thumb" src="img/img14.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img15.JPG" />
+                  <img data-u="thumb" src="img/img15.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img16.JPG" />
+                  <img data-u="thumb" src="img/img16.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img17.JPG" />
+                  <img data-u="thumb" src="img/img17.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img18.JPG" />
+                  <img data-u="thumb" src="img/img18.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img19.JPG" />
+                  <img data-u="thumb" src="img/img19.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img20.JPG" />
+                  <img data-u="thumb" src="img/img20.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img21.JPG" />
+                  <img data-u="thumb" src="img/img21.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img22.JPG" />
+                  <img data-u="thumb" src="img/img22.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img23.JPG" />
+                  <img data-u="thumb" src="img/img23.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img24.JPG" />
+                  <img data-u="thumb" src="img/img24.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img25.JPG" />
+                  <img data-u="thumb" src="img/img25.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img26.JPG" />
+                  <img data-u="thumb" src="img/img26.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img27.JPG" />
+                  <img data-u="thumb" src="img/img27.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img28.JPG" />
+                  <img data-u="thumb" src="img/img28.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img29.JPG" />
+                  <img data-u="thumb" src="img/img29.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img30.JPG" />
+                  <img data-u="thumb" src="img/img30.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img31.JPG" />
+                  <img data-u="thumb" src="img/img31.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img32.JPG" />
+                  <img data-u="thumb" src="img/img32.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img33.JPG" />
+                  <img data-u="thumb" src="img/img33.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img34.JPG" />
+                  <img data-u="thumb" src="img/img34.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img35.JPG" />
+                  <img data-u="thumb" src="img/img35.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img37.JPG" />
+                  <img data-u="thumb" src="img/img37.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img38.JPG" />
+                  <img data-u="thumb" src="img/img38.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img39.JPG" />
+                  <img data-u="thumb" src="img/img39.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img40.JPG" />
+                  <img data-u="thumb" src="img/img40.JPG" />
+                </div>
+                <div>
+                  <img data-u="image" src="img/img41.JPG" />
+                  <img data-u="thumb" src="img/img41.JPG" />
+                </div>
+              </div>
+              <!--#region Thumbnail Navigator Skin Begin -->
+              <!-- Help: https://www.jssor.com/development/slider-with-thumbnail-navigator.html -->
+              <style>
+                /* jssor slider loading skin spin css */
+                .jssorl-009-spin img {
+                  animation-name: jssorl-009-spin;
+                  animation-duration: 1.6s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                }
+
+                @keyframes jssorl-009-spin {
+                  from {
+                    transform: rotate(0deg);
+                  }
+
+                  to {
+                    transform: rotate(360deg);
+                  }
+                }
+
+                /* jssor slider thumbnail navigator skin 07 css */
+                /*
+                .jssort07 .p            (normal)
+                .jssort07 .p:hover      (normal mouseover)
+                .jssort07 .pav          (active)
+                .jssort07 .pav:hover    (active mouseover)
+                .jssort07 .pdn          (mousedown)
+                */
+                .jssort07 {
+                  position: absolute;
+                  /* size of thumbnail navigator container */
+                  width: 800px;
+                  height: 100px;
+                }
+
+                .jssort07 .p {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 99px;
+                  height: 66px;
+                }
+
+                .jssort07 .i {
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 99px;
+                  height: 66px;
+                  filter: alpha(opacity=80);
+                  opacity: 0.8;
+                }
+
+                .jssort07 .p:hover .i,
+                .jssort07 .pav .i {
+                  filter: alpha(opacity=100);
+                  opacity: 1;
+                }
+
+                .jssort07 .o {
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 97px;
+                  height: 64px;
+                  border: 1px solid #000;
+                  box-sizing: content-box;
+                  transition: border-color 0.6s;
+                  -moz-transition: border-color 0.6s;
+                  -webkit-transition: border-color 0.6s;
+                  -o-transition: border-color 0.6s;
+                }
+
+                .jssort07 .pav .o {
+                  border-color: #0099ff;
+                }
+
+                .jssort07 .p:hover .o {
+                  border-color: #fff;
+                  transition: none;
+                  -moz-transition: none;
+                  -webkit-transition: none;
+                  -o-transition: none;
+                }
+
+                .jssort07 .p.pdn .o {
+                  border-color: #0099ff;
+                }
+
+                * html .jssort07 .o {
+                  /* ie quirks mode adjust */
+                  width/**/
+          : 99px;
+                  height/**/
+          : 66px;
+                }
+              </style>
+              <!-- thumbnail navigator container -->
+              <div
+                data-u="thumbnavigator"
+                class="jssort07"
+                style="width: 720px; height: 100px; left: 0px; bottom: 0px;"
+              >
+                <!-- Thumbnail Item Skin Begin -->
+                <div data-u="slides" style="cursor: default;">
+                  <div data-u="prototype" class="p">
+                    <div data-u="thumbnailtemplate" class="i"></div>
+                    <div class="o"></div>
+                  </div>
+                </div>
+                <!-- Thumbnail Item Skin End -->
+
+                <!--#region Arrow Navigator Skin Begin -->
+                <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+                <style>
+                  .jssora051 {
+                    display: block;
+                    position: absolute;
+                    cursor: pointer;
+                  }
+
+                  .jssora051 .a {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-width: 360;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .jssora051:hover {
+                    opacity: 0.8;
+                  }
+
+                  .jssora051.jssora051dn {
+                    opacity: 0.5;
+                  }
+
+                  .jssora051.jssora051ds {
+                    opacity: 0.3;
+                    pointer-events: none;
+                  }
+                </style>
+                <div
+                  data-u="arrowleft"
+                  class="jssora051"
+                  style="width:40px;height:40px;top:123px;left:8px;"
+                  data-autocenter="2"
+                  data-scale="0.75"
+                  data-scale-left="0.75"
+                >
+                  <svg
+                    viewBox="0 0 16000 16000"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                  >
+                    <polyline
+                      class="a"
+                      points="11040,1920 4960,8000 11040,14080 "
+                    ></polyline>
+                  </svg>
+                </div>
+                <div
+                  data-u="arrowright"
+                  class="jssora051"
+                  style="width:40px;height:40px;top:123px;right:8px;"
+                  data-autocenter="2"
+                  data-scale="0.75"
+                  data-scale-right="0.75"
+                >
+                  <svg
+                    viewBox="0 0 16000 16000"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                  >
+                    <polyline
+                      class="a"
+                      points="4960,1920 11040,8000 4960,14080 "
+                    ></polyline>
+                  </svg>
+                </div>
+                <!--#endregion Arrow Navigator Skin End -->
+              </div>
+              <!--#endregion Thumbnail Navigator Skin End -->
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
-            </div>
+            <!-- Jssor Slider End -->
           </div>
 
           <div
             class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
+          ></div>
 
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div>
+            class="resume-item d-flex flex-column flex-md-row justify-content-end "
+          ></div>
         </div>
       </section>
 

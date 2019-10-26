@@ -157,13 +157,23 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
   .hero-address {
-    margin-top: -534px;
-    margin-bottom: 500px !important;
+    margin-top: -734px;
+    margin-bottom: 700px !important;
     margin-left: 20px;
     font-size: 5em;
   }
   .home-address:hover {
     cursor: pointer;
+  }
+  /* SLIDESHOW */
+  .slideshow-container {
+    padding: 15% 0;
+  }
+  .fa {
+    font-size: 40px;
+  }
+  .previous-slide {
+    margin-bottom: 0;
   }
 }
 
