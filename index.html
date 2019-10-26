@@ -72,7 +72,9 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gallery-section">Gallery</a>
+            <a class="nav-link js-scroll-trigger" href="#gallery-section"
+              >Gallery</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#house-info"
@@ -85,12 +87,10 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#map">Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scheduale" href="#awards"
-              >Scheduale an Appoitment</a
-            >
+            <a class="nav-link scheduale" href="#">Scheduale an Appoitment</a>
           </li>
         </ul>
       </div>
@@ -865,7 +865,7 @@
         id="house-info"
       >
         <div class="w-100">
-          <h2 class="mb-5">Information</h2>
+          <h2 class="mb-5 info-main-heading">Information</h2>
           <div class="container">
             <div class="row">
               <div class="col ">
@@ -889,20 +889,19 @@
                       3 acre property
                     </li>
                   </ul>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="info-right-section">
+                  "A beautiful Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Consectetur voluptate amet tempore atque
+                  veritatis minus temporibus eaque ullam illum! Odio praesentium
+                  corrupti reprehenderit fugiat, dignissimos culpa soluta minima
+                  iste laborum. "
+                </div>
               </div>
             </div>
-
-                  <div class="col">
-                    <div class="info-right-section">
-                      "A beautiful Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Consectetur voluptate amet tempore atque
-                      veritatis minus temporibus eaque ullam illum! Odio
-                      praesentium corrupti reprehenderit fugiat, dignissimos
-                      culpa soluta minima iste laborum. "
-                    </div>
-
-                  </div>
-                </div>
           </div>
         </div>
       </section>
@@ -932,45 +931,150 @@
 
       <hr class="m-0" />
 
+      <div class="col map-container" id="content-window">
+        <h3 id="content-title"></h3>
+
+        <p id="content-desc"></p>
+      </div>
       <section
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="awards"
+        id="map"
       >
         <div class="w-100">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - University of Colorado Boulder - Emerging
-              Tech Competition 2009
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - University of Colorado Boulder - Adobe
-              Creative Jam 2008 (UI Design Category)
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup> Place - University of Colorado Boulder - Emerging
-              Tech Competition 2008
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - James Buchanan High School - Hackathon 2006
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup> Place - James Buchanan High School - Hackathon 2005
-            </li>
-          </ul>
+          <h2 class="mb-5">Map</h2>
+          <div class="container map">
+            <div class="row">
+              <div class="col map-container-right">
+                <!-- <div id="map"></div>
+                <div id="right-panel">
+                  <h2>Results</h2>
+                  <ul id="places"></ul>
+                  <button id="more">More results</button>
+                </div> -->
+                <!-- <script>
+                var map;
+                
+                function initMap() {
+                // Create the map.
+                var pyrmont = {lat: -33.866, lng: 151.196};
+                map = new google.maps.Map(document.getElementById('map'), {
+                center: pyrmont,
+                zoom: 17
+                });
+                
+                // Create the places service.
+                var service = new google.maps.places.PlacesService(map);
+                var getNextPage = null;
+                var moreButton = document.getElementById('more');
+                moreButton.onclick = function() {
+                moreButton.disabled = true;
+                if (getNextPage) getNextPage();
+                };
+                
+                // Perform a nearby search.
+                service.nearbySearch(
+                {location: pyrmont, radius: 500, type: ['school']},
+                function(results, status, pagination) {
+                if (status !== 'OK') return;
+                
+                createMarkers(results);
+                moreButton.disabled = !pagination.hasNextPage;
+                getNextPage = pagination.hasNextPage && function() {
+                pagination.nextPage();
+                };
+                });
+                }
+                
+                function createMarkers(places) {
+                var bounds = new google.maps.LatLngBounds();
+                var placesList = document.getElementById('places');
+                
+                for (var i = 0, place; place = places[i]; i++) {
+                var image = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25)
+                };
+                
+                var marker = new google.maps.Marker({
+                map: map,
+                icon: image,
+                title: place.name,
+                position: place.geometry.location
+                });
+                
+                var li = document.createElement('li');
+                li.textContent = place.name;
+                placesList.appendChild(li);
+                
+                bounds.extend(place.geometry.location);
+                }
+                map.fitBounds(bounds);
+                }
+                </script> -->
+
+                <div id="map"></div>
+                <script>
+                  var map;
+                  function initMap() {
+                    map = new google.maps.Map(document.getElementById("map"), {
+                      center: { lat: -34.397, lng: 150.644 },
+                      zoom: 8
+                    });
+
+                    var kmlLayer = new google.maps.KmlLayer({
+                      url:
+                        "http://googlemaps.github.io/kml-samples/kml/Placemark/placemark.kml",
+                      suppressInfoWindows: true,
+                      map: map
+                    });
+
+                    kmlLayer.addListener("click", function(kmlEvent) {
+                      var text = kmlEvent.featureData.name;
+                      var description = kmlEvent.featureData.description;
+                      console.log(text);
+
+                      showInContentWindow(text, description);
+                    });
+
+                    function showInContentWindow(text, desc) {
+                      var title = $("#content-title");
+                      var des = $("#content-desc");
+                      title.text(text);
+                      des.text(desc);
+                    }
+                  }
+                </script>
+                <!-- <div id="map" style="width: 300px; height: 300px;"></div>
+              <script type="text/javascript">
+                $(function () {
+                  $("#map").googleMap({
+                    zoom: 10, // Initial zoom level (optional)
+                    coords: [48.895651, 2.290569], // Map center (optional)
+                    type: "ROADMAP" // Map type (optional)
+                  });
+                })
+              </script> -->
+                <!-- <script>
+                $('.map')
+                  .gmap3({
+                    center: [48.8620722, 2.352047],
+                    zoom: 4
+                  })
+                  .marker([
+                    { position: [48.8620722, 2.352047] },
+                    { address: "86000 Poitiers, France" },
+                    { address: "66000 Perpignan, France", icon: "https://maps.google.com/mapfiles/marker_grey.png" }
+                  ])
+                  .on('click', function (marker) {
+                    marker.setIcon('https://maps.google.com/mapfiles/marker_green.png');
+                  });
+              </script></div> -->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -985,5 +1089,26 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script src="js/resume.js"></script>
+
+    <!-- GOOGLE MAPS -->
+ 
+    <script type="module">
+      import GOOGLE_MAP_KEY from "./key.js";
+   
+    
+
+      function loadScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src =
+          "https://maps.googleapis.com/maps/api/js?v=3" +
+          "&key=" +
+          GOOGLE_MAP_KEY +
+          "&libraries=places&callback=initMap"; //& needed
+        document.body.appendChild(script);
+      }
+
+      window.onload = loadScript;
+    </script>
   </body>
 </html>
