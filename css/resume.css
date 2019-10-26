@@ -149,17 +149,21 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
-/* HERO */
-
-.hero {
-  background: url(../img/hero.jpg);
-}
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
+  }
+  .hero-address {
+    margin-top: -534px;
+    margin-bottom: 500px !important;
+    margin-left: 20px;
+    font-size: 5em;
+  }
+  .home-address:hover {
+    cursor: pointer;
   }
 }
 
