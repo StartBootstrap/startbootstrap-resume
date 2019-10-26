@@ -180,6 +180,10 @@ section.resume-section .resume-item .resume-date {
     display: flex;
     margin: 0 auto;
     text-align: center;
+    margin-top: 40px;
+  }
+  .hide-img {
+    font-size: 45px;
   }
 }
 
