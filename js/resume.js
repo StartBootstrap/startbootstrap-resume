@@ -42,12 +42,32 @@
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      $(".bg-primary").css("top", 0);
+      if ($(window).width() <= 767) $(".bg-primary").css("top", 0);
     } else {
-      $(".bg-primary").css("top", "-50px");
+      if ($(window).width() <= 767) $(".bg-primary").css("top", "-50px");
     }
     prevScrollpos = currentScrollPos;
   };
+
+  /* GALLERY */
+
+  $(function() {
+    var selectedClass = "";
+    $(".filter").click(function() {
+      selectedClass = $(this).attr("data-rel");
+      $("#gallery").fadeTo(100, 0.1);
+      $("#gallery div")
+        .not("." + selectedClass)
+        .fadeOut()
+        .removeClass("animation");
+      setTimeout(function() {
+        $("." + selectedClass)
+          .fadeIn()
+          .addClass("animation");
+        $("#gallery").fadeTo(300, 1);
+      }, 300);
+    });
+  });
 })(jQuery); // End of use strict
 
 const sendEmail = () => {

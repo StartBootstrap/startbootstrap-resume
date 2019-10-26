@@ -175,6 +175,12 @@ section.resume-section .resume-item .resume-date {
   .previous-slide {
     margin-bottom: 0;
   }
+  .filter-container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -210,11 +216,51 @@ a:active {
     margin-left: 10px;
   }
   .navbar {
-    /* background-color: #000000 !important; */
     transition: top 0.3s;
   }
 }
 
-.nav-up {
-  top: -40px;
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+.btn.filter {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.filter-container {
+  display: block;
 }
