@@ -243,6 +243,20 @@ section.resume-section .resume-item .resume-date {
     color: #343a40;
     font-size: 2em;
   }
+  /* map */
+
+  #content-window {
+    float: left;
+    font-family: "Roboto", "sans-serif";
+    height: 80%;
+    line-height: 30px;
+    padding-left: 20px;
+    width: 30%;
+  }
+  #content-desc {
+    display: block;
+    width: 100%;
+  }
 }
 
 #map {
@@ -251,14 +265,14 @@ section.resume-section .resume-item .resume-date {
   float: right;
 }
 
-#content-window {
+/* #content-window {
   float: left;
   font-family: "Roboto", "sans-serif";
   height: 80%;
   line-height: 30px;
   padding-left: 20px;
-  width: 30%;
-}
+  width: 100%;
+} */
 
 @media (min-width: 992px) {
   section.resume-section {
@@ -296,6 +310,9 @@ a:active {
   }
   .navbar {
     transition: top 0.3s;
+  }
+  #content-window {
+    display: inline-block;
   }
 }
 
@@ -392,12 +409,37 @@ a:active {
   .floor-plan-heading {
     font-family: "Jomolhari", serif;
   }
+  /* Map */
+  #map {
+    width: 100%;
+    height: 400px;
+    float: right;
+    margin-bottom: 20px;
+  }
+  #content-container {
+    margin-top: 200px;
+  }
+  #content-title {
+    padding-right: 30px;
+  }
+  #content-desc {
+    width: 200px;
+  }
 }
-
+#content-window {
+  float: left;
+}
 @media (max-width: 400px) {
   .btn.filter {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
+  }
+  .hero-main-heading {
+    font-size: 1em;
+    margin-top: -253px;
+    margin-bottom: 220px !important;
+    margin-left: 10px;
+    font-family: "Jomolhari", serif;
   }
 }
 .btn.filter {
