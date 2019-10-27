@@ -23,7 +23,8 @@
       rel="stylesheet"
     />
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <!-- Font Awesome  -->
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -33,6 +34,8 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet" />
     <link href="css/resume.css" rel="stylesheet" />
+
+    
   </head>
 
   <body id="page-top">
@@ -72,7 +75,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gallery-section"
+            <a class="nav-link js-scroll-trigger" href="#gallery"
               >Gallery</a
             >
           </li>
@@ -109,7 +112,7 @@
             width="100%"
             height="100%"
           />
-          <h1 class="mb-0 hero-address">
+          <h1 class="mb-0 hero-main-heading">
             3910 Kinsale Road
           </h1>
           <div class="subheading mb-5">
@@ -574,6 +577,12 @@
             </div>
             <!-- Jssor Slider End -->
           </div>
+          <div class="slideshow-footer">
+            "laborum laborum Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Maxime, doloremque eius, quia facilis temporibus dolorem
+            quaerat unde nulla dicta, at debitis! Accusamus optio similique
+            unde, aspernatur repellendus incidunt ab ipsa."
+          </div>
 
           <div
             class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
@@ -589,16 +598,64 @@
 
       <section
         class="resume-section p-3 p-lg-5 d-flex align-items-center container"
-        id="gallery-section"
+        id="gallery"
       >
-        <div class="w-100">
+        <div class="w-100 container">
+<h2 class="gallery-heading">Gallery</h2>
+
           <div
             class="resume-item d-flex flex-column flex-md-row justify-content-center "
           >
-            <!-- Grid row -->
+          
+            <div class="gallery row" >
+              <div class="col filter-container">
+                <button
+                  type="button"
+                  class="btn btn-outline-black waves-effect filter"
+                  data-rel="all"
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-black waves-effect filter"
+                  data-rel="1"
+                >
+                  Property
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-black waves-effect filter"
+                  data-rel="2"
+                >
+                  Kitchen
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-black waves-effect filter"
+                  data-rel="3"
+                >
+                  Bathroom
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-black waves-effect filter"
+                  data-rel="4"
+                >
+                  Living Room
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-black waves-effect filter"
+                  data-rel="5"
+                >
+                  Bedroom
+                </button>
 
-            <!-- Grid row -->
-            <div class="gallery col" id="gallery">
+                <!-- Grid column -->
+              </div>
+              <div class="row"> 
+                <div class="col gallery-image-container"> 
               <!-- Grid column -->
               <div class="mb-3 pics animation all ">
                 <a href="img/img2.JPG" data-size="1600x1067">
@@ -610,9 +667,6 @@
                   />
                 </a>
               </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
               <div class="mb-3 pics animation all 4">
                 <a href="img/img3.JPG" data-size="1600x1067">
                   <img data-u="image" class="img-fluid" src="img/img3.JPG" />
@@ -805,56 +859,12 @@
               </div>
               <!-- Grid column -->
             </div>
-
-            <!-- Grid row -->
+            </div>
+            </div>
+        
           </div>
-          <!-- Grid column -->
-          <div class=" filter-container">
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="all"
-            >
-              All
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="1"
-            >
-              Property
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="2"
-            >
-              Kitchen
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="3"
-            >
-              Bathroom
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="4"
-            >
-              Living Room
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="5"
-            >
-              Bedroom
-            </button>
+         
 
-            <!-- Grid column -->
-          </div>
         </div>
       </section>
 
@@ -874,19 +884,19 @@
                   <ul class="fa-ul mb-0">
                     <li>
                       <i class="fa-li fa fa-check"></i>
-                      3 floors
+                      3 Floors
                     </li>
                     <li>
                       <i class="fa-li fa fa-check"></i>
-                      4 bedrooms
+                      4 Bedrooms
                     </li>
                     <li>
                       <i class="fa-li fa fa-check"></i>
-                      3 washrooms
+                      3 Washrooms
                     </li>
                     <li>
                       <i class="fa-li fa fa-check"></i>
-                      3 acre property
+                      3 Acre Property
                     </li>
                   </ul>
                 </div>
@@ -913,7 +923,7 @@
         id="floor-plans"
       >
         <div class="w-100">
-          <h2 class="mb-5">Floor Plans</h2>
+          <h2 class="mb-5  floor-plan-heading">Floor Plans</h2>
           <p>
             Apart from being a web developer, I enjoy most of my time being
             outdoors. In the winter, I am an avid skier and novice ice climber.
@@ -932,18 +942,21 @@
       <hr class="m-0" />
 
       <div class="col map-container" id="content-window">
-        <p id="content-title">Bunker Hill Golf Club</p>
+        <div class="hide-golfclubs">
+          <p id="content-title">Bunker Hill Golf Club</p>
 
-        <p id="content-desc">
-          3695 Sideline 4 Pickering, ON L1Y 1C8 Canada
-        </p>
-        <hr />
-        <p id="content-title">Watson's Glen Golf Club</p>
+          <p id="content-desc">
+            3695 Sideline 4 Pickering, ON L1Y 1C8 Canada
+          </p>
+          <hr />
+          <p id="content-title">Watson's Glen Golf Club</p>
 
-        <p id="content-desc">
-          3430 Concession Rd 7 Pickering, ON L1Y 1C6 Canada
-        </p>
-        <hr />
+          <p id="content-desc">
+            3430 Concession Rd 7 Pickering, ON L1Y 1C6 Canada
+          </p>
+          <hr />
+        </div>
+
         <p id="content-title">My School</p>
 
         <p id="content-desc">
@@ -1040,12 +1053,18 @@
                 <script>
                   var map;
                   function initMap() {
+                    let zoom = 0;
+                    if ($(window).width() <= 768) {
+                      zoom = 13;
+                    } else {
+                      zoom = 14.8;
+                    }
                     var flag =
                       "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
-                    var schoolIcon = "../images/school.png";
+                    var schoolIcon = "img/school.png";
                     map = new google.maps.Map(document.getElementById("map"), {
                       center: { lat: 43.943199, lng: -79.029774 },
-                      zoom: 14.8
+                      zoom: zoom
                     });
 
                     var homeMarker = new google.maps.Marker({
@@ -1063,8 +1082,6 @@
                       title: "school"
                     });
 
-                  
-        
                     // var kmlLayer = new google.maps.KmlLayer({
                     //   url:
                     //     "",
