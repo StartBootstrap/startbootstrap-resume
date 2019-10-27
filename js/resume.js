@@ -42,9 +42,13 @@
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      if ($(window).width() <= 767) $(".bg-primary").css("top", 0);
+      if ($(window).width() <= 967)
+        $(".bg-primary").css({
+          top: 0,
+          transition: "0.4s ease-out"
+        });
     } else {
-      if ($(window).width() <= 767) $(".bg-primary").css("top", "-50px");
+      if ($(window).width() <= 967) $(".bg-primary").css("top", "-60px");
     }
     prevScrollpos = currentScrollPos;
   };

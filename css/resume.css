@@ -208,13 +208,22 @@ section.resume-section .resume-item .resume-date {
   #house-info h2 {
     margin-left: 20px;
   }
-  .floor-plan-container {
+  #content-title {
+    margin-top: 20px;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    font-size: 2em;
   }
 }
 
 #map {
   width: 70%;
-  height: 100%;
+  height: 80%;
   float: right;
 }
 .map-container {
@@ -222,7 +231,7 @@ section.resume-section .resume-item .resume-date {
 #content-window {
   float: left;
   font-family: "Roboto", "sans-serif";
-  height: 100%;
+  height: 80%;
   line-height: 30px;
   padding-left: 20px;
   width: 30%;
