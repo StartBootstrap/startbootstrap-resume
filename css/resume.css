@@ -226,8 +226,7 @@ section.resume-section .resume-item .resume-date {
   height: 80%;
   float: right;
 }
-.map-container {
-}
+
 #content-window {
   float: left;
   font-family: "Roboto", "sans-serif";
@@ -299,6 +298,20 @@ a:active {
     -webkit-column-width: 100%;
     -moz-column-width: 100%;
     column-width: 100%;
+  }
+  #content-title {
+    margin-top: 20px;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    font-size: 1.5em;
+  }
+  #content-desc {
+    font-size: 0.8em;
   }
 }
 
