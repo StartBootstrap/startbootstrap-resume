@@ -574,6 +574,7 @@
             </div>
             <!-- Jssor Slider End -->
           </div>
+          <div class="slideshow-footer">"laborum laborum Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque eius, quia facilis temporibus dolorem quaerat unde nulla dicta, at debitis! Accusamus optio similique unde, aspernatur repellendus incidunt ab ipsa."</div>
 
           <div
             class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
@@ -599,8 +600,30 @@
 
             <!-- Grid row -->
             <div class="gallery col" id="gallery">
+                <div class=" filter-container">
+                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">
+                    All
+                  </button>
+                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">
+                    Property
+                  </button>
+                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">
+                    Kitchen
+                  </button>
+                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">
+                    Bathroom
+                  </button>
+                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="4">
+                    Living Room
+                  </button>
+                  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="5">
+                    Bedroom
+                  </button>
+                
+                  <!-- Grid column -->
+                </div>
               <!-- Grid column -->
-              <div class="mb-3 pics animation all ">
+              <div class="mb-3 pics animation all filter-container">
                 <a href="img/img2.JPG" data-size="1600x1067">
                   <img
                     data-u="image"
@@ -809,52 +832,10 @@
             <!-- Grid row -->
           </div>
           <!-- Grid column -->
-          <div class=" filter-container">
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="all"
-            >
-              All
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="1"
-            >
-              Property
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="2"
-            >
-              Kitchen
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="3"
-            >
-              Bathroom
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="4"
-            >
-              Living Room
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-black waves-effect filter"
-              data-rel="5"
-            >
-              Bedroom
-            </button>
+        
 
-            <!-- Grid column -->
-          </div>
+
+        <!-- FILTER  -->
         </div>
       </section>
 
@@ -932,18 +913,22 @@
       <hr class="m-0" />
 
       <div class="col map-container" id="content-window">
-        <p id="content-title">Bunker Hill Golf Club</p>
+        <div class="hide-golfclubs"> 
 
-        <p id="content-desc">
-          3695 Sideline 4 Pickering, ON L1Y 1C8 Canada
-        </p>
-        <hr />
-        <p id="content-title">Watson's Glen Golf Club</p>
+          <p id="content-title">Bunker Hill Golf Club</p>
 
-        <p id="content-desc">
-          3430 Concession Rd 7 Pickering, ON L1Y 1C6 Canada
-        </p>
-        <hr />
+          <p id="content-desc">
+            3695 Sideline 4 Pickering, ON L1Y 1C8 Canada
+          </p>
+          <hr />
+          <p id="content-title">Watson's Glen Golf Club</p>
+
+          <p id="content-desc">
+            3430 Concession Rd 7 Pickering, ON L1Y 1C6 Canada
+          </p>
+          <hr />
+        </div>
+
         <p id="content-title">My School</p>
 
         <p id="content-desc">
@@ -1040,12 +1025,18 @@
                 <script>
                   var map;
                   function initMap() {
+                    let zoom = 0  
+                     if ($(window).width() <= 768) { 
+                       zoom = 10
+                     }  else { 
+                       zoom = 14.8
+                     }
                     var flag =
                       "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
                     var schoolIcon = "img/school.png"
                     map = new google.maps.Map(document.getElementById("map"), {
                       center: { lat: 43.943199, lng: -79.029774 },
-                      zoom: 14.8
+                      zoom: zoom
                     });
 
                     var homeMarker = new google.maps.Marker({

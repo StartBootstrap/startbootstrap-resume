@@ -168,6 +168,9 @@ section.resume-section .resume-item .resume-date {
   /* SLIDESHOW */
   .slideshow-container {
     padding: 15% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .fa {
     font-size: 40px;
@@ -175,12 +178,19 @@ section.resume-section .resume-item .resume-date {
   .previous-slide {
     margin-bottom: 0;
   }
-  .filter-container {
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
+
+  .slideshow-footer {
     text-align: center;
-    margin-top: 40px;
+    font-size: 1.3em;
+    font-style: italic;
+  }
+  .filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .filter {
+    margin-left: 5px;
+    margin-bottom: 12px;
   }
   .hide-img {
     font-size: 45px;
@@ -312,6 +322,22 @@ a:active {
   }
   #content-desc {
     font-size: 0.8em;
+  }
+  .slideshow-footer {
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .filter {
+    margin-left: 5px;
+    margin-bottom: 12px;
+  }
+  .hide-golfclubs {
+    display: none;
   }
 }
 
