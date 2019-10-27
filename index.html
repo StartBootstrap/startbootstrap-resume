@@ -932,9 +932,30 @@
       <hr class="m-0" />
 
       <div class="col map-container" id="content-window">
-        <h3 id="content-title"></h3>
+        <p id="content-title">Bunker Hill Golf Club</p>
 
-        <p id="content-desc"></p>
+        <p id="content-desc">
+          3695 Sideline 4 Pickering, ON L1Y 1C8 Canada
+        </p>
+        <hr />
+        <p id="content-title">Watson's Glen Golf Club</p>
+
+        <p id="content-desc">
+          3430 Concession Rd 7 Pickering, ON L1Y 1C6 Canada
+        </p>
+        <hr />
+        <p id="content-title">My School</p>
+
+        <p id="content-desc">
+          3600 Lake Ridge Brooklin, ON L1X 2W3 Canada
+        </p>
+        <hr />
+        <p id="content-title">407/ 412 Carpool Lot</p>
+
+        <p id="content-desc">
+          980 Winchester Rd W Whitby, ON L1M 1V6 Canada
+        </p>
+        <hr />
       </div>
       <section
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -1019,25 +1040,45 @@
                 <script>
                   var map;
                   function initMap() {
+                    var flag =
+                      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+                    var schoolIcon = "../images/school.png";
                     map = new google.maps.Map(document.getElementById("map"), {
-                      center: { lat: -34.397, lng: 150.644 },
-                      zoom: 8
+                      center: { lat: 43.943199, lng: -79.029774 },
+                      zoom: 14.8
                     });
 
-                    var kmlLayer = new google.maps.KmlLayer({
-                      url:
-                        "http://googlemaps.github.io/kml-samples/kml/Placemark/placemark.kml",
-                      suppressInfoWindows: true,
-                      map: map
+                    var homeMarker = new google.maps.Marker({
+                      position: { lat: 43.943199, lng: -79.029774 },
+                      map: map,
+                      animation: google.maps.Animation.DROP,
+                      title: "3910 Kinsale Road"
                     });
 
-                    kmlLayer.addListener("click", function(kmlEvent) {
-                      var text = kmlEvent.featureData.name;
-                      var description = kmlEvent.featureData.description;
-                      console.log(text);
-
-                      showInContentWindow(text, description);
+                    var schoolMarker = new google.maps.Marker({
+                      position: { lat: 43.93956, lng: -79.017323 },
+                      map: map,
+                      animation: google.maps.Animation.DROP,
+                      icon: schoolIcon,
+                      title: "school"
                     });
+
+                  
+        
+                    // var kmlLayer = new google.maps.KmlLayer({
+                    //   url:
+                    //     "",
+                    //   suppressInfoWindows: true,
+                    //   map: map
+                    // });
+
+                    // kmlLayer.addListener("click", function(kmlEvent) {
+                    //   var text = kmlEvent.featureData.name;
+                    //   var description = kmlEvent.featureData.description;
+                    //   console.log(text);
+
+                    //   showInContentWindow(text, description);
+                    // });
 
                     function showInContentWindow(text, desc) {
                       var title = $("#content-title");
@@ -1078,7 +1119,18 @@
         </div>
       </section>
     </div>
-
+    <footer>
+      <!-- <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div> -->
+    </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1091,7 +1143,7 @@
     <script src="js/resume.js"></script>
 
     <!-- GOOGLE MAPS -->
- 
+
     <script type="module">
       import GOOGLE_MAP_KEY from "./key.js";
       function loadScript() {
