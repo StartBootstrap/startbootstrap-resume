@@ -391,17 +391,17 @@ a:active {
   .floor-plan-heading {
     font-family: "Jomolhari", serif;
   }
+  /* Hero  */
+  .hero-main-heading {
+    font-family: "Jomolhari", serif;
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 400px) {
   .btn.filter {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
-  }
-  /* Hero  */
-  .hero-main-heading {
-    font-family: "Jomolhari", serif;
-    font-size: 1em;
   }
 }
 .btn.filter {
