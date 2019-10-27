@@ -398,6 +398,11 @@ a:active {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
   }
+  /* Hero  */
+  .hero-main-heading {
+    font-family: "Jomolhari", serif;
+    font-size: 1em;
+  }
 }
 .btn.filter {
   border: 1px solid black;
