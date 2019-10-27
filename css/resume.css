@@ -286,8 +286,9 @@ a:active {
 }
 
 @media (max-width: 767px) {
+  /* Hero  */
   .hero-main-heading {
-    font-size: 2em;
+    font-size: 1em;
     margin-top: -273px;
     margin-bottom: 220px !important;
     margin-left: 10px;
@@ -390,11 +391,6 @@ a:active {
   /* Floor plan */
   .floor-plan-heading {
     font-family: "Jomolhari", serif;
-  }
-  /* Hero  */
-  .hero-main-heading {
-    font-family: "Jomolhari", serif;
-    font-size: 1em;
   }
 }
 
