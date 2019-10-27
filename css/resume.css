@@ -178,11 +178,20 @@ section.resume-section .resume-item .resume-date {
   .previous-slide {
     margin-bottom: 0;
   }
-
   .slideshow-footer {
     text-align: center;
     font-size: 1.3em;
     font-style: italic;
+  }
+  /* Gallery */
+  .gallery {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery-heading {
+    text-align: center;
+  }
+  .gallery-image-container {
   }
   .filter-container {
     margin-bottom: 20px;
@@ -191,6 +200,8 @@ section.resume-section .resume-item .resume-date {
   .filter {
     margin-left: 5px;
     margin-bottom: 12px;
+    border: none !important;
+    font-size: 1.2em;
   }
   .hide-img {
     font-size: 45px;
@@ -198,6 +209,7 @@ section.resume-section .resume-item .resume-date {
   .fa-check {
     font-size: 1.2em;
   }
+
   .info-section {
     background: rgba(0, 0, 0, 0.9);
     color: white;
@@ -245,6 +257,7 @@ section.resume-section .resume-item .resume-date {
   padding-left: 20px;
   width: 30%;
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
@@ -328,6 +341,9 @@ a:active {
     margin-bottom: 0;
     text-align: center;
   }
+  .gallery-heading {
+    text-align: center;
+  }
   .filter-container {
     margin-bottom: 20px;
     text-align: center;
@@ -335,9 +351,27 @@ a:active {
   .filter {
     margin-left: 5px;
     margin-bottom: 12px;
+    border: none !important;
   }
   .hide-golfclubs {
     display: none;
+  }
+  .info-section {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .info-heading {
+    margin: 20px;
+    padding-top: 20px;
+  }
+  .info-section ul li {
+    margin-left: 20px;
+  }
+  .info-right-section {
+    text-align: center;
   }
 }
 
