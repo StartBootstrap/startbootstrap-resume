@@ -9,7 +9,7 @@ body {
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
-  color: #868e96;
+  color: #000;
 }
 
 @media (min-width: 992px) {
@@ -150,17 +150,19 @@ section.resume-section .resume-item .resume-date {
 }
 
 @media (min-width: 768px) {
+  /* Hero */
   section.resume-section {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
-  .hero-address {
+  .hero-main-heading {
     margin-top: -65%;
     margin-bottom: 60% !important;
     margin-left: 20px;
-    font-size: 5em;
+    font-size: 2em;
+    font-family: "Jomolhari", serif;
   }
   .home-address:hover {
     cursor: pointer;
@@ -284,11 +286,12 @@ a:active {
 }
 
 @media (max-width: 767px) {
-  .hero-address {
-    font-size: 3em;
+  .hero-main-heading {
+    font-size: 2em;
     margin-top: -273px;
-    margin-bottom: 200px !important;
+    margin-bottom: 220px !important;
     margin-left: 10px;
+    font-family: "Jomolhari", serif;
   }
   .navbar {
     transition: top 0.3s;
@@ -314,14 +317,10 @@ a:active {
 }
 
 @media (max-width: 450px) {
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
+  div {
+    font-family: "Jomolhari", serif;
   }
+
   #content-title {
     margin-top: 20px;
     font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
@@ -330,7 +329,7 @@ a:active {
       "Noto Color Emoji";
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
+    color: #000;
     font-size: 1.5em;
   }
   #content-desc {
@@ -341,8 +340,17 @@ a:active {
     margin-bottom: 0;
     text-align: center;
   }
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
   .gallery-heading {
     text-align: center;
+    font-family: "Jomolhari", serif;
   }
   .filter-container {
     margin-bottom: 20px;
@@ -355,6 +363,12 @@ a:active {
   }
   .hide-golfclubs {
     display: none;
+  }
+  /* Info  */
+  .info-main-heading {
+    font-family: "Jomolhari", serif;
+    font-size: 42px;
+    text-align: center;
   }
   .info-section {
     background: rgba(0, 0, 0, 0.9);
@@ -373,6 +387,10 @@ a:active {
   .info-right-section {
     text-align: center;
   }
+  /* Floor plan */
+  .floor-plan-heading {
+    font-family: "Jomolhari", serif;
+  }
 }
 
 @media (max-width: 400px) {
@@ -389,4 +407,12 @@ a:active {
 
 .filter-container {
   display: block;
+}
+
+.gallery-heading,
+.info-main-heading,
+.floor-plan-heading,
+p,
+div {
+  font-family: "Jomolhari", serif;
 }
