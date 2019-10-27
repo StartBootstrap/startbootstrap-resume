@@ -1,3 +1,4 @@
+// import { EMAIL_KEY } from "../key.js";
 (function($) {
   ("use strict"); // Start of use strict
 
@@ -72,11 +73,59 @@
       }, 300);
     });
   });
+
+  $(".scheduale").click(() => {
+    // sendMandrillEmail();
+    sendTheMail();
+  });
 })(jQuery); // End of use strict
 
 const sendEmail = () => {
-  const subject = "3910 Kinsale Schedualing Appoitment";
-  const body = "Hi, I would like to view the house.";
+  const subject = "3910 Kinsale Road";
+  const body = "Hi, I would like to make an appoitment to view the house.";
 
   window.open(`mailto:benaimjacob@gmail.com?subject=${subject}&body=${body}`);
+};
+
+function sendTheMail() {
+  var m = new mandrill.Mandrill(EMAIL_KEY); // This will be public
+
+  m.messages.send({
+    message: {
+      from_email: "jacob.benaim@icloud.com",
+      from_name: "jay",
+      to: [{ email: "benaimjacob@gmail.com", name: "jay" }], // Array of recipients
+      subject: "3910 Kinsale Road",
+      html: "Hi, I would like to make an appoitment to view the house."
+      // text: "" // Alternatively, use the "html" key to send HTML emails rather than plaintext
+    }
+  });
+}
+const sendMandrillEmail = () => {
+  $.ajax({
+    type: "POST",
+    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+    data: {
+      key: EMAIL_KEY,
+      message: {
+        from_email: "benaimjacob@gmail.com",
+        to: [
+          {
+            email: "jacob.benaim@icloud.com",
+            name: "David Pekar",
+            type: "to"
+          }
+        ],
+        autotext: "true",
+        subject: "3910 Kinsale Road",
+        html: "Hi, I would like to make an appoitment to view the house."
+      }
+    }
+  })
+    .done(function(response) {
+      console.log(response); // if you're into that sorta thing
+    })
+    .catch(err => {
+      console.log(err.responseJSON.message);
+    });
 };
