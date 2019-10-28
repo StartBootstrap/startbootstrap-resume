@@ -150,6 +150,11 @@ section.resume-section .resume-item .resume-date {
 }
 
 @media (min-width: 768px) {
+  /* Navbar */
+  .nav-phone-number {
+    margin-top: 40px;
+    color: white !important;
+  }
   /* Hero */
   section.resume-section {
     min-height: 100vh;
