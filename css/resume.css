@@ -150,35 +150,49 @@ section.resume-section .resume-item .resume-date {
 }
 
 @media (min-width: 768px) {
-  /* Navbar */
-  .nav-phone-number {
-    margin-top: 160px !important;
-    color: white !important;
-  }
-  /* Hero */
+  /* Global */
   section.resume-section {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+  /* Navbar */
+  .nav-phone-number {
+    margin-top: 160px !important;
+    color: white !important;
+  }
+  /* Hero */
+
   .hero-main-heading {
     margin-top: -65%;
     margin-bottom: 60% !important;
     margin-left: 20px;
-    font-size: 2em;
+    font-size: 3em;
+    font-family: "Jomolhari", serif;
+  }
+  .hero-subheading {
+    font-size: 3em;
     font-family: "Jomolhari", serif;
   }
   .home-address:hover {
     cursor: pointer;
   }
+
   /* SLIDESHOW */
   .slideshow-container {
-    padding: 15% 0;
+    padding: 4% 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+  /* .slider1_container {
+    min-width: 900px !important;
+    height: 700px !important;
+  }
+  .slides {
+    width: 100% !important;
+  } */
   .fa {
     font-size: 40px;
   }
@@ -298,6 +312,9 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+  .hero-container {
+    width: 100%;
   }
 }
 

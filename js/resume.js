@@ -74,6 +74,9 @@
     });
   });
 
+  $(".phone-number").click(() => {
+    window.open("tel:6476404714");
+  });
   // $(".img-fluids").click(e => {
   //   e.preventDefault();
   //   const imgElem = e.target;
