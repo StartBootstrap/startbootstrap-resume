@@ -102,7 +102,7 @@
             <div class="subheading mb-3">Deloitte Consulting LLP, Government & Public Services - Rosslyn, VA</div>
             <p>Client: Veterans Benefits Administration</p>
             <p>Produced deliverables to analyze Business Architecture requirements for a $30M systems modernization contract.</p>
-            <button type="button" class="collapsiblesection">Achievements: </button>
+            <button type="button" class="collapsiblesection">Achievements: <i onclick="toggleFunction(this)" class="fas fa-toggle-off" id="switch"></i> <span id="sign">+</span> </button>
             <div class="collapsecontent">
             <p><br>
               • Designed onboarding PowerPoint Deck for new Partner providing a historical analysis of contract’s financial performance & key stakeholders <br><br>
@@ -126,7 +126,7 @@
             <h3 class="mb-0">Policy and Advocacy Intern</h3>
             <div class="subheading mb-3">HealthHIV - Washington DC</div>
             <p>Researched current policy issues impacting HIV patient communities for a federal-funded medical capacity-building health non-profit.</p>
-            <button type="button" class="collapsiblesection">Achievements: </button>
+            <button type="button" class="collapsiblesection">Achievements: <i onclick="toggleFunction(this)" class="fas fa-toggle-off" id="switch"></i> </button>
             <div class="collapsecontent">
             <p><br>
               • Produced health policy articles for monthly National LGBT Health Coalition newsletter discussing outlook of policy activity<br><br>
@@ -149,7 +149,7 @@
             <h3 class="mb-0">Program Coordinator</h3>
             <div class="subheading mb-3">Sponsors for Educational Opportunity (SEO) - New York, NY</div>
             <p>Maintained scholars and new applicant databases serving 1000+ students, presided over candidate interview coordination for selective non-profit academic program aimed to narrow education gap across NYC DOE public schools.</p>
-            <button type="button" class="collapsiblesection">Achievements: </button>
+            <button type="button" class="collapsiblesection">Achievements: <i onclick="toggleFunction(this)" class="fas fa-toggle-off" id="switch"></i> </button>
             <div class="collapsecontent">
             <p><br>
               • Developed high-level SAT Tracker for class of 240 students which provided management with diagnostics of score trends<br><br>
@@ -171,7 +171,7 @@
             <h3 class="mb-0">Municipal Securities Product Control Analyst</h3>
             <div class="subheading mb-3">Bank of America Merrill Lynch - New York, NY</div>
             <p>Managed accurate financial reporting and trade flow analysis for Municipal Markets trading desks, specialized in Primary and Secondary bond products. Coordinated relationships with internal clients (traders, tech support, market risk, and back office teams) to minimize operational risk for a $700M+ business.</p>
-            <button type="button" class="collapsiblesection">Achievements: </button>
+            <button type="button" class="collapsiblesection">Achievements: <i onclick="toggleFunction(this)" class="fas fa-toggle-off" id="switch"></i> </button>
             <div class="collapsecontent">
             <p><br>
               • Researched and performed Independent Price Verification analysis for monthly volume of 2,500+ bond securities to monitor large discrepancies between internal prices and average market value<br><br>
@@ -424,6 +424,7 @@
     var coll = document.getElementsByClassName("collapsiblesection");
   var i;
 
+
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
@@ -436,6 +437,28 @@
     } )  ;
   }
   </script>
+
+<!-- Script for plus/minus buttons -->
+  <script>
+  var sign = document.getElementById("sign");
+    sign.onclick= function(){
+    this.innerHTML == "-"};
+    sign.onclick = function(){
+      console.log("clicked");
+    }
+    sign.onclick = function(){
+      sign.innerHTML = "-";
+    }
+
+  </script> 
+
+  <!-- Script for toggle on/off-->
+  <script>
+  function toggleFunction(x){
+    x.classList.toggle("fa-toggle-on");
+  }
+
+  </script>  
 
 </body>
 
