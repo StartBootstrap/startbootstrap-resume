@@ -256,6 +256,9 @@ section.resume-section .resume-item .resume-date {
     margin: 20px;
     padding-top: 20px;
   }
+  .info-main-heading {
+    text-align: center;
+  }
   .info-section ul li {
     margin-left: 20px;
   }
@@ -350,6 +353,9 @@ a:active {
   }
   #content-window {
     display: inline-block;
+  }
+  .modal {
+    padding-top: 55%;
   }
 }
 
