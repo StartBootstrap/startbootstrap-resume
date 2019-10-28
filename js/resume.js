@@ -74,10 +74,26 @@
     });
   });
 
-  $(".scheduale").click(() => {
-    // sendMandrillEmail();
-    sendTheMail();
-  });
+  // $(".img-fluids").click(e => {
+  //   e.preventDefault();
+  //   const imgElem = e.target;
+  //   console.log(imgElem);
+  //   console.log(e);
+  //   imgElem.className = imgElem.className + " modal-image";
+  //   console.log(imgElem);
+  //   $(".gallery-image-container")
+  //     .append(`    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  //                 <div class="modal-dialog " role="document">
+
+  //                     <div class="modal-body">
+  //                   ${imgElem}
+  //                     </div>
+
+  //                   </div>
+  //                 </div>`);
+  //   // $(".modal").modal("toggle");
+  //   // $("modal-image").toggle();
+  // });
 })(jQuery); // End of use strict
 
 const sendEmail = () => {

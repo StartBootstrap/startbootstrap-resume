@@ -152,7 +152,7 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 768px) {
   /* Navbar */
   .nav-phone-number {
-    margin-top: 40px;
+    margin-top: 160px !important;
     color: white !important;
   }
   /* Hero */
@@ -212,6 +212,21 @@ section.resume-section .resume-item .resume-date {
   }
   .hide-img {
     font-size: 45px;
+  }
+  /* MODAL */
+  .modal-body {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-image {
+    min-width: 1000px;
+    padding: 40px 0;
+  }
+  .modal-btn {
+    margin-left: -150px;
+  }
+  .modal-btn:hover {
+    cursor: pointer;
   }
   .fa-check {
     font-size: 1.2em;
