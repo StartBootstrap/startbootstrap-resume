@@ -77,26 +77,24 @@
   $(".phone-number").click(() => {
     window.open("tel:6476404714");
   });
-  // $(".img-fluids").click(e => {
-  //   e.preventDefault();
-  //   const imgElem = e.target;
-  //   console.log(imgElem);
-  //   console.log(e);
-  //   imgElem.className = imgElem.className + " modal-image";
-  //   console.log(imgElem);
-  //   $(".gallery-image-container")
-  //     .append(`    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  //                 <div class="modal-dialog " role="document">
 
-  //                     <div class="modal-body">
-  //                   ${imgElem}
-  //                     </div>
+  $(".img-fluid").click(e => {
+    const string = String(e.target.src);
+    const listOfStrings = string.split("/");
+    const imgNum = listOfStrings[listOfStrings.length - 1];
+    const src = "img/" + imgNum;
+    const id = imgNum.split(".")[0];
+    const container = $(".gallery-image-container");
+    container.append(`<div class="modal fade" id="${id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true">
+                  <div class="modal-dialog " role="document">
 
-  //                   </div>
-  //                 </div>`);
-  //   // $(".modal").modal("toggle");
-  //   // $("modal-image").toggle();
-  // });
+                    <div class="modal-body">
+                      <img data-u="image" class="img-fluid modal-image" src=${src} alt="front-view" />
+                    </div>
+                  </div>
+                </div> `);
+  });
 })(jQuery); // End of use strict
 
 const sendEmail = () => {

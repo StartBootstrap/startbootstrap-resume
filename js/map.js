@@ -1,24 +1,53 @@
-// $(function() {
-//   //   //   dotenv.config();
+var map;
+function initMap() {
+  let zoom = 0;
+  if ($(window).width() <= 768) {
+    zoom = 13;
+  } else {
+    zoom = 14.8;
+  }
+  var flag =
+    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+  var schoolIcon = "img/school.png";
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 43.943199, lng: -79.029774 },
+    zoom: zoom
+  });
 
-//   //   //   var GOOGLE_MAP_KEY = process.env.GOOGLE_API_KEY;
+  var homeMarker = new google.maps.Marker({
+    position: { lat: 43.943199, lng: -79.029774 },
+    map: map,
+    animation: google.maps.Animation.DROP,
+    title: "3910 Kinsale Road"
+  });
 
-//   //   //   function loadScript() {
-//   //   //     var script = document.createElement("script");
-//   //   //     script.type = "text/javascript";
-//   //   //     script.src =
-//   //   //       "https://maps.googleapis.com/maps/api/js?v=3" +
-//   //   //       "&key=" +
-//   //   //       GOOGLE_MAP_KEY +
-//   //   //       "&libraries=places&callback=initMap"; //& needed
-//   //   //     document.body.appendChild(script);
-//   //   //   }
+  var schoolMarker = new google.maps.Marker({
+    position: { lat: 43.93956, lng: -79.017323 },
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: schoolIcon,
+    title: "school"
+  });
 
-//   //   //   window.onload = loadScript;
-//   var dotenv = require("dotenv");
-//   dotenv.config();
+  // var kmlLayer = new google.maps.KmlLayer({
+  //   url:
+  //     "",
+  //   suppressInfoWindows: true,
+  //   map: map
+  // });
 
-//   console.log(process.env.GOOGLE_API_KEY);
-// });
-// const map = "sada";
-// export default map;
+  // kmlLayer.addListener("click", function(kmlEvent) {
+  //   var text = kmlEvent.featureData.name;
+  //   var description = kmlEvent.featureData.description;
+  //   console.log(text);
+
+  //   showInContentWindow(text, description);
+  // });
+
+  function showInContentWindow(text, desc) {
+    var title = $("#content-title");
+    var des = $("#content-desc");
+    title.text(text);
+    des.text(desc);
+  }
+}

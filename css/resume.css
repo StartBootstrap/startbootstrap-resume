@@ -502,3 +502,125 @@ p,
 div {
   font-family: "Jomolhari", serif;
 }
+/* JSSOR SLIDESHOW */
+
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* jssor slider thumbnail navigator skin 07 css */
+/*
+                .jssort07 .p            (normal)
+                .jssort07 .p:hover      (normal mouseover)
+                .jssort07 .pav          (active)
+                .jssort07 .pav:hover    (active mouseover)
+                .jssort07 .pdn          (mousedown)
+                */
+.jssort07 {
+  position: absolute;
+  /* size of thumbnail navigator container */
+  width: 800px;
+  height: 100px;
+}
+
+.jssort07 .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99px;
+  height: 66px;
+}
+
+.jssort07 .i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 99px;
+  height: 66px;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.jssort07 .p:hover .i,
+.jssort07 .pav .i {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.jssort07 .o {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 97px;
+  height: 64px;
+  border: 1px solid #000;
+  box-sizing: content-box;
+  transition: border-color 0.6s;
+  -moz-transition: border-color 0.6s;
+  -webkit-transition: border-color 0.6s;
+  -o-transition: border-color 0.6s;
+}
+
+.jssort07 .pav .o {
+  border-color: #0099ff;
+}
+
+.jssort07 .p:hover .o {
+  border-color: #fff;
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+}
+
+.jssort07 .p.pdn .o {
+  border-color: #0099ff;
+}
+
+* html .jssort07 .o {
+  /* ie quirks mode adjust */
+  width/**/
+                : 99px;
+  height/**/
+                : 66px;
+}
+
+.jssora051 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.jssora051 .a {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1460;
+  stroke-miterlimit: 10;
+}
+
+.jssora051:hover {
+  opacity: 0.8;
+}
+
+.jssora051.jssora051dn {
+  opacity: 0.5;
+}
+
+.jssora051.jssora051ds {
+  opacity: 0.3;
+  pointer-events: none;
+}
