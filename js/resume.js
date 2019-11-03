@@ -88,13 +88,73 @@
     container.append(`<div class="modal fade" id="${id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                   aria-hidden="true">
                   <div class="modal-dialog " role="document">
+                  <div class="close-btn">X</div> 
 
                     <div class="modal-body">
                       <img data-u="image" class="img-fluid modal-image" src=${src} alt="front-view" />
-                    </div>
-                  </div>
+                      </div>
+                      </div>
                 </div> `);
   });
+
+  /* Gallery hover */
+  $(function() {
+    $(".all").hover(
+      function() {
+        if ($(window).width() >= 567) {
+          let element = $(this);
+          let className = element.attr("class");
+          let category = className.slice(-1);
+          Number(category);
+
+          const CATEGORIES = {
+            0: "Front",
+            1: "Exterior",
+            2: "Kitchen",
+            3: "Bathroom",
+            4: "Living Room",
+            5: "Bedroom",
+            6: "Office",
+            7: "Laundry Room"
+          };
+          console.log($(this));
+          console.log(CATEGORIES[category]);
+
+          if (CATEGORIES[category] === undefined) {
+            $(this)
+              .find(".img-fluid")
+              .css("opacity", 1);
+          } else {
+            $(this)
+              .find(".img-fluid")
+              .css("opacity", 0.3);
+            $(this).append(
+              ` <div class="middle"><div class="text">${CATEGORIES[category]}</div></div>`
+            );
+          }
+        } else {
+          $(this)
+            .find(".img-fluid")
+            .removeClass("middle");
+        }
+      },
+      () => {
+        $(this)
+          .find(".img-fluid")
+          .css("opacity", 1);
+      }
+    );
+  });
+
+  // $(".all").hover(
+  //   () => {
+  //     $(this).append("<div class='gallery-hover'>Hello</div>");
+  //     console.log($(this).attr("class"));
+  //   },
+  //   () => {
+  //     $(this).append(`hover`);
+  //   }
+  // );
 })(jQuery); // End of use strict
 
 const sendEmail = () => {

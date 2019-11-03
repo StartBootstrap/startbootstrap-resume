@@ -162,6 +162,10 @@ section.resume-section .resume-item .resume-date {
     margin-top: 160px !important;
     color: white !important;
   }
+  .nav-link {
+    font-size: 1.4em;
+    color: white !important ;
+  }
   /* Hero */
 
   .hero-main-heading {
@@ -180,12 +184,12 @@ section.resume-section .resume-item .resume-date {
   }
 
   /* SLIDESHOW */
-  .slideshow-container {
+  /* .slideshow-container {
     padding: 4% 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
+  } */
   /* .slider1_container {
     min-width: 900px !important;
     height: 700px !important;
@@ -193,7 +197,7 @@ section.resume-section .resume-item .resume-date {
   .slides {
     width: 100% !important;
   } */
-  .fa {
+  /* .fa {
     font-size: 40px;
   }
   .previous-slide {
@@ -203,15 +207,52 @@ section.resume-section .resume-item .resume-date {
     text-align: center;
     font-size: 1.3em;
     font-style: italic;
-  }
+  } */
   /* Gallery */
-  .gallery {
-    display: flex;
-    justify-content: center;
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .all {
+    position: relative;
+  }
+  /* .all:hover {
+    opacity: 0.3;
+  } */
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .middle:hover {
+    opacity: 1;
+  }
+
+  .text {
+    background-color: #495057;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    opacity: 1;
+  }
+  .img-fluid {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
   }
   .gallery-heading {
     text-align: center;
   }
+
   .gallery-image-container {
   }
   .filter-container {
@@ -401,6 +442,7 @@ a:active {
     margin-bottom: 0;
     text-align: center;
   }
+
   .gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
