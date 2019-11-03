@@ -565,6 +565,7 @@ a:active {
     height: 300px;
     width: 300px;
     margin-bottom: 40px;
+    margin: 0 auto;
   }
   .info-heading {
     margin: 20px;
@@ -574,6 +575,7 @@ a:active {
     margin-left: 20px;
   }
   .info-right-section {
+    margin-top: 30px;
     text-align: center;
   }
   /* Floor plan */
