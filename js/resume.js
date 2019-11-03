@@ -39,20 +39,20 @@
   $(".hero-email").click(() => sendEmail());
 
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      if ($(window).width() <= 967)
-        $(".bg-primary").css({
-          top: 0,
-          transition: "0.4s ease-out"
-        });
-    } else {
-      if ($(window).width() <= 967) $(".bg-primary").css("top", "-60px");
-    }
-    prevScrollpos = currentScrollPos;
-  };
+  // var prevScrollpos = window.pageYOffset;
+  // window.onscroll = function() {
+  //   var currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     if ($(window).width() <= 967)
+  //       $(".bg-primary").css({
+  //         top: 0,
+  //         transition: "0.4s ease-out"
+  //       });
+  //   } else {
+  //     if ($(window).width() <= 967) $(".bg-primary").css("top", "-60px");
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // };
 
   /* GALLERY */
 
