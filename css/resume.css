@@ -536,6 +536,14 @@ a:active {
   div {
     font-family: "Jomolhari", serif;
   }
+  /* HERO */
+  .hero-main-heading {
+    display: none;
+  }
+  .hero-subheading {
+    font-size: 3em;
+    margin-top: 20px;
+  }
   /* NAVBAR */
 
   #content-title {
