@@ -117,8 +117,6 @@
             6: "Office",
             7: "Laundry Room"
           };
-          console.log($(this));
-          console.log(CATEGORIES[category]);
 
           if (CATEGORIES[category] === undefined) {
             $(this)
@@ -145,16 +143,6 @@
       }
     );
   });
-
-  // $(".all").hover(
-  //   () => {
-  //     $(this).append("<div class='gallery-hover'>Hello</div>");
-  //     console.log($(this).attr("class"));
-  //   },
-  //   () => {
-  //     $(this).append(`hover`);
-  //   }
-  // );
 })(jQuery); // End of use strict
 
 const sendEmail = () => {
