@@ -129,6 +129,8 @@
                 aria-hidden="true">
                 <div class="modal-dialog " role="document">
                 <div class="close-btn">X</div>
+                <div class="prev-btn"><</div>
+                <div class="next-btn">></div>
 
                   <div class="modal-body">
                     <img data-u="image" class="img-fluid modal-image" src="${src}" alt="front-view" />

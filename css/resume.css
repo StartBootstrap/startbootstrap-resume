@@ -208,12 +208,12 @@ section.resume-section .resume-item .resume-date {
   .slides {
     min-width: 900px !important;
   }
-  .carousel {
-    /* position: absolute; */
-    background: gray;
+  /* .carousel { */
+  /* position: absolute; */
+  /* background: gray;
     display: none;
-  }
-  .carousel-close {
+  } */
+  /* .carousel-close {
     font-size: 1.3em;
     float: right;
     margin-right: -10%;
@@ -232,7 +232,7 @@ section.resume-section .resume-item .resume-date {
   .carousel-control-prev {
     height: 75%;
     margin-top: 15%;
-  }
+  } */
   /* .fa {
     font-size: 40px;
   }
@@ -324,6 +324,10 @@ section.resume-section .resume-item .resume-date {
     font-size: 45px;
   }
   /* MODAL */
+  /* .modal {
+    margin-left: -60px;
+    padding-right: 80px;
+  } */
   .modal-body {
     display: flex;
     justify-content: center;
@@ -334,7 +338,7 @@ section.resume-section .resume-item .resume-date {
     padding: 30px 0;
   }
   .modal-btn {
-    margin-left: -150px;
+    margin-left: -130px;
   }
   .modal-btn:hover {
     cursor: pointer;
@@ -350,6 +354,24 @@ section.resume-section .resume-item .resume-date {
   .close-btn:hover {
     cursor: pointer;
   }
+  /* .prev-btn,
+  .next-btn {
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    margin-top: 55%;
+  }
+  .prev-btn {
+    float: left;
+    margin-left: -60px;
+    padding-right: 80%;
+  }
+  .next-btn {
+    float: right;
+    margin-right: -82%;
+    padding: 30px;
+  } */
+  /* DETAILS */
   .info-section {
     background: rgba(0, 0, 0, 0.9);
     color: white;
