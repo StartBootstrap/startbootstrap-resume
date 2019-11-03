@@ -213,6 +213,15 @@ section.resume-section .resume-item .resume-date {
     background: gray;
     display: none;
   }
+  .carousel-close {
+    font-size: 1.3em;
+    float: right;
+    margin-right: -10%;
+    margin-top: -80%;
+  }
+  .carousel-close:hover {
+    cursor: pointer;
+  }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     color: black;
@@ -742,3 +751,23 @@ div {
   opacity: 0.3;
   pointer-events: none;
 }
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+/* 
+
+for zoom animation 
+uncomment this part if you haven't added this code anywhere else
+
+*/

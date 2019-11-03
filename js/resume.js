@@ -218,6 +218,12 @@
       <img class="d-block w-100" src="img/img41.JPG" alt="slide">
     </div>
   </div>
+
+    <div class="carousel-caption d-none d-md-block">
+    <a class="carousel-close" role="button" >
+    <span class="carousel-close" aria-hidden="true">X</span>
+  </a>
+  </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -293,16 +299,17 @@
                   <div class="modal-body">
                     <img data-u="image" class="img-fluid modal-image" src="${src}" alt="front-view" />
                     </div>
-                    <div class="left-arrow"><</div> <div class="right-arrow">> </div> 
+
                     </div>
                     </div> `);
                 $(".modal").modal("show");
-
+                //                     <div class="left-arrow"><</div> <div class="right-arrow">> </div>
                 // $(".modal-backdrop").hide();
                 $(".modal").on("show.bs.modal", function(event) {
                   var idx = $(".modal:visible").length;
                   $(this).css("z-index", 1040 + 10 * idx);
                 });
+
                 $(".modal").on("hide.bs.modal", function(event) {
                   // var idx = $(".modal:visible").length - 1; // raise backdrop after animation.
                   $(".modal-backdrop").hide();
@@ -316,6 +323,9 @@
               });
             });
           }
+          $(".carousel-close").click(() => {
+            $(".carousel").hide();
+          });
         } else {
           $(this)
             .find(".img-fluid")
