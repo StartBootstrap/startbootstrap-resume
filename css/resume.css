@@ -228,6 +228,11 @@ section.resume-section .resume-item .resume-date {
     height: 60px;
     width: 60px;
   }
+  .carousel-control-next,
+  .carousel-control-prev {
+    height: 75%;
+    margin-top: 15%;
+  }
   /* .fa {
     font-size: 40px;
   }
@@ -502,6 +507,7 @@ a:active {
   div {
     font-family: "Jomolhari", serif;
   }
+  /* NAVBAR */
 
   #content-title {
     margin-top: 20px;
@@ -595,6 +601,48 @@ a:active {
     margin-right: 10px;
     color: white;
   }
+  /* CAROUSEL */
+  .gallery-image-container {
+    max-width: 360px !important;
+    margin-left: -30px;
+  }
+
+  .slide {
+    max-width: 200px !important;
+  }
+  .carousel {
+    /* position: absolute; */
+    background: gray;
+    display: none;
+  }
+  .carousel-close {
+    font-size: 1.3em;
+    float: right;
+    /* margin-right: -10%;
+    margin-top: -80%;
+    z-index: 10; */
+  }
+  .carousel-close:hover {
+    cursor: pointer;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    color: black;
+    height: 40px;
+    width: 40px;
+  }
+  .carousel-item,
+  .active,
+  .carousel-inner,
+  .carousel,
+  .d-block {
+    min-width: 385px !important;
+    height: 280px;
+    /* margin-left: -10px; */
+  }
+  /* .d-block {
+    min-width: 100% !important;
+  } */
 }
 #content-window {
   float: left;
