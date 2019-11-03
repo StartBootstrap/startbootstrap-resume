@@ -156,6 +156,7 @@
                     <img data-u="image" class="img-fluid modal-image" src="${src}" alt="front-view" />
                     </div>
                     </div>
+                    <div><</div> <div>> </div> 
               </div> `);
                 $(".modal").modal("show");
                 // $(".modal-backdrop").hide();
