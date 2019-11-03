@@ -77,25 +77,27 @@
   $(".phone-number").click(() => {
     window.open("tel:6476404714");
   });
+  // $(function() {
+  //   $(".img-fluid").click(e => {
+  //     const string = String(e.target.src);
+  //     const listOfStrings = string.split("/");
+  //     const imgNum = listOfStrings[listOfStrings.length - 1];
+  //     const src = "img/" + imgNum;
+  //     const id = imgNum.split(".")[0];
+  //     const container = $(".gallery-image-container");
+  //     console.log(container);
+  //     container.append(`<div class="modal fade" id="${id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  //               aria-hidden="true">
+  //               <div class="modal-dialog " role="document">
+  //               <div class="close-btn">X</div>
 
-  $(".img-fluid").click(e => {
-    const string = String(e.target.src);
-    const listOfStrings = string.split("/");
-    const imgNum = listOfStrings[listOfStrings.length - 1];
-    const src = "img/" + imgNum;
-    const id = imgNum.split(".")[0];
-    const container = $(".gallery-image-container");
-    container.append(`<div class="modal fade" id="${id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                  aria-hidden="true">
-                  <div class="modal-dialog " role="document">
-                  <div class="close-btn">X</div> 
-
-                    <div class="modal-body">
-                      <img data-u="image" class="img-fluid modal-image" src=${src} alt="front-view" />
-                      </div>
-                      </div>
-                </div> `);
-  });
+  //                 <div class="modal-body">
+  //                   <img data-u="image" class="img-fluid modal-image" src=${src} alt="front-view" />
+  //                   </div>
+  //                   </div>
+  //             </div> `);
+  //   });
+  // });
 
   /* Gallery hover */
   $(function() {
@@ -123,18 +125,58 @@
               .find(".img-fluid")
               .css("opacity", 1);
           } else {
-            $(this)
-              .find(".img-fluid")
-              .css("opacity", 0.3);
+            // $(this)
+            //   .find(".img-fluid")
+            //   .css("opacity", 0.3);
+            // $(function() {
             $(this).append(
               ` <div class="middle"><div class="text">${CATEGORIES[category]}</div></div>`
             );
+            // console.log($(this).find(".middle"));
+            // });
+            $(function() {
+              $(".text").click(function() {
+                const parent = $(".row");
+                const src = $(this)
+                  .parentsUntil(parent)
+                  .find(".img-fluid")
+                  .attr("src");
+                const listOfStrings = src.split("/");
+                const imgNum = listOfStrings[listOfStrings.length - 1];
+                const id = imgNum.split(".")[0];
+                const container = $(".gallery-image-container");
+                console.log(src);
+
+                container.append(`<div class="modal fade" id="${id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                <div class="close-btn">X</div>
+
+                  <div class="modal-body">
+                    <img data-u="image" class="img-fluid modal-image" src="${src}" alt="front-view" />
+                    </div>
+                    </div>
+              </div> `);
+                $(".modal").modal("show");
+                // $(".modal-backdrop").hide();
+                $(".modal").on("show.bs.modal", function(event) {
+                  var idx = $(".modal:visible").length;
+                  $(this).css("z-index", 1040 + 10 * idx);
+                });
+                $(".modal").on("hide.bs.modal", function(event) {
+                  // var idx = $(".modal:visible").length - 1; // raise backdrop after animation.
+                  $(".modal-backdrop").hide();
+                  $(".modal").hide();
+                });
+              });
+            });
           }
         } else {
           $(this)
             .find(".img-fluid")
             .removeClass("middle");
         }
+        $(".modal").modal("hide");
       },
       () => {
         $(this)

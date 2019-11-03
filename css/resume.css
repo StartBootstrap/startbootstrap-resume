@@ -237,6 +237,7 @@ section.resume-section .resume-item .resume-date {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 93%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -246,11 +247,14 @@ section.resume-section .resume-item .resume-date {
   }
 
   .text {
-    background-color: #495057;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     font-size: 16px;
-    padding: 23px 38px;
     opacity: 0.8;
+    padding: 25% 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 0.7px;
   }
   .img-fluid {
     opacity: 1;
@@ -284,6 +288,7 @@ section.resume-section .resume-item .resume-date {
   .modal-body {
     display: flex;
     justify-content: center;
+    /* margin-left: 280px; */
   }
   .modal-image {
     min-width: 900px;
@@ -301,7 +306,7 @@ section.resume-section .resume-item .resume-date {
   .close-btn {
     float: right;
     color: white;
-    margin-right: -160px;
+    margin-right: -300px;
   }
   .close-btn:hover {
     cursor: pointer;
@@ -379,6 +384,23 @@ section.resume-section .resume-item .resume-date {
   .hero-container {
     width: 100%;
   }
+  .middle {
+    width: 98%;
+  }
+  .text {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    padding: 30% 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    z-index: 5;
+  }
+  .modal-body {
+    margin-left: 280px;
+  }
 }
 
 .bg-primary {
@@ -418,7 +440,12 @@ a:active {
     padding-top: 55%;
   }
 }
-
+/* .modal {
+  position: absolute;
+  z-index: 9;
+  width: 500px;
+  height: 400px;
+} */
 .gallery {
   -webkit-column-count: 3;
   -moz-column-count: 3;
