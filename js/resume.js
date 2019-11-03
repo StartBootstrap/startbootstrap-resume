@@ -77,28 +77,165 @@
   $(".phone-number").click(() => {
     window.open("tel:6476404714");
   });
-  // $(function() {
-  //   $(".img-fluid").click(e => {
-  //     const string = String(e.target.src);
-  //     const listOfStrings = string.split("/");
-  //     const imgNum = listOfStrings[listOfStrings.length - 1];
-  //     const src = "img/" + imgNum;
-  //     const id = imgNum.split(".")[0];
-  //     const container = $(".gallery-image-container");
-  //     console.log(container);
-  //     container.append(`<div class="modal fade" id="${id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-  //               aria-hidden="true">
-  //               <div class="modal-dialog " role="document">
-  //               <div class="close-btn">X</div>
-
-  //                 <div class="modal-body">
-  //                   <img data-u="image" class="img-fluid modal-image" src=${src} alt="front-view" />
-  //                   </div>
-  //                   </div>
-  //             </div> `);
-  //   });
-  // });
-
+  $(function() {
+    $(".img-fluid").click(e => {
+      const string = String(e.target.src);
+      const listOfStrings = string.split("/");
+      const imgNum = listOfStrings[listOfStrings.length - 1];
+      const src = "img/" + imgNum;
+      const id = imgNum.split(".")[0];
+      const container = $(".gallery-image-container");
+      console.log(container);
+      $(".img-fluid").css("opacity", 0.3);
+      $(".carousel").css({
+        display: "inline-block",
+        "z-index": 9,
+        "min-width": "900px"
+        // "margin-left": "-460px"
+      });
+      container.append(`
+      
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/img2.JPG" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img3.JPG" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img4.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img5.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img6.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img7.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img8.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img9.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img10.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img11.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img12.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img13.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img14.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img15.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img16.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img17.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img18.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img19.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img20.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img21.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img22.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img23.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img24.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img25.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img26.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img27.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img28.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img29.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img30.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img31.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img32.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img33.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img34.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img35.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img36.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img37.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img38.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img39.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img40.JPG" alt="slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img41.JPG" alt="slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> `);
+    });
+  });
+  $(function() {
+    $(".jssora051").hover(() => {
+      $(".jssora051").click(() => {
+        alert("hello");
+      });
+    });
+  });
   /* Gallery hover */
   $(function() {
     $(".all").hover(
@@ -136,6 +273,7 @@
             // });
             $(function() {
               $(".text").click(function() {
+                $(".carousel").hide();
                 const parent = $(".row");
                 const src = $(this)
                   .parentsUntil(parent)
@@ -155,10 +293,11 @@
                   <div class="modal-body">
                     <img data-u="image" class="img-fluid modal-image" src="${src}" alt="front-view" />
                     </div>
+                    <div class="left-arrow"><</div> <div class="right-arrow">> </div> 
                     </div>
-                    <div><</div> <div>> </div> 
-              </div> `);
+                    </div> `);
                 $(".modal").modal("show");
+
                 // $(".modal-backdrop").hide();
                 $(".modal").on("show.bs.modal", function(event) {
                   var idx = $(".modal:visible").length;
@@ -168,6 +307,11 @@
                   // var idx = $(".modal:visible").length - 1; // raise backdrop after animation.
                   $(".modal-backdrop").hide();
                   $(".modal").hide();
+                });
+                $(".modal").on("hidden.bs.modal", function(e) {
+                  if ($(".modal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                  }
                 });
               });
             });

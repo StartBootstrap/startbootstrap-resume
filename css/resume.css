@@ -204,10 +204,21 @@ section.resume-section .resume-item .resume-date {
   /* .slider1_container {
     min-width: 900px !important;
     height: 700px !important;
-  }
-  .slides {
-    width: 100% !important;
   } */
+  .slides {
+    min-width: 900px !important;
+  }
+  .carousel {
+    /* position: absolute; */
+    background: gray;
+    display: none;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    color: black;
+    height: 60px;
+    width: 60px;
+  }
   /* .fa {
     font-size: 40px;
   }
@@ -268,8 +279,22 @@ section.resume-section .resume-item .resume-date {
   .gallery-heading {
     text-align: center;
   }
-
-  .gallery-image-container {
+  .left-arrow,
+  .right-arrow {
+    color: white;
+    font-size: 4em;
+    margin-top: -40px;
+  }
+  .left-arrow,
+  .right-arrow:hover {
+    cursor: pointer;
+  }
+  .left-arrow {
+    float: left;
+  }
+  .right-arrow {
+    float: right;
+    margin-right: -260px;
   }
   .filter-container {
     margin-bottom: 20px;
