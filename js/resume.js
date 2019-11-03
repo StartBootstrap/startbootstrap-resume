@@ -110,11 +110,11 @@
             6: "Office",
             7: "Laundry Room"
           };
-
           if (CATEGORIES[category] === undefined) {
             $(this)
               .find(".img-fluid")
               .css("opacity", 1);
+
             $(function() {
               $(".img-fluid").click(function() {
                 const parent = $(".row");
@@ -129,17 +129,17 @@
                 aria-hidden="true">
                 <div class="modal-dialog " role="document">
                 <div class="close-btn">X</div>
-                <div class="prev-btn"><</div>
-                <div class="next-btn">></div>
+         
 
                   <div class="modal-body">
                     <img data-u="image" class="img-fluid modal-image" src="${src}" alt="front-view" />
                     </div>
-
+                    
                     </div>
-                    </div> `);
+
+                    </div> 
+                    `);
                 $(".modal").modal("show");
-                //                     <div class="left-arrow"><</div> <div class="right-arrow">> </div>
                 // $(".modal-backdrop").hide();
                 $(".modal").on("show.bs.modal", function(event) {
                   var idx = $(".modal:visible").length;
@@ -159,15 +159,13 @@
               });
             });
           } else {
-            // $(this)
-            //   .find(".img-fluid")
-            //   .css("opacity", 0.3);
-            // $(function() {
             $(this).append(
               ` <div class="middle"><div class="text">${CATEGORIES[category]}</div></div>`
             );
-            // console.log($(this).find(".middle"));
-            // });
+            console.log(CATEGORIES[category]);
+            if (CATEGORIES[category] === "Property") {
+              $(".text").css("padding", "30% 0");
+            }
             $(function() {
               $(".text").click(function() {
                 const parent = $(".row");

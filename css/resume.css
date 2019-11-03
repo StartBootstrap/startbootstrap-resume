@@ -175,7 +175,7 @@ section.resume-section .resume-item .resume-date {
   }
   .nav-link {
     font-size: 1.4em;
-    color: white !important ;
+    /* color: white !important ; */
   }
   /* Hero */
 
@@ -187,7 +187,7 @@ section.resume-section .resume-item .resume-date {
     font-family: "Jomolhari", serif;
   }
   .hero-subheading {
-    font-size: 3em;
+    font-size: 2.7em;
     font-family: "Jomolhari", serif;
   }
   .home-address:hover {
@@ -292,24 +292,28 @@ section.resume-section .resume-item .resume-date {
   }
   .gallery-heading {
     text-align: center;
+    font-size: 5em;
   }
+  /*
   .left-arrow,
   .right-arrow {
+    display: flex;
+    flex-direction: flex-end;
     color: white;
     font-size: 4em;
-    margin-top: -40px;
   }
   .left-arrow,
   .right-arrow:hover {
     cursor: pointer;
   }
-  .left-arrow {
+  */
+
+  /* .left-arrow {
     float: left;
   }
   .right-arrow {
     float: right;
-    margin-right: -260px;
-  }
+  }  */
   .filter-container {
     margin-bottom: 20px;
     text-align: center;
@@ -384,6 +388,7 @@ section.resume-section .resume-item .resume-date {
   }
   .info-main-heading {
     text-align: center;
+    margin-top: -80px;
   }
   .info-section ul li {
     margin-left: 20px;
@@ -394,6 +399,7 @@ section.resume-section .resume-item .resume-date {
   }
   #house-info h2 {
     margin-left: 20px;
+    margin-top: -120px;
   }
   #content-title {
     margin-top: 20px;
@@ -453,12 +459,13 @@ section.resume-section .resume-item .resume-date {
     color: white;
     font-size: 16px;
     opacity: 0.8;
-    padding: 30% 0;
+    padding: 26% 0;
     font-size: 1.4em;
     font-weight: 700;
     letter-spacing: 0.7px;
     z-index: 5;
   }
+
   .modal-body {
     margin-left: 280px;
   }
@@ -580,6 +587,7 @@ a:active {
     font-family: "Jomolhari", serif;
     font-size: 42px;
     text-align: center;
+    margin-top: -40px;
   }
   .info-section {
     background: rgba(0, 0, 0, 0.9);
@@ -691,7 +699,9 @@ a:active {
 }
 
 .filter-container {
+  margin-top: 10px;
   display: block;
+  font-size: 1.3em;
 }
 
 .gallery-heading,
