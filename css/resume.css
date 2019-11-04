@@ -284,6 +284,10 @@ section.resume-section .resume-item .resume-date {
   .text:hover {
     cursor: pointer;
   }
+  .text a {
+    color: white !important;
+    text-decoration: none;
+  }
   .img-fluid {
     opacity: 1;
     display: block;
@@ -511,10 +515,6 @@ a:active {
   }
   #content-window {
     display: inline-block;
-  }
-  .modal {
-    overflow-y: hidden;
-    /* padding-top: 50%; */
   }
 }
 /* .modal {
