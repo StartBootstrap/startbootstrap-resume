@@ -764,6 +764,7 @@
     <script type="text/javascript">jssor_1_slider_init();
     </script>`);
 
+                // Change First Image for slideshow when clicked
                 const newSrc = $(this)
                   .parent()
                   .parent()
@@ -780,16 +781,13 @@
             .removeClass("middle");
         }
       },
+      // MOUSE OUT
       () => {
         $(this)
           .find(".img-fluid")
           .css("opacity", 1);
       }
     );
-  });
-  $(".img-fluid").click(() => {
-    // js-scroll-trigger" href="#gallery"
-    $("#gallery").focus();
   });
 })(jQuery); // End of use strict
 
