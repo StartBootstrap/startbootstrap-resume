@@ -356,7 +356,7 @@ section.resume-section .resume-item .resume-date {
   .close-btn {
     float: right;
     color: white;
-    margin-left: -100px;
+    margin-left: -120px;
     margin-top: -20px;
     margin-right: -170px;
   }
@@ -391,7 +391,8 @@ section.resume-section .resume-item .resume-date {
   }
   .info-main-heading {
     text-align: center;
-    margin-top: -80px;
+    margin-top: 40px;
+    padding-top: 100px;
   }
   .info-section ul li {
     margin-left: 20px;
@@ -402,7 +403,8 @@ section.resume-section .resume-item .resume-date {
   }
   #house-info h2 {
     margin-left: 20px;
-    margin-top: -120px;
+    margin-top: -100px;
+    font-size: 5em;
   }
   #content-title {
     margin-top: 20px;
@@ -471,6 +473,9 @@ section.resume-section .resume-item .resume-date {
 
   .modal-body {
     margin-left: 280px;
+  }
+  .close-btn {
+    margin-right: -65%;
   }
 }
 
@@ -599,7 +604,7 @@ a:active {
     font-family: "Jomolhari", serif;
     font-size: 42px;
     text-align: center;
-    margin-top: -40px;
+    margin-top: 40px;
   }
   .info-section {
     background: rgba(0, 0, 0, 0.9);
@@ -642,7 +647,6 @@ a:active {
   }
   .close-btn {
     float: right;
-    /* margin-right: 10px; */
     color: white;
   }
   /* CAROUSEL */
