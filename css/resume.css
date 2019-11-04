@@ -281,6 +281,9 @@ section.resume-section .resume-item .resume-date {
     font-weight: 700;
     letter-spacing: 0.7px;
   }
+  .text:hover {
+    cursor: pointer;
+  }
   .img-fluid {
     opacity: 1;
     display: block;
@@ -339,25 +342,25 @@ section.resume-section .resume-item .resume-date {
   }
   .modal-image {
     min-width: 900px;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   .modal-btn {
     margin-left: -130px;
   }
-  .modal-btn:hover {
+  /* .modal-btn:hover {
     cursor: pointer;
-  }
+  } */
   .fa-check {
     font-size: 1.2em;
   }
   .close-btn {
-    float: right;
+    float: left;
     color: white;
-    margin-right: -300px;
+    margin-left: -100px;
+    margin-top: 40px;
+    /* margin-right: -300px; */
   }
-  .close-btn:hover {
-    cursor: pointer;
-  }
+
   /* .prev-btn,
   .next-btn {
     color: white;
@@ -468,6 +471,7 @@ section.resume-section .resume-item .resume-date {
 
   .modal-body {
     margin-left: 280px;
+    padding: -10px 0;
   }
 }
 
@@ -505,7 +509,7 @@ a:active {
     display: inline-block;
   }
   .modal {
-    padding-top: 55%;
+    padding-top: 50%;
   }
 }
 /* .modal {
@@ -637,8 +641,8 @@ a:active {
     width: 200px;
   }
   .close-btn {
-    float: right;
-    margin-right: 10px;
+    float: left;
+    /* margin-right: 10px; */
     color: white;
   }
   /* CAROUSEL */

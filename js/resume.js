@@ -162,7 +162,6 @@
             $(this).append(
               ` <div class="middle"><div class="text">${CATEGORIES[category]}</div></div>`
             );
-            console.log(CATEGORIES[category]);
             if (CATEGORIES[category] === "Property") {
               $(".text").css("padding", "30% 0");
             }
