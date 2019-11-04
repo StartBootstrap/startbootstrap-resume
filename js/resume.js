@@ -26,3 +26,8 @@
   });
 
 })(jQuery); // End of use strict
+
+//Tootip
+  $( document ).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});
+});
