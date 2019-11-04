@@ -354,11 +354,11 @@ section.resume-section .resume-item .resume-date {
     font-size: 1.2em;
   }
   .close-btn {
-    float: left;
+    float: right;
     color: white;
     margin-left: -100px;
-    margin-top: 40px;
-    /* margin-right: -300px; */
+    margin-top: -20px;
+    margin-right: -170px;
   }
 
   /* .prev-btn,
@@ -471,7 +471,6 @@ section.resume-section .resume-item .resume-date {
 
   .modal-body {
     margin-left: 280px;
-    padding: -10px 0;
   }
 }
 
@@ -509,7 +508,8 @@ a:active {
     display: inline-block;
   }
   .modal {
-    padding-top: 50%;
+    overflow-y: hidden;
+    /* padding-top: 50%; */
   }
 }
 /* .modal {
@@ -641,7 +641,7 @@ a:active {
     width: 200px;
   }
   .close-btn {
-    float: left;
+    float: right;
     /* margin-right: 10px; */
     color: white;
   }
