@@ -138,7 +138,7 @@
               $AutoPlay: 1,
               $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
+               
                 $TransitionsOrder: 1
               },
               $ArrowNavigatorOptions: {
@@ -483,7 +483,6 @@
               $AutoPlay: 1,
               $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
                 $TransitionsOrder: 1
               },
               $ArrowNavigatorOptions: {
@@ -765,26 +764,28 @@
     </div>
     <script type="text/javascript">jssor_1_slider_init();
     </script>`);
-                $(".resume-section, .filter-container").css(
+                $(".resume-section, .filter-container, body").css(
                   "background",
                   "rgba(0,0,0,1)"
                 );
                 $(" html, body").css("background", "rgba(0,0,0,0.9)");
 
                 $(
-                  ".btn, #map, .m-0, h2, a, #content, .info-section, .hero"
+                  ".btn, #map div, .m-0, h2, a, #content, .info-section, .hero"
                 ).hide();
+                $(".gallery-image-container").show();
+
                 $(".navbar").css({
                   background: "rgba(0,0,0,0.8)",
                   "z-index": "-1"
                 });
                 $(".close-gallery").show();
-                $("#map").css("width", "100%");
+                $("#map").css({ width: "100%" });
                 // $(".close-gallery").css(marginRight, "-20px");
-                $(".gallery-image-container").show();
                 $(".gallery-image-container, .gallery").css({
                   marginLeft: "-100px"
                 });
+                $("body").css("height", "50%");
                 $(document).keydown(function(e) {
                   // ESCAPE key pressed
                   if (e.keyCode == 27) {
@@ -793,7 +794,7 @@
                     ).css("background", "white");
 
                     $(
-                      ".btn, .m-0, h2, a, #content-window,  .info-section , #map, #content, .hero"
+                      ".btn, .m-0, h2, a, #content-window,  .info-section , #map div, #content, .hero"
                     ).show();
                     $(".gallery-image-container").hide();
 
@@ -813,7 +814,7 @@
                   ).css("background", "white");
 
                   $(
-                    ".btn, .m-0, h2, a, #content-window,  .info-section , #map, #content, .hero"
+                    ".btn, .m-0, h2, a, #content-window,  .info-section , #map div, #content, .hero"
                   ).show();
                   $(".gallery-image-container").hide();
 
