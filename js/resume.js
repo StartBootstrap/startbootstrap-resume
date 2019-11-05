@@ -765,28 +765,66 @@
     </div>
     <script type="text/javascript">jssor_1_slider_init();
     </script>`);
-                $(".resume-section, .img-fluid").css(
+                $(".resume-section, .filter-container").css(
                   "background",
-                  "rgba(0,0,0,0.7)"
+                  "rgba(0,0,0,1)"
                 );
-                $(" html").css("background", "rgba(0,0,0,0.7)");
-                $(".btn, .m-0, h2,  a").hide();
+                $(" html, body").css("background", "rgba(0,0,0,0.9)");
+
+                $(
+                  ".btn, #map, .m-0, h2, a, #content, .info-section, .hero"
+                ).hide();
+                $(".navbar").css({
+                  background: "rgba(0,0,0,0.8)",
+                  "z-index": "-1"
+                });
                 $(".close-gallery").show();
+                $("#map").css("width", "100%");
+                // $(".close-gallery").css(marginRight, "-20px");
                 $(".gallery-image-container").show();
+                $(".gallery-image-container, .gallery").css({
+                  marginLeft: "-100px"
+                });
                 $(document).keydown(function(e) {
                   // ESCAPE key pressed
                   if (e.keyCode == 27) {
-                    $(".resume-section, .img-fluid").css("background", "white");
-                    $(".btn, html").css("background", "white");
+                    $(
+                      ".resume-section, .img-fluid , .btn, html,  .filter-container"
+                    ).css("background", "white");
+
+                    $(
+                      ".btn, .m-0, h2, a, #content-window,  .info-section , #map, #content, .hero"
+                    ).show();
                     $(".gallery-image-container").hide();
-                    $(".btn, .m-0, h2, a").show();
+
+                    $(".navbar").css({
+                      background: "rgba(0,0,0,1)",
+                      "z-index": "1"
+                    });
+                    $(".gallery-image-container, .gallery").css({
+                      marginLeft: "0"
+                    });
+                    $("#map").css("width", "70%");
                   }
                 });
                 $(".close-gallery").click(() => {
-                  $(".resume-section, .img-fluid").css("background", "white");
-                  $(".btn, html").css("background", "white");
+                  $(
+                    ".resume-section, .img-fluid , .btn, html,  .filter-container"
+                  ).css("background", "white");
+
+                  $(
+                    ".btn, .m-0, h2, a, #content-window,  .info-section , #map, #content, .hero"
+                  ).show();
                   $(".gallery-image-container").hide();
-                  $(".btn, .m-0, h2, a").show();
+
+                  $(".navbar").css({
+                    background: "rgba(0,0,0,1)",
+                    "z-index": "1"
+                  });
+                  $(".gallery-image-container, .gallery").css({
+                    marginLeft: "0"
+                  });
+                  $("#map").css("width", "70%");
                 });
                 // Change First Image for slideshow when clicked
                 const newSrc = $(this)

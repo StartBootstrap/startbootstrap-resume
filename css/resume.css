@@ -304,6 +304,8 @@ section.resume-section .resume-item .resume-date {
   .close-gallery {
     float: right;
     color: white;
+    margin-left: 300px !important;
+    margin-right: -20px !important;
   }
   .close-gallery:hover {
     cursor: pointer;
