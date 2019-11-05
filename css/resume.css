@@ -301,6 +301,13 @@ section.resume-section .resume-item .resume-date {
     text-align: center;
     font-size: 5em;
   }
+  .close-gallery {
+    float: right;
+    color: white;
+  }
+  .close-gallery:hover {
+    cursor: pointer;
+  }
   /*
   .left-arrow,
   .right-arrow {

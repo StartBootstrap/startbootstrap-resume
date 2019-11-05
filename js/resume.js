@@ -564,6 +564,8 @@
         .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
         .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
     </style>
+    <span class="close-gallery">X</span>
+
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -768,8 +770,8 @@
                   "rgba(0,0,0,0.7)"
                 );
                 $(" html").css("background", "rgba(0,0,0,0.7)");
-                $(".btn, .m-0, h2").hide();
-
+                $(".btn, .m-0, h2,  a").hide();
+                $(".close-gallery").show();
                 $(".gallery-image-container").show();
                 $(document).keydown(function(e) {
                   // ESCAPE key pressed
@@ -777,8 +779,14 @@
                     $(".resume-section, .img-fluid").css("background", "white");
                     $(".btn, html").css("background", "white");
                     $(".gallery-image-container").hide();
-                    $(".btn, .m-0, h2").show();
+                    $(".btn, .m-0, h2, a").show();
                   }
+                });
+                $(".close-gallery").click(() => {
+                  $(".resume-section, .img-fluid").css("background", "white");
+                  $(".btn, html").css("background", "white");
+                  $(".gallery-image-container").hide();
+                  $(".btn, .m-0, h2, a").show();
                 });
                 // Change First Image for slideshow when clicked
                 const newSrc = $(this)
