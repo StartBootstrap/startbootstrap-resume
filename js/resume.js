@@ -224,7 +224,7 @@
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
+        <div data-u="slides" class="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
             <div>
                 <img id="first-image" data-u="image" src="img/img2.JPG" />
                 <img id="first-image" data-u="thumb" src="img/img2.JPG" />
@@ -569,8 +569,8 @@
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
-            <div>
+        <div data-u="slides" class="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
+            <div >
                 <img id="first-image" data-u="image" src="img/img2.JPG" />
                 <img id="first-image" data-u="thumb" src="img/img2.JPG" />
             </div>
@@ -763,7 +763,23 @@
     </div>
     <script type="text/javascript">jssor_1_slider_init();
     </script>`);
+                $(".resume-section, .img-fluid").css(
+                  "background",
+                  "rgba(0,0,0,0.7)"
+                );
+                $(" html").css("background", "rgba(0,0,0,0.7)");
+                $(".btn, .m-0, h2").hide();
 
+                $(".gallery-image-container").show();
+                $(document).keydown(function(e) {
+                  // ESCAPE key pressed
+                  if (e.keyCode == 27) {
+                    $(".resume-section, .img-fluid").css("background", "white");
+                    $(".btn, html").css("background", "white");
+                    $(".gallery-image-container").hide();
+                    $(".btn, .m-0, h2").show();
+                  }
+                });
                 // Change First Image for slideshow when clicked
                 const newSrc = $(this)
                   .parent()
