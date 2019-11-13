@@ -790,7 +790,7 @@
                   // ESCAPE key pressed
                   if (e.keyCode == 27) {
                     $(
-                      ".resume-section, .img-fluid , .btn, html,  .filter-container"
+                      ".resume-section, .img-fluid , .btn, html,  .filter-container,  body"
                     ).css("background", "white");
 
                     $(
@@ -810,7 +810,7 @@
                 });
                 $(".close-gallery").click(() => {
                   $(
-                    ".resume-section, .img-fluid , .btn, html,  .filter-container"
+                    ".resume-section, .img-fluid , .btn, html,  .filter-container,  body"
                   ).css("background", "white");
 
                   $(
