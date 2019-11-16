@@ -31,9 +31,9 @@ h6 {
 }
 
 h1 {
-  text-transform: capitalize;
   font-size: 6rem; 
   line-height: 5.5rem;
+  text-transform: capitalize;
 }
 
 h2 {
