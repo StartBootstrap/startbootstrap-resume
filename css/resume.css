@@ -176,3 +176,7 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+div p {
+  list-style: unset;
+}
