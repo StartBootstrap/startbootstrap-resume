@@ -25,15 +25,13 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-  /*text-transform: uppercase; */
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #343a40;
 }
 
 h1 {
   font-size: 6rem; 
   line-height: 5.5rem;
-  text-transform: capitalize;
 }
 
 h2 {
