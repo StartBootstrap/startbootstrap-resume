@@ -178,5 +178,6 @@ a:hover, a:focus, a:active {
 }
 
 div p {
+  list-style-position: outside;
   list-style: unset;
 }
