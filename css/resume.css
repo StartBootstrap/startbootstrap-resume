@@ -50,7 +50,7 @@ p.lead {
 
 .subheading {
   /*text-transform: uppercase;*/
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
