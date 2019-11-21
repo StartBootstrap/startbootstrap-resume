@@ -397,10 +397,12 @@ section.resume-section .resume-item .resume-date {
     color: white;
     height: 400px;
     width: 300px;
+    font-size: 1.5em;
   }
   .info-heading {
     margin: 20px;
     padding-top: 20px;
+    font-size: 1.2em;
   }
   .info-main-heading {
     text-align: center;
@@ -413,6 +415,7 @@ section.resume-section .resume-item .resume-date {
   .info-right-section {
     top: 0;
     float: right;
+    font-size: 1.4em;
   }
   #house-info h2 {
     margin-left: 20px;
@@ -525,6 +528,15 @@ a:active {
   #content-window {
     display: inline-block;
   }
+  .info-section {
+    font-size: 1.5em;
+  }
+  .info-heading {
+    font-size: 1.2em;
+  }
+  .social-icons {
+    display: none;
+  }
 }
 /* .modal {
   position: absolute;
@@ -559,9 +571,10 @@ a:active {
     display: none;
   }
   .hero-subheading {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 20px;
   }
+
   /* NAVBAR */
 
   #content-title {
