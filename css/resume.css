@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Palatino, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Palatino, 'Helvetica Neue', Palatino, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #868e96;
 }
@@ -18,19 +18,23 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+h2
+{
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Palatino, 'Helvetica Neue', Palatino, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
 }
-
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Palatino, 'Helvetica Neue', Palatino, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #343a40;
+}
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 5.5rem;
 }
 
@@ -49,7 +53,7 @@ p.lead {
 
 .subheading {
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Palatino, 'Helvetica Neue', Palatino, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
 
@@ -71,7 +75,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #388cbd;
 }
 
 .dev-icons {
@@ -79,17 +83,17 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #38a2bd;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
-  letter-spacing: 0.05rem;
   text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #6ec8d4;
 }
 
 @media (min-width: 992px) {
@@ -171,5 +175,6 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #273582;
 }
+nobr  {  white-space: nowrap;  hyphens: none;  }
