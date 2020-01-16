@@ -174,30 +174,3 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
-
-
-
-
-.latex sub {
-  vertical-align: -0.1ex;
-  margin-left: -0.1667em;
-  margin-right: -0.025em;
-}
-
-.xetex sub {
-  vertical-align: -0.1ex;
-  margin-left: -0.1667em;
-  margin-right: -0.125em;
-}
-
-.latex sub, .latex sup, .xetex sub {
-  font-size: 0.9em;
-  text-transform:uppercase;
-
-}
-.latex sup {
-  font-size: 0.85em;
-  vertical-align: -0.2em;
-  margin-left: -0.26em;
-  margin-right: -0.05em;
-}
