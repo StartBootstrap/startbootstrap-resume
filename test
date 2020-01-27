@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>My Resume</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Sacramento:500, 700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" style=color:"blue;”>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Kayla Ward-Cofield</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+      ul {
+  background-color: #1a1aff;
+}
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Kayla
+          <span class="text-primary">Ward-Cofield</span>
+        </h1>
+        <div class="subheading mb-5">6221 Greenleigh Ave Unit 518 · Baltimore, MD 21220 · (310) 910-7436 ·<a href="mailto:kayla.wardcofield@gmail.com">kayla.wardcofield@gmail.com</a>
+        </div>
+        <p class="lead mb-5">I am a sophomore at the Illustrious Morgan State University. I am striving to leverage my collaboration, critical thinking, and communication skills through internship and co-operative educational opportunities focused toward Engineering, DevOps, Cybersecurity, and Information Technology positions.</p>
+<p> 
+<font color="orange" style=”text-align: center; Sacramento”><b>PROUD TO BE MORGAN MADE.</b></font>
+
+         </p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5"><i>Experience</i></h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Infrastructure Design Engineer</h3>
+            <div class="subheading mb-3">Booz Allen Hamilton</div>
+            <p>
+            <ul>
+               <li>Conduct thorough self-assessments to identify network security vulnerabilities and areas for improvement</li>
+               <li>Ensure network confidentiality, availability and integrity through preventative measures and upgrades</li>
+               <li>Conduct ongoing security reviews and tests to verify security features and controls are functional and effective
+               <li>Conduct ongoing security reviews and tests to verify security features and controls are functional and effective</li>
+               <li>Coordinate/host U.S. Army Communications Security (COMSEC) integration forums for DoD personnel, government contractors, and private sector industry</li>
+               <li>Liaise private sector industry and current organization</li> 
+            </ul>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">February 2019- Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Client Systems Technician</h3>
+            <div class="subheading mb-3">United States Air Force</div>
+            <p>
+            </ul>
+          <li>Properly reimaged workstations and installed operating systems, software drivers, and software applications</li>
+          <li>Followed internal procedures for change management, incident management, and escalation</li>
+          <li>Utilized Active Directory to push group policies and managed additions, updates and deletions of network accounts</li
+          <li>Collaborated with various offices on base to plan and implement new technology</li>
+          <li>Presented analysis of findings both verbally and in written reports</li>
+          <li>Led special projects (such as base-wide technical refreshes), internal and external audits, evaluations and process improvements</li>
+          <li>Referred major hardware and software problems and defective products to vendors for servicing and/or replacements</li>
+
+    <p><b>Significant Accomplishments</b></p>
+        <ul> 
+</li style="text-align: left;">Mitigated network security risk. Received the highest score on DISA inspection of systems under my direct responsibility for the Command Cyber Operational Readiness Inspection for both NIPR and SIPR. </li>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2015 - November 2018</span>
+          </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5"><i>Education</i></h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Morgan State University</h3>
+            <div class="subheading mb-3">Candidate, Bachelor of Science</div>
+            <div>Electrical and Computer Engineering Track</div>
+            <p>GPA: 4.0</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2019 - May 2023</span>
+          </div>
+       
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5"><i>Skills and Proficiencies</i></h2>
+
+        <div class="subheading mb-3">Certifications &amp; Tools</div>
+        </ul>
+
+          </li>Microsoft Office • SharePoint • Assessment and Authorization • BMC Remedy • Information Assurance • Active Directory • Risk Management Framework • Systems Integration • Vulnerability Assessment and Analysis • Network Vulnerability Analysis Knowledge of Protocols • IT Asset Management Services • Authorized to Operate • NIST • Responsive Web Design • JavaScript</li>
+        </ul>
+        
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5"><i>Interests</i></h2>
+        <p>Apart from matriculating, I enjoy journaling, reading, and spending time with friends. As a self-care enthusiast, I ensure that I provide myself at least one day each week to wind down and focus on me and activities I enjoy. </p>
+        <p class="mb-0">I consider myself inspirational. I enjoy positive quotes and reading books that are uplifting. My favorite quote is, "Bloom where you are planted." I believe that no matter what course life takes us, optimism and one's ability to embrace the simple things are the keys to true happiness. </p>
+        <p> 
+        <font color="orange" style=”text-align: centered;”><b><i>Current Reading: Millionaire Success Habits by Dean Graziosi</b></i></font>
+       
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5"><i>Awards &amp; Certifications</i></h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            CompTIA A+ Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            CompTIA Security+ Certification</li>
+           <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Responsive Web Design Certification</li>
+           <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            JavaScript Algorithms and Data Structure Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - AMIE Design Thinking Challenge 2020</li>
+        </ul>
+      </div>
+    </section>
+<section>
+<hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5"><font><i>Activities and Honors</i></h2>
+    </p style=”text-align: left;”>Women of Color Science, Technology, Engineering and Mathematics (STEM) Conference • Black Engineer of the Year (BEYA) STEM Conference • National Society of Black Engineers (NSBE) • Institute of Electrical and Electronic Engineers (IEEE) • 2020 Advancing Minorities’ Interest in Engineering (AMIE) Design Challenge Team • Society of Women Engineers (SWE) • Thurgood Marshall College Fund (TMCF) Scholarship Candidate • Self-Taught Code: HMTL, HTML5, JavaScript</p>
+        
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
