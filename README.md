@@ -9,7 +9,7 @@ The hyperlink above is a resume created with Bootstrap 4 detailing my accomplish
 
 ## Preview
 
-[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
+[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://brant-777.github.io/Brant-resume/)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
 
