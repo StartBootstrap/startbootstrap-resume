@@ -11,7 +11,7 @@
 
 ## About
 
-The hyperlink above is a resume created with Bootstrap 4 detailing my accomplishments and a downloadable resume link
+The hyperlink above is a resume created with Bootstrap 4 detailing my accomplishments and a downloadable resume link.
 
 
 
