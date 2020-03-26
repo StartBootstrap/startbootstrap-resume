@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 300px
+        }
+        .connector {
+            height: 30%;
+            width: 2px;
+            background-color: black;
+        }
+        .node {
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 100%;
+            width: 10px;
+            height: 10px;
+        }
+        .node:hover {
+            width: 14px;
+            height: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="node"></div>
+        <div class="connector"></div>
+        <div class="node"></div>
+        <div class="connector"></div>
+        <div class="node"></div>
+    </div>
+</body>
