@@ -10,7 +10,7 @@ body {
 
 
   padding-top: 54px;
-  color: #868e96;
+  color: #495057
 }
 
 @media (min-width: 992px) {
@@ -63,15 +63,15 @@ p.lead {
 
 .social-icons a {
   display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2rem;
+  width: 2rem;
   background-color: #495057;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-right: 0.2rem;
 }
 
 .social-icons a:last-child {
@@ -144,7 +144,7 @@ section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
-  background-color: #ffc107;
+  background-color: #fffbf0;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -170,17 +170,17 @@ section.resume-section .resume-item .resume-date {
 .bg-primary {
 
 
-  background-color: #ffffff !important;
+  background-color: #fbbc00 !important;
 }
 
 .text-primary {
 /*  color: #BD5D38 !important; gaby */
-  color: #e4eaef !important;
+  color: #fbbc00  !important;
 }
 
 a {
 /*  color: #BD5D38;*/
-color: #ffffff;
+color: #fbbc00;
 }
 
 a:hover, a:focus, a:active {
