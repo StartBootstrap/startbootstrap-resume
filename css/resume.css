@@ -175,12 +175,12 @@ section.resume-section .resume-item .resume-date {
 
 .text-primary {
 /*  color: #BD5D38 !important; gaby */
-  color: ###e4eaef !important;
+  color: #e4eaef !important;
 }
 
 a {
 /*  color: #BD5D38;*/
-color: ##ffffff;
+color: #ffffff;
 }
 
 a:hover, a:focus, a:active {
