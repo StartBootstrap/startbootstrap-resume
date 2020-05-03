@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #e3856b;
+  background-color: #ffc7bf;
 }
 
 .dev-icons {
@@ -80,7 +80,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #e3856b;
+  color: #ffc7bf;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +90,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #e3856b;
+  outline-color: #ffc7bf;
 }
 
 @media (min-width: 992px) {
@@ -160,11 +160,11 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #e3856b !important;
+  background-color: #ffc7bf !important;
 }
 
 .text-primary {
-  color: #e3856b !important;
+  color: #ffc7bf !important;
 }
 
 a {
