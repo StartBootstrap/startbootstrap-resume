@@ -1,7 +1,6 @@
 ---
 layout: resume
 ---
-Work experience
 
 Founder and President
 Paper Bridges NC
