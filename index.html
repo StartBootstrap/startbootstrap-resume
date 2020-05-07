@@ -340,76 +340,27 @@ Thankful because it identifies me as a global citizen. <br/>Now, I work hard to 
     </section><br/><br/>
         
 <!-- modify this form HTML and place wherever you want your form -->
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #e68677;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #e68677;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #ffebe6;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
-   <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="contact">
-  <div class="w-100">
-          <h2 class="mb-5">  Contact</h2>
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
+      <div class="w-100">
+        <h2 class="mb-5">Contact</h2>
 
 <div class="container">
 <form
   action="https://formspree.io/mqkykwqa"
   method="POST"
 >
-    <label for="fname">First Name</label>
+    <label for="name">Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name">
-
-    <label for="inquiry">Inquiry</label>
-    <select id="inquiry" name="inquiry">
-      <option value="keynote">Keynote an event</option>
-      <option value="feedback">Website feedback</option>
-      <option value="work">Design and business inquiries</option>
-    </select>
+    <label for="inquriy">Inquiry</label>
+    <input type="text" id="lname" name="lastname" placeholder="Keynote, feedback, work, ect...">
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Say hi." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
-</div></div></section>
 
-</body>
-</html>
         <!--end form-->
       
       </div></div></section><br/>
@@ -426,66 +377,5 @@ element.parentNode.removeChild(element);
         </section>
 
   </div>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-</body>
-<!-- Place this script at the end of the body tag -->
-
-<script>
-  window.addEventListener("DOMContentLoaded", function() {
-
-    // get the form elements defined in your form HTML above
-    
-    var form = document.getElementById("my-form");
-    var button = document.getElementById("my-form-button");
-    var status = document.getElementById("my-form-status");
-
-    // Success and Error functions for after the form is submitted
-    
-    function success() {
-      form.reset();
-      button.style = "display: none ";
-      status.innerHTML = "Thanks!";
-    }
-
-    function error() {
-      status.innerHTML = "Oops! There was a problem.";
-    }
-
-    // handle the form submission event
-
-    form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
-  });
-  
-  // helper function for sending an AJAX request
-
-  function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
-    };
-    xhr.send(data);
-  }
-</script>
-        
-        <!--end form-->
 </html>
