@@ -1,19 +1,15 @@
 // Import variables
-@import "variables.scss";
+@import "./variables.scss";
 
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 
-// REMOVE MIXINS AND OVERRIDE BOOTSTRAP VARIABLES INSTEAD
-@import "mixins.scss";
-
 // Global CSS
-@import "global.scss";
+@import "./global.scss";
 
 // Components
-@import "nav.scss";
+@import "./components/sidenav.scss";
+@import "./components/icons.scss";
 
-// REMOVE / MOVE THESE
-// -- Move these into global? Or figure out a different way to divide
-@import "resume-item.scss";
-@import "bootstrap-overrides.scss";
+// Sections
+@import "./sections/resume-section.scss";

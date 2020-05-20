@@ -1,15 +1,14 @@
 // Global styling for this template
 
 body {
-  @include body-font;
-  padding-top: 54px;
-  color: $gray-600;
+    padding-top: $navbar-base-height;
+    color: $gray-600;
 }
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: $sidebar-base-width;
-  }
+@include media-breakpoint-up(lg) {
+    body {
+        padding-top: 0;
+        padding-left: $sidebar-base-width;
+    }
 }
 
 h1,
@@ -18,63 +17,21 @@ h3,
 h4,
 h5,
 h6 {
-  @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+    text-transform: uppercase;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-h3 {
-  font-size: 2rem;
+    line-height: 1;
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+    font-size: 1.15rem;
+    font-weight: 400;
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  @include heading-font;
-  font-size: 1.5rem;
-}
-
-.social-icons {
-  a {
-    display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
-    border-radius: 100%;
-    text-align: center;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-weight: 500;
     font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 1rem;
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover {
-      background-color: $primary;
-    }
-  }
-}
-
-.dev-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $primary;
-    }
-  }
 }
