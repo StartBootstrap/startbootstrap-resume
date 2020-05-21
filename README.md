@@ -4,9 +4,9 @@
 
 ## Preview
 
-[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
+[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://hleo1.github.io/hubert-resume/)
 
-**[View Live Preview](https://google.com/)**
+**[View Live Preview](https://hleo1.github.io/hubert-resume/)**
 
 ## Status
 
