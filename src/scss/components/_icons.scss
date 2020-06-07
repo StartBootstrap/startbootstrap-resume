@@ -5,13 +5,13 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: sass-rem(56);
+        width: sass-rem(56);
         background-color: $gray-700;
         color: $white;
         border-radius: 100%;
-        font-size: 1.5rem;
-        margin-right: 1.5rem;
+        font-size: sass-rem(24);
+        margin-right: sass-rem(24);
         &:last-child {
             margin-right: 0;
         }
@@ -23,5 +23,5 @@
 
 // Styling for the development technology icons
 .dev-icons {
-    font-size: 3rem;
+    font-size: sass-rem(48);
 }

@@ -1,7 +1,7 @@
 #sideNav {
     .navbar-nav .nav-item .nav-link {
         font-weight: 800;
-        letter-spacing: 0.05rem;
+        letter-spacing: sass-rem(1);
         text-transform: uppercase;
     }
     .navbar-toggler {
@@ -27,10 +27,10 @@
             display: flex;
 
             margin: auto auto 0;
-            padding: 0.5rem;
+            padding: sass-rem(8);
             .img-profile {
-                max-width: 10rem;
-                max-height: 10rem;
+                max-width: sass-rem(160);
+                max-height: sass-rem(160);
                 border: 0.5rem solid fade-out($white, 0.8);
             }
         }

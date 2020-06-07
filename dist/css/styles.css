@@ -10025,7 +10025,7 @@ h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
@@ -10038,7 +10038,7 @@ p.lead {
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {

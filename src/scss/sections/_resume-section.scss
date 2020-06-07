@@ -1,11 +1,11 @@
 section.resume-section {
     display: flex;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    max-width: 75rem;
+    padding-left: sass-rem(16);
+    padding-right: sass-rem(16);
+    padding-top: sass-rem(80);
+    padding-bottom: sass-rem(80);
+    max-width: sass-rem(1200);
     .resume-section-content {
         width: 100%;
     }
@@ -17,9 +17,9 @@ section.resume-section {
 }
 @include media-breakpoint-up(lg) {
     section.resume-section {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-left: sass-rem(48);
+        padding-right: sass-rem(48);
+        padding-top: sass-rem(80);
+        padding-bottom: sass-rem(80);
     }
 }

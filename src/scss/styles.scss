@@ -1,6 +1,9 @@
 // Import variables
 @import "./variables.scss";
 
+// Import Sass mixins / functions
+@import "~@sass-collective/sass-rem";
+
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 
