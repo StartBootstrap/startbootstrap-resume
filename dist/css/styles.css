@@ -159,7 +159,8 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  /* color: #bd5d38; */
+  color: #343a40;
   text-decoration: none;
   background-color: transparent;
 }
@@ -6097,7 +6098,8 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  /* background-color: #bd5d38 !important; */
+  background-color: #343a40 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9799,7 +9801,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  /* color: #bd5d38 !important; */
+  color: #343a40 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
