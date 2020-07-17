@@ -40,7 +40,7 @@
     },
     "devDependencies": {
         "autoprefixer": "9.8.0",
-        "browser-sync": "2.26.7",
+        "browser-sync": "^2.26.10",
         "chokidar": "3.4.0",
         "concurrently": "5.2.0",
         "postcss": "7.0.32",
