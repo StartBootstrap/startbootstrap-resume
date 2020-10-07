@@ -6097,7 +6097,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: #3058db !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9799,7 +9799,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: #3058db !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10064,7 +10064,6 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10090,7 +10089,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #3058DB;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10100,7 +10099,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #0c1a69;
 }
 
 .dev-icons {
