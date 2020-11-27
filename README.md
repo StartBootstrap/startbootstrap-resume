@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![Resume Preview](https://assets.startbootstrap.com/img/screenshots/themes/resume.png)](https://enyingim.github.io)
+[![Resume Preview](https://assets.startbootstrap.com/img/screenshots/themes/resume.png)](https://enyingim.github.io/dist/index.html)
 
 **[View Live Preview](https://startbootstrap.github.io/startbootstrap-resume/)**
 
