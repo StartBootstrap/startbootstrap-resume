@@ -1,9 +1,17 @@
+// 
+// Sidenav
+// 
+
 #sideNav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     .navbar-nav .nav-item .nav-link {
         font-weight: 800;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
     }
+
     .navbar-toggler {
         &:focus {
             outline-color: lighten($primary, 15%);
@@ -13,6 +21,8 @@
 
 @include media-breakpoint-up(lg) {
     #sideNav {
+        padding-left: 0;
+        padding-right: 0;
         text-align: center;
         position: fixed;
         top: 0;
@@ -23,17 +33,20 @@
 
         width: $sidebar-base-width;
         height: 100vh;
+
         .navbar-brand {
             display: flex;
 
             margin: auto auto 0;
             padding: 0.5rem;
+
             .img-profile {
                 max-width: 10rem;
                 max-height: 10rem;
                 border: 0.5rem solid fade-out($white, 0.8);
             }
         }
+
         .navbar-collapse {
             display: flex;
             align-items: flex-start;
@@ -41,12 +54,15 @@
 
             width: 100%;
             margin-bottom: auto;
+
             .navbar-nav {
                 flex-direction: column;
 
                 width: 100%;
+
                 .nav-item {
                     display: block;
+
                     .nav-link {
                         display: block;
                     }

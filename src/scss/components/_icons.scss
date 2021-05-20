@@ -1,3 +1,7 @@
+// 
+// Icons
+// 
+
 // Styling for the rounded social media links
 
 .social-icons {
@@ -12,9 +16,11 @@
         border-radius: 100%;
         font-size: 1.5rem;
         margin-right: 1.5rem;
+
         &:last-child {
             margin-right: 0;
         }
+
         &:hover {
             background-color: $primary;
         }

@@ -1,9 +1,12 @@
-// Global styling for this template
+// 
+// Global
+// 
 
 body {
     padding-top: $navbar-base-height;
     color: $gray-600;
 }
+
 @include media-breakpoint-up(lg) {
     body {
         padding-top: 0;
