@@ -7336,7 +7336,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #bd5d38 !important;
+  color: rgb(104, 31, 18) !important;
 }
 
 .text-secondary {
@@ -7392,7 +7392,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: rgb(104, 31, 18) !important;
 }
 
 .bg-secondary {
@@ -10887,7 +10887,7 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: rgb(104, 31, 18);
 }
 
 @media (min-width: 992px) {
