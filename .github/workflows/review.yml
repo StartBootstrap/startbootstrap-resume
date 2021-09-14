@@ -10,3 +10,4 @@ jobs:
       - name: Get HTML preview link
         id: html_preview
         uses: pavi2410/html-preview-action@v2 # NOTE: replace with the latest version of this Action
+
