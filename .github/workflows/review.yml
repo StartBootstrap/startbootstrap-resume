@@ -1,0 +1,13 @@
+# Used to auto approve/merge PRs that update container images in stage or PRs created by GoCD pipelines.
+name: Automerge gocd deployments
+
+on: 
+  push:
+    branches-ignore: ['master']
+
+jobs:
+  HTML Preview
+    id: html_preview
+    uses: pavi2410/html-preview-action@v2
+    with:
+      html_file: 'index.html'
