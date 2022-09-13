@@ -3032,13 +3032,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #070707;
+  border-color: #000000;
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
+  background-color:honeydew;
+  border-color: black;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
@@ -3271,7 +3271,7 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #bd5d38;
+  color: #000000;
   border-color: #bd5d38;
 }
 .btn-outline-primary:hover {
@@ -3954,7 +3954,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #974a2d;
+  color:black;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4001,7 +4001,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #bd5d38;
+  background-color: #000000;
 }
 
 .nav-fill > .nav-link,
@@ -4156,7 +4156,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color: navy;
     border-right: 0;
     border-left: 0;
     transition: none;
