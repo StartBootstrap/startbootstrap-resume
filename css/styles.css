@@ -238,7 +238,7 @@ sup {
 
 a {
   color: #bd5d38;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #974a2d;
@@ -7372,6 +7372,7 @@ textarea.form-control-lg {
 
 .mb-3 {
   margin-bottom: 1rem !important;
+  text-align: var(--bs-body-text-align);
 }
 
 .mb-4 {
@@ -7379,7 +7380,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .mb-auto {
@@ -11311,7 +11312,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform:none;
+  text-transform: uppercase;
 }
 
 h1, .h1 {
@@ -11319,16 +11320,25 @@ h1, .h1 {
 }
 
 p.lead {
-  color:#101214;
-  font-size: 1.15rem;
-  font-weight: 400;
+  color:#6c757d;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  font-family: var(--bs-body-font-family);
+
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400;
-  font-size: 1.2rem;
-  color: #41464b;
+  font-family: var(--bs-body-font-family);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #6c757d;
+}
+.subheadingCompany {
+  font-family: var(--bs-body-font-family);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
 }
 
 #sideNav {
