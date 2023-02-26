@@ -15,6 +15,7 @@
     .navbar-toggler {
         &:focus {
             outline-color: lighten($primary, 15%);
+    
         }
     }
 }
